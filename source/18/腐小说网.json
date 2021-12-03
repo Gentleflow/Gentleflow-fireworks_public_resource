@@ -1,0 +1,56 @@
+{
+  "sourceName": "🔞 腐小说网",
+  "sourceType": 0,
+  "sourceUrl": "http://www.fxshu.org/",
+  "bookInfoPattern": "",
+  "exploreUrl": "现代耽美::/xiandai/list_4_{{page}}.html\n古代耽美::/gudai/list_5_{{page}}.html\n穿越重生::/chuanyue/list_6_{{page}}.html\n玄幻灵异::/qihuan/list_7_{{page}}.html\n网游竞技::/wangyou/list_8_{{page}}.html\n同人耽美::/tongren/list_9_{{page}}.html\nG L 百合::/baihe/list_10_{{page}}.html",
+  "header": "{\n  \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/82.0.4080.0 Safari/537.36 Edg/82.0.453.0\"\n}",
+  "ruleBookInfo": {
+    "infoInit": "",
+    "infoAuthor": "class.tiitls@tag.strong.0@text##作者：",
+    "infoCoverUrl": "",
+    "infoIntro": "",
+    "infoKind": "class.new-nab@tag.a-1@text",
+    "infoLastChapter": "class.tiitls@tag.span.0@text[时间：]##|-##.",
+    "infoName": "class.coa-an@tag.h1@text",
+    "infoTocUrl": "",
+    "infoWordCount": "class.tiitls@tag.span.1@text"
+  },
+  "ruleContent": {
+    "content": "class.cotbd@textNodes",
+    "nextContentUrl": "",
+    "webJs": "",
+    "sourceRegex": "",
+    "replaceRegex": ""
+  },
+  "ruleExplore": {
+    "exploreAuthor": "tag.a.0@text##.*作者：",
+    "exploreBookList": "class.list_article@ul@li",
+    "exploreBookUrl": "tag.a.0@href",
+    "exploreCoverUrl": "",
+    "exploreIntro": "class.desc.0@text",
+    "exploreKind": "",
+    "exploreLastChapter": "class.time.0@text",
+    "exploreName": "tag.a.0@b@text||tag.a.0@strong@text"
+  },
+  "ruleSearch": {
+    "searchAuthor": "class.click@text##.*作者：",
+    "searchBookList": "tag.li",
+    "searchBookUrl": "tag.a.1@href",
+    "searchCoverUrl": "",
+    "searchIntro": "class.desc@text",
+    "searchKind": "tag.a.0@text",
+    "searchLastChapter": "class.time@text##-##.",
+    "searchName": "tag.a.1@text##",
+    "searchWordCount": ""
+  },
+  "ruleToc": {
+    "tocList": "class.ampag@tag.li!0:1:2",
+    "tocName": "tag.a@text",
+    "tocUrl": "tag.a@href",
+    "isVip": "",
+    "nextTocUrl": "",
+    "tocUpdateTime": ""
+  },
+  "searchUrl": "http://www.fxshu.org/plus/search.php?q={{key}}"
+}

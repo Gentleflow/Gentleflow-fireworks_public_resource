@@ -1,0 +1,56 @@
+{
+  "sourceName": "\uD83D\uDCA5 笔趣阁⑤",
+  "sourceType": 0,
+  "sourceUrl": "http://www.biqujia.com",
+  "bookInfoPattern": "",
+  "exploreUrl": "玄幻::/xuanhuan/\n修真::/xiuzhen/\n都市::/dushi/\n历史::/lishi/\n网游::/wangyou/\n科幻::/kehuan/\n恐怖::/kongbu/\n其他::/qita/\n全本::/quanben/\n",
+  "header": "",
+  "ruleBookInfo": {
+    "infoInit": "",
+    "infoAuthor": "",
+    "infoCoverUrl": "img@src",
+    "infoIntro": "id.intro@text",
+    "infoKind": "",
+    "infoLastChapter": "id.info@tag.p.3@a@text",
+    "infoName": "",
+    "infoTocUrl": "",
+    "infoWordCount": ""
+  },
+  "ruleContent": {
+    "content": "id.content@html",
+    "nextContentUrl": "",
+    "webJs": "",
+    "sourceRegex": "",
+    "replaceRegex": ""
+  },
+  "ruleExplore": {
+    "exploreAuthor": "class.s5@text||class.s4@text",
+    "exploreBookList": "id.newscontent@class.l@tag.ul@tag.li||class.novelslist2@tag.ul@tag.li!0",
+    "exploreBookUrl": "class.s2@tag.a@href",
+    "exploreCoverUrl": "",
+    "exploreIntro": "",
+    "exploreKind": "class.s1@tag.a@text",
+    "exploreLastChapter": "class.s3@tag.a@text",
+    "exploreName": "class.s2@tag.a@text"
+  },
+  "ruleSearch": {
+    "searchAuthor": "class.result-game-item-info-tag.0@tag.span.1@text",
+    "searchBookList": "class.result-item result-game-item",
+    "searchBookUrl": "h3@a@href",
+    "searchCoverUrl": "class.result-game-item-pic@img@src",
+    "searchIntro": "",
+    "searchKind": "class.result-game-item-info-tag.1@tag.span.1@text",
+    "searchLastChapter": "class.result-game-item-info-tag.3@tag.a@text",
+    "searchName": "h3@a@span@text",
+    "searchWordCount": ""
+  },
+  "ruleToc": {
+    "tocList": "id.list@dd@a",
+    "tocName": "text",
+    "tocUrl": "href",
+    "isVip": "",
+    "nextTocUrl": "",
+    "tocUpdateTime": ""
+  },
+  "searchUrl": "http://www.biqujia.com/search.php?q={{key}}"
+}

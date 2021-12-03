@@ -1,0 +1,56 @@
+{
+  "sourceName": "💥 天天小书屋",
+  "sourceType": 0,
+  "sourceUrl": "https://www.myshu.org",
+  "bookInfoPattern": "",
+  "exploreUrl": "",
+  "header": "",
+  "ruleBookInfo": {
+    "infoInit": "",
+    "infoAuthor": "id.info@p.1@text",
+    "infoCoverUrl": "tag.img@src",
+    "infoIntro": "id.intro@text",
+    "infoKind": "",
+    "infoLastChapter": "id.info@p!0:1:2@a@text",
+    "infoName": "id.info@h1@text",
+    "infoTocUrl": "",
+    "infoWordCount": ""
+  },
+  "ruleContent": {
+    "content": "id.content@textNodes##本站重要通知.*|天才一秒.*|http.*",
+    "nextContentUrl": "",
+    "webJs": "",
+    "sourceRegex": "",
+    "replaceRegex": ""
+  },
+  "ruleExplore": {
+    "exploreAuthor": "",
+    "exploreBookList": "",
+    "exploreBookUrl": "",
+    "exploreCoverUrl": "",
+    "exploreIntro": "",
+    "exploreKind": "",
+    "exploreLastChapter": "",
+    "exploreName": ""
+  },
+  "ruleSearch": {
+    "searchAuthor": "class.author@text",
+    "searchBookList": "class.bookbox",
+    "searchBookUrl": "class.bookname@tag.a.0@href",
+    "searchCoverUrl": "tag.img@src",
+    "searchIntro": "",
+    "searchKind": "class.cat@text##分类：",
+    "searchLastChapter": "class.update@tag.a.0@text",
+    "searchName": "class.bookname@tag.a.0@text",
+    "searchWordCount": ""
+  },
+  "ruleToc": {
+    "tocList": "class.listmain@tag.dl@tag.dd@tag.a",
+    "tocName": "text",
+    "tocUrl": "href",
+    "isVip": "",
+    "nextTocUrl": "",
+    "tocUpdateTime": ""
+  },
+  "searchUrl": "https://www.myshu.org/s.php?ie=gbk&q={{key}}"
+}

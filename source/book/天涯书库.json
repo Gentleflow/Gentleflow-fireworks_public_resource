@@ -1,0 +1,56 @@
+{
+  "sourceName": "\uD83D\uDCA5 天涯书库",
+  "sourceType": 0,
+  "sourceUrl": "https://www.tianyabooks.com",
+  "bookInfoPattern": "",
+  "exploreUrl": "华人文学::https://www.tianyabooks.com/cn/\n世界文学::https://www.tianyabooks.com/world/\n言情小说::https://www.tianyabooks.com/romance/\n网络小说::https://www.tianyabooks.com/net/\n恐怖灵异::https://www.tianyabooks.com/horror/\n侦探推理::https://www.tianyabooks.com/spy/\n科幻小说::https://www.tianyabooks.com/sf/\n玄幻小说::https://www.tianyabooks.com/fantasy/",
+  "header": "",
+  "ruleBookInfo": {
+    "infoInit": "",
+    "infoAuthor": "class.book@tag.h2@text",
+    "infoCoverUrl": "",
+    "infoIntro": "class.book@tag.div@tag.p@text",
+    "infoKind": "",
+    "infoLastChapter": "",
+    "infoName": "class.book@tag.h1@text",
+    "infoTocUrl": "",
+    "infoWordCount": ""
+  },
+  "ruleContent": {
+    "content": "id.main@tag.p.1@html",
+    "nextContentUrl": "id.main@tag.table.1@tag.tbody@tag.tr@tag.td@tag.table.0@tag.tbody@tag.tr@tag.td.2@tag.strong@tag.a@href",
+    "webJs": "",
+    "sourceRegex": "",
+    "replaceRegex": ""
+  },
+  "ruleExplore": {
+    "exploreAuthor": "",
+    "exploreBookList": "",
+    "exploreBookUrl": "",
+    "exploreCoverUrl": "",
+    "exploreIntro": "",
+    "exploreKind": "",
+    "exploreLastChapter": "",
+    "exploreName": ""
+  },
+  "ruleSearch": {
+    "searchAuthor": "",
+    "searchBookList": "class.leftbox@tag.ul@tag.li",
+    "searchBookUrl": "tag.a@href",
+    "searchCoverUrl": "",
+    "searchIntro": "",
+    "searchKind": "",
+    "searchLastChapter": "",
+    "searchName": "tag.a@text",
+    "searchWordCount": ""
+  },
+  "ruleToc": {
+    "tocList": "class.book@tag.dl@tag.dd",
+    "tocName": "tag.a@text",
+    "tocUrl": "tag.a@href",
+    "isVip": "",
+    "nextTocUrl": "",
+    "tocUpdateTime": ""
+  },
+  "searchUrl": "https://www.tianyabooks.com"
+}

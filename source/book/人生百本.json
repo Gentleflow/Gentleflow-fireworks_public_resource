@@ -1,0 +1,56 @@
+{
+  "sourceName": "\uD83D\uDCA5 人生百本",
+  "sourceType": 0,
+  "sourceUrl": "https://www.100ben.net",
+  "bookInfoPattern": "",
+  "exploreUrl": "世界名著::https://www.100ben.net/shijiemingzhu/list_{{page}}.html\n现代文学::https://www.100ben.net/xiandaiwenxue/list_{{page}}.html\n外国小说::https://www.100ben.net/waiguoxiaoshuo/list_{{page}}.html\n古典小说::https://www.100ben.net/gudianwenxue/list_{{page}}.html\n武侠小说::https://www.100ben.net/wuxiaxiaoshuo/list_{{page}}.html\n言情小说::https://www.100ben.net/yanqingxiaoshuo/list_{{page}}.html\n推理小说::https://www.100ben.net/tuilixiaoshuo/list_{{page}}.html\n科幻小说::https://www.100ben.net/kehuanxiaoshuo/list_{{page}}.html\n人物传记::https://www.100ben.net/renwuzhuanji/list_{{page}}.html\n盗墓悬疑::https://www.100ben.net/daomuxuanyi/list_{{page}}.html\n玄幻穿越::https://www.100ben.net/xuanhuanchuanyue/list_{{page}}.html\n科普书籍::https://www.100ben.net/kepushuji/list_{{page}}.html",
+  "header": "",
+  "ruleBookInfo": {
+    "infoInit": "",
+    "infoAuthor": "",
+    "infoCoverUrl": "class.book_info finish@tag.img.0@src",
+    "infoIntro": "class.intro@tag.p@text||class.intro@text",
+    "infoKind": "",
+    "infoLastChapter": "",
+    "infoName": "",
+    "infoTocUrl": "",
+    "infoWordCount": ""
+  },
+  "ruleContent": {
+    "content": "id.content@tag.p@text||id.content@textNodes",
+    "nextContentUrl": "",
+    "webJs": "",
+    "sourceRegex": "",
+    "replaceRegex": ""
+  },
+  "ruleExplore": {
+    "exploreAuthor": "",
+    "exploreBookList": "",
+    "exploreBookUrl": "",
+    "exploreCoverUrl": "",
+    "exploreIntro": "",
+    "exploreKind": "",
+    "exploreLastChapter": "",
+    "exploreName": ""
+  },
+  "ruleSearch": {
+    "searchAuthor": "class.author@text",
+    "searchBookList": "class.recommand@tag.li",
+    "searchBookUrl": "class.titles@tag.h3.0@tag.a.0@href",
+    "searchCoverUrl": "tag.a.0@tag.img.0@src",
+    "searchIntro": "",
+    "searchKind": "",
+    "searchLastChapter": "",
+    "searchName": "class.titles@tag.h3.0@tag.a.0@text",
+    "searchWordCount": ""
+  },
+  "ruleToc": {
+    "tocList": "id.dir@tag.dd",
+    "tocName": "tag.a@text",
+    "tocUrl": "tag.a@href",
+    "isVip": "",
+    "nextTocUrl": "",
+    "tocUpdateTime": ""
+  },
+  "searchUrl": "https://www.100ben.net/plus/search.php?keyword={{key}},{\n  \"charset\": \"utf-8\"\n}"
+}

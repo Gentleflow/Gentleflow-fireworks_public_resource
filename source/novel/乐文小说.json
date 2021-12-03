@@ -1,0 +1,56 @@
+{
+  "sourceName": "💥 乐文小说",
+  "sourceType": 0,
+  "sourceUrl": "http://www.xlwxsw.com",
+  "bookInfoPattern": "",
+  "exploreUrl": "玄幻魔法::/list/1-{{page}}.html\n仙侠修真::/list/2-{{page}}.html\n都市言情::/list/3-{{page}}.html\n历史军事::/list/4-{{page}}.html\n网游动漫::/list/5-{{page}}.html\n科幻小说::/list/6-{{page}}.html\n恐怖灵异::/list/7-{{page}}.html\n其他类型::/list/8-{{page}}.html\n全本小说::/quanben/\n",
+  "header": "",
+  "ruleBookInfo": {
+    "infoInit": "",
+    "infoAuthor": "@css:[property='og:novel:author']@content",
+    "infoCoverUrl": "@css:[property='og:image']@content",
+    "infoIntro": "@css:[property='og:description']@content",
+    "infoKind": "@css:[property='og:novel:category']@content",
+    "infoLastChapter": "@css:[property='og:novel:latest_chapter_name']@content",
+    "infoName": "@css:[property='og:title']@content",
+    "infoTocUrl": "",
+    "infoWordCount": ""
+  },
+  "ruleContent": {
+    "content": "id.content@textNodes##http.*|天才一秒.*|大家记得收藏网址.*",
+    "nextContentUrl": "",
+    "webJs": "",
+    "sourceRegex": "",
+    "replaceRegex": ""
+  },
+  "ruleExplore": {
+    "exploreAuthor": "class.s4@text",
+    "exploreBookList": "class.l bd@tag.ul@tag.li",
+    "exploreBookUrl": "class.s2@tag.a@href",
+    "exploreCoverUrl": "",
+    "exploreIntro": "",
+    "exploreKind": "",
+    "exploreLastChapter": "class.s3@tag.a@text",
+    "exploreName": "class.s2@tag.a@text"
+  },
+  "ruleSearch": {
+    "searchAuthor": "class.author@text",
+    "searchBookList": "class.p10",
+    "searchBookUrl": "class.bookname@a@href",
+    "searchCoverUrl": "tag.img@src",
+    "searchIntro": "",
+    "searchKind": "class.cat@text##分类：",
+    "searchLastChapter": "class.update@a@text",
+    "searchName": "class.bookname@text",
+    "searchWordCount": ""
+  },
+  "ruleToc": {
+    "tocList": "class.listmain@dd!0:1:2:3:4:5@a",
+    "tocName": "text",
+    "tocUrl": "href",
+    "isVip": "",
+    "nextTocUrl": "",
+    "tocUpdateTime": ""
+  },
+  "searchUrl": "https://www.xlwxsw.com/s.php?q={{key}}"
+}

@@ -1,0 +1,56 @@
+{
+  "sourceName": "\uD83D\uDCA5 笔下文学",
+  "sourceType": 0,
+  "sourceUrl": "https://m.bxwx66.com/",
+  "bookInfoPattern": "",
+  "exploreUrl": "书库全部::/store/<,0_0_0_{{page}}.html>\n奇幻玄幻::/xuanhuan/<,{{page}}.html>\n武侠仙侠::/wuxia/<,{{page}}.html>\n都市生活::/dushi/<,{{page}}.html>\n历史军事::/lishi/<,{{page}}.html>\n游戏竞技::/youxi/<,{{page}}.html>\n科幻未来::/kehuan/<,{{page}}.html>\n恐怖悬疑::/xuanyi/<,{{page}}.html>\n二次元::/erciyuan/<,{{page}}.html>\n经典网文::/jingdian/<,{{page}}.html>\n古代言情::/guyan/<,{{page}}.html>\n现代言情::/xianyan/<,{{page}}.html>\n幻想奇缘::/huanqing/<,{{page}}.html>\n青春校园::/qingchun/<,{{page}}.html>\n网络情缘::/wangluo/<,{{page}}.html>\n科幻空间::/mmkehuan/<,{{page}}.html>\n鬼怪灵异::/lingyi/<,{{page}}.html>\nN次元::/Nciyuan/<,{{page}}.html>\n言情美文::/yanqing/<,{{page}}.html>\n总点击榜::/top/allvisit/<,{{page}}.html>\n总推荐榜::/top/allvote/<,{{page}}.html>\n总收藏榜::/top/goodnum/<,{{page}}.html>\n总字数榜::/top/size/<,{{page}}.html>\n全部全本::/full/all/{{page}}.html\n强推榜::/top/toptime/<,{{page}}.html>\n新书榜::/top/goodnew/<,{{page}}.html>",
+  "header": "",
+  "ruleBookInfo": {
+    "infoInit": "class.detail",
+    "infoAuthor": "class.author@tag.a@text",
+    "infoCoverUrl": "img@src",
+    "infoIntro": "",
+    "infoKind": "tag.p.2@tag.a@text&&\ntag.p.2@tag.span.0@text&&\ntag.p.4@text##最后更新：",
+    "infoLastChapter": "class.new@tag.a@text",
+    "infoName": "class.name@text",
+    "infoTocUrl": "",
+    "infoWordCount": "tag.p.2@tag.span.1@text"
+  },
+  "ruleContent": {
+    "content": "class.content@html##喜欢.*更新速度最快。|因某些原.*找到回家的路！",
+    "nextContentUrl": "text.下一页@href",
+    "webJs": "",
+    "sourceRegex": "",
+    "replaceRegex": ""
+  },
+  "ruleExplore": {
+    "exploreAuthor": "",
+    "exploreBookList": "",
+    "exploreBookUrl": "",
+    "exploreCoverUrl": "",
+    "exploreIntro": "",
+    "exploreKind": "",
+    "exploreLastChapter": "",
+    "exploreName": ""
+  },
+  "ruleSearch": {
+    "searchAuthor": "class.data.0@tag.a@text",
+    "searchBookList": "class.list@tag.li",
+    "searchBookUrl": "class.bookname@tag.a@href",
+    "searchCoverUrl": "img@src",
+    "searchIntro": "class.intro@text",
+    "searchKind": "class.data@tag.span.0@text",
+    "searchLastChapter": "tag.p.3@tag.a@text",
+    "searchName": "class.bookname@tag.a@text",
+    "searchWordCount": "tag.p.1@tag.span.1@text"
+  },
+  "ruleToc": {
+    "tocList": "class.read@tag.li",
+    "tocName": "tag.a@text",
+    "tocUrl": "tag.a@href",
+    "isVip": "",
+    "nextTocUrl": "text.下一页@href",
+    "tocUpdateTime": ""
+  },
+  "searchUrl": "https://m.bxwx66.com/search.html,{\"method\":\"POST\";\"body\":\"searchkey={{key}}\"}"
+}

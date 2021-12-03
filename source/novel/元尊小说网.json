@@ -1,0 +1,56 @@
+{
+  "sourceName": "💥 元尊小说网",
+  "sourceType": 0,
+  "sourceUrl": "http://www.yuanzun888.com",
+  "bookInfoPattern": "",
+  "exploreUrl": "玄幻::/xuanhuan/\n修真::/xiuzhen/\n都市::/dushi/\n历史::/lishi/\n侦探::/zhentan/\n网游::/wangyou/\n科幻::/kehuan/\n恐怖::/kongbu/\n其他::/othersbooks/\n全本::/quanben/\n",
+  "header": "{\n  \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko, By Black Prism) Chrome/99.0 Safari/537.36\"\n}",
+  "ruleBookInfo": {
+    "infoInit": "",
+    "infoAuthor": "",
+    "infoCoverUrl": "",
+    "infoIntro": "id.intro@tag.p.0@textNodes",
+    "infoKind": "",
+    "infoLastChapter": "",
+    "infoName": "",
+    "infoTocUrl": "",
+    "infoWordCount": ""
+  },
+  "ruleContent": {
+    "content": "id.content@html##天才一秒记.*网址：|[a-zA-Z]+://[^\\s]*|[a-zA-Z]+\\.[^\\s]*",
+    "nextContentUrl": "",
+    "webJs": "",
+    "sourceRegex": "",
+    "replaceRegex": ""
+  },
+  "ruleExplore": {
+    "exploreAuthor": "class.s4@text",
+    "exploreBookList": "class.l bd@tag.ul@tag.li",
+    "exploreBookUrl": "class.s2@tag.a@href",
+    "exploreCoverUrl": "",
+    "exploreIntro": "",
+    "exploreKind": "class.s1@text",
+    "exploreLastChapter": "class.s3@tag.a@text",
+    "exploreName": "class.s2@tag.a@text"
+  },
+  "ruleSearch": {
+    "searchAuthor": "class.author@text##作者：",
+    "searchBookList": "class.bookbox",
+    "searchBookUrl": "tag.a.0@href",
+    "searchCoverUrl": "tag.img@src",
+    "searchIntro": "",
+    "searchKind": "class.cat@text##分类：",
+    "searchLastChapter": "class.update@tag.a.0@text",
+    "searchName": "class.bookname@tag.a.0@text",
+    "searchWordCount": ""
+  },
+  "ruleToc": {
+    "tocList": "class.listmain@tag.dl@tag.dd!0:1:2:3:4:5",
+    "tocName": "tag.a@text",
+    "tocUrl": "tag.a@href",
+    "isVip": "",
+    "nextTocUrl": "",
+    "tocUpdateTime": ""
+  },
+  "searchUrl": "http://www.yuanzun888.com/s.php?ie=gbk&q={{key}}"
+}

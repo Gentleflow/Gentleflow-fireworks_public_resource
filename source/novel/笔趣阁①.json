@@ -1,0 +1,56 @@
+{
+  "sourceName": "💥 笔趣阁①",
+  "sourceType": 0,
+  "sourceUrl": "www.xbiquge.la",
+  "bookInfoPattern": "",
+  "exploreUrl": "玄幻::http://www.xbiquge.la/fenlei/1_{{page}}.html\n修真::http://www.xbiquge.la/fenlei/2_{{page}}.html\n都市::http://www.xbiquge.la/fenlei/3_{{page}}.html\n穿越::http://www.xbiquge.la/fenlei/4_{{page}}.html\n网游::http://www.xbiquge.la/fenlei/5_{{page}}.html\n科幻::http://www.xbiquge.la/fenlei/6_{{page}}.html",
+  "header": "",
+  "ruleBookInfo": {
+    "infoInit": "",
+    "infoAuthor": "id.info@tag.p.0@text##作    者：",
+    "infoCoverUrl": "id.fmimg@tag.img.0@src",
+    "infoIntro": "id.intro@tag.p.1@text",
+    "infoKind": "",
+    "infoLastChapter": "id.info@tag.p.3@title",
+    "infoName": "id.info@tag.h1.0@text",
+    "infoTocUrl": "",
+    "infoWordCount": ""
+  },
+  "ruleContent": {
+    "content": "id.content@textNodes",
+    "nextContentUrl": "",
+    "webJs": "",
+    "sourceRegex": "",
+    "replaceRegex": ""
+  },
+  "ruleExplore": {
+    "exploreAuthor": "class.s5@text",
+    "exploreBookList": "id.newscontent@class.l@tag.ul@tag.li",
+    "exploreBookUrl": "class.s2@tag.a@href",
+    "exploreCoverUrl": "",
+    "exploreIntro": "",
+    "exploreKind": "class.s1@tag.a@text",
+    "exploreLastChapter": "class.s3@tag.a@text",
+    "exploreName": "class.s2@tag.a@text"
+  },
+  "ruleSearch": {
+    "searchAuthor": "class.even.1@text",
+    "searchBookList": "class.grid@tag.tbody@tag.tr!0",
+    "searchBookUrl": "class.even.0@tag.a@href",
+    "searchCoverUrl": "",
+    "searchIntro": "",
+    "searchKind": "",
+    "searchLastChapter": "class.odd.0@tag.a@text",
+    "searchName": "class.even.0@tag.a@text",
+    "searchWordCount": ""
+  },
+  "ruleToc": {
+    "tocList": "id.list@tag.dd",
+    "tocName": "tag.a@text",
+    "tocUrl": "tag.a@href",
+    "isVip": "",
+    "nextTocUrl": "",
+    "tocUpdateTime": ""
+  },
+  "searchUrl": "http://www.xbiquge.la/modules/article/waps.php?searchkey={{key}}"
+}

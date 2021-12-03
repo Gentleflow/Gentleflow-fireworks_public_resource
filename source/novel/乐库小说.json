@@ -1,0 +1,56 @@
+{
+  "sourceName": "💥 乐库小说",
+  "sourceType": 0,
+  "sourceUrl": "https://www.6lk.net",
+  "bookInfoPattern": "",
+  "exploreUrl": "玄幻::/sort/10/{{page}}.html\n都市::/sort/3/{{page}}.html\n穿越::/sort/4/{{page}}.html\n仙侠::/sort/5/{{page}}.html\n武侠::/sort/6/{{page}}.html\n恐怖::/sort/7/{{page}}.html\n言情::/sort/1/{{page}}.html\n",
+  "header": "{\n  \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.25 Safari/537.36 Core/1.70.3730.400 QQBrowser/10.5.3805.400\"\n}",
+  "ruleBookInfo": {
+    "infoInit": "",
+    "infoAuthor": "",
+    "infoCoverUrl": "",
+    "infoIntro": "",
+    "infoKind": "",
+    "infoLastChapter": "",
+    "infoName": "",
+    "infoTocUrl": "",
+    "infoWordCount": ""
+  },
+  "ruleContent": {
+    "content": "id.content@html",
+    "nextContentUrl": "",
+    "webJs": "",
+    "sourceRegex": "",
+    "replaceRegex": ""
+  },
+  "ruleExplore": {
+    "exploreAuthor": "class.book_other@tag.span.0@text",
+    "exploreBookList": "id.sitebox@tag.dl",
+    "exploreBookUrl": "tag.dd.0@tag.h3@tag.a@href",
+    "exploreCoverUrl": "tag.dt@tag.a@tag.img@data-original",
+    "exploreIntro": "class.book_des@text",
+    "exploreKind": "class.book_other.0@tag.span.2@text",
+    "exploreLastChapter": "class.book_other.1@tag.a@text",
+    "exploreName": "tag.dd.0@tag.h3@tag.a@text"
+  },
+  "ruleSearch": {
+    "searchAuthor": "class.book_other.0@tag.span.0@text",
+    "searchBookList": "id.sitembox@tag.dl",
+    "searchBookUrl": "tag.dd.0@tag.a@href",
+    "searchCoverUrl": "tag.dt@tag.img@src",
+    "searchIntro": "",
+    "searchKind": "class.book_other.0@tag.span.1@text&&class.book_other.0@tag.span.2@text&&class.book_other.0@tag.span.3@text",
+    "searchLastChapter": "class.book_other.1@tag.a@text",
+    "searchName": "tag.dd.0@text",
+    "searchWordCount": ""
+  },
+  "ruleToc": {
+    "tocList": "id.readerlist@tag.li",
+    "tocName": "tag.a@text",
+    "tocUrl": "tag.a@href",
+    "isVip": "",
+    "nextTocUrl": "",
+    "tocUpdateTime": ""
+  },
+  "searchUrl": "https://www.6lk.net/s.php,{\n  \"method\": \"POST\",\n  \"body\": \"searchkey={{key}}\"\n}"
+}

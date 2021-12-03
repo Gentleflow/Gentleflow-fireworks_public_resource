@@ -1,0 +1,56 @@
+{
+  "sourceName": "💥 笔趣阁⑧",
+  "sourceType": 0,
+  "sourceUrl": "https://www.boquge.com",
+  "bookInfoPattern": "",
+  "exploreUrl": "玄幻::/xuanhuanxiaoshuo/\n奇幻::/qihuanxiaoshuo/\n修真::/xiuzhenxiaoshuo/\n都市::/dushixiaoshuo/\n言情::/yanqingxiaoshuo/\n历史::/lishixiaoshuo/\n同人::/tongrenxiaoshuo/\n武侠::/wuxiaxiaoshuo/\n科幻::/kehuanxiaoshuo/\n游戏::/youxixiaoshuo/\n军事::/junshixiaoshuo/\n竞技::/jingjixiaoshuo/\n灵异::/lingyixiaoshuo/\n校园::/xiaoyuanxiaoshuo/\n商战::/shangzhanxiaoshuo/\n官场::/guanchangxiaoshuo/\n职场::/zhichangxiaoshuo/\n其他::/qitaxiaoshuo/\n",
+  "header": "",
+  "ruleBookInfo": {
+    "infoInit": "",
+    "infoAuthor": "class.col-xs-12 list-group-item no-border.0@tag.h1@tag.small@text#作者：",
+    "infoCoverUrl": "",
+    "infoIntro": "id.shot@text",
+    "infoKind": "",
+    "infoLastChapter": "",
+    "infoName": "class.col-xs-12 list-group-item no-border.0@tag.h1@text",
+    "infoTocUrl": "",
+    "infoWordCount": ""
+  },
+  "ruleContent": {
+    "content": "id.txtContent@textNodes",
+    "nextContentUrl": "",
+    "webJs": "",
+    "sourceRegex": "",
+    "replaceRegex": ""
+  },
+  "ruleExplore": {
+    "exploreAuthor": "class.col-xs-2@text",
+    "exploreBookList": "class.list-group-item clearfix!0",
+    "exploreBookUrl": "class.col-xs-4@tag.a@href##[0-9]*.html",
+    "exploreCoverUrl": "",
+    "exploreIntro": "",
+    "exploreKind": "class.col-xs-1@tag.i@text",
+    "exploreLastChapter": "class.col-xs-4@tag.a@text",
+    "exploreName": "class.col-xs-3@tag.a@text"
+  },
+  "ruleSearch": {
+    "searchAuthor": "class.col-xs-2.0@text",
+    "searchBookList": "class.list-group-item!0:-1",
+    "searchBookUrl": "class.col-xs-3@tag.a@href",
+    "searchCoverUrl": "",
+    "searchIntro": "",
+    "searchKind": "tag.i@text",
+    "searchLastChapter": "class.col-xs-4@tag.a@text",
+    "searchName": "class.col-xs-3@tag.a@text",
+    "searchWordCount": ""
+  },
+  "ruleToc": {
+    "tocList": "id.chapters-list@tag.li!0@tag.a",
+    "tocName": "text",
+    "tocUrl": "href",
+    "isVip": "",
+    "nextTocUrl": "",
+    "tocUpdateTime": ""
+  },
+  "searchUrl": "https://www.boquge.com/search.htm?keyword={{key}}&pn={{page}}"
+}

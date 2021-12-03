@@ -1,0 +1,56 @@
+{
+  "sourceName": "\uD83D\uDCA5 古典文学",
+  "sourceType": 0,
+  "sourceUrl": "http://www.cngdwx.com",
+  "bookInfoPattern": "",
+  "exploreUrl": "全部典籍::http://www.cngdwx.com/shuku_1518_{{page}}.html\n先秦两汉::http://www.cngdwx.com/xianqinlianghan/shuku_155_{{page}}.html\n魏晋南北::http://www.cngdwx.com/weijinnanbeichao/shuku_91_{{page}}.html\n国学启蒙::http://www.cngdwx.com/guoxueqimeng/shuku.html\n译文赏析::http://www.cngdwx.com/yiwenshangxi/shuku_99_{{page}}.html\n唐宋时代::http://www.cngdwx.com/tangsong/shuku_317_{{page}}.html\n元明清史::http://www.cngdwx.com/yuanmingqing/shuku_598_{{page}}.html\n近现代史::http://www.cngdwx.com/jinxiandai/shuku_198_{{page}}.html\n杂谈类别::http://www.cngdwx.com/zatan/shuku.html",
+  "header": "",
+  "ruleBookInfo": {
+    "infoInit": "",
+    "infoAuthor": "class.info@tag.li.0@text",
+    "infoCoverUrl": "",
+    "infoIntro": "class.words@tag.p@text",
+    "infoKind": "",
+    "infoLastChapter": "",
+    "infoName": "class.title@tag.h1@text",
+    "infoTocUrl": "",
+    "infoWordCount": ""
+  },
+  "ruleContent": {
+    "content": "class.box_box@tag.p@html",
+    "nextContentUrl": "",
+    "webJs": "",
+    "sourceRegex": 0,
+    "replaceRegex": 0
+  },
+  "ruleExplore": {
+    "exploreAuthor": "",
+    "exploreBookList": "",
+    "exploreBookUrl": "",
+    "exploreCoverUrl": 0,
+    "exploreIntro": "",
+    "exploreKind": "",
+    "exploreLastChapter": "",
+    "exploreName": ""
+  },
+  "ruleSearch": {
+    "searchAuthor": "class.author@tag.a.0@text||tag.div.1@tag.p.0@tag.a.0@text",
+    "searchBookList": "-class.ul_m_list@tag.li||class.ul_b_list@tag.li",
+    "searchBookUrl": "class.title1@tag.a.0@href||tag.h2@tag.a.0@href",
+    "searchCoverUrl": "tag.div.0@tag.a.0@tag.img@src",
+    "searchIntro": "",
+    "searchKind": "class.c@tag.a.0@text||tag.div.1@tag.p.0@tag.a.1@text",
+    "searchLastChapter": "class.title1@tag.a.1@text",
+    "searchName": "class.title1@tag.a.0@text||tag.h2@tag.a.0@text",
+    "searchWordCount": ""
+  },
+  "ruleToc": {
+    "tocList": "class.list_box@tag.li@tag.a",
+    "tocName": "text",
+    "tocUrl": "href",
+    "isVip": "",
+    "nextTocUrl": "",
+    "tocUpdateTime": ""
+  },
+  "searchUrl": "http://www.cngdwx.com/plus/search.php?kwtype=0&searchtype=&q={{key}},{\n  \"charset\": \"utf-8\"\n}"
+}

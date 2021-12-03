@@ -1,0 +1,56 @@
+{
+  "sourceName": "💥 笔趣阁⑪",
+  "sourceType": 0,
+  "sourceUrl": "http://www.xibige.com",
+  "bookInfoPattern": "",
+  "exploreUrl": "",
+  "header": "",
+  "ruleBookInfo": {
+    "infoInit": "",
+    "infoAuthor": "",
+    "infoCoverUrl": "id.fmimg@img@src",
+    "infoIntro": "id.intro@tag.p.0@text",
+    "infoKind": "",
+    "infoLastChapter": "id.list@tag.dd.0@a@text",
+    "infoName": "",
+    "infoTocUrl": "",
+    "infoWordCount": ""
+  },
+  "ruleContent": {
+    "content": "id.content@textNodes##２３ＵＳ．ＣＯＭ",
+    "nextContentUrl": "",
+    "webJs": "",
+    "sourceRegex": "",
+    "replaceRegex": ""
+  },
+  "ruleExplore": {
+    "exploreAuthor": "",
+    "exploreBookList": "",
+    "exploreBookUrl": "",
+    "exploreCoverUrl": "",
+    "exploreIntro": "",
+    "exploreKind": "",
+    "exploreLastChapter": "",
+    "exploreName": ""
+  },
+  "ruleSearch": {
+    "searchAuthor": "class.odd.1@text||class.s5@text",
+    "searchBookList": "class.grid@tag.tr||class.l@li",
+    "searchBookUrl": "tag.a.0@href",
+    "searchCoverUrl": "tag.a.0@href##.*/(\\d+)_(\\d+)/##http://r.m.xibige.com/files/article/image/$1/$2/$2s.jpg",
+    "searchIntro": "",
+    "searchKind": "class.even.2@text",
+    "searchLastChapter": "class.even.0@tag.a@text||class.s3@a@text",
+    "searchName": "class.odd.0@tag.a.0@text||class.s2@a@text",
+    "searchWordCount": ""
+  },
+  "ruleToc": {
+    "tocList": "id.list@tag.dd",
+    "tocName": "tag.a@text",
+    "tocUrl": "tag.a@href",
+    "isVip": "",
+    "nextTocUrl": "",
+    "tocUpdateTime": ""
+  },
+  "searchUrl": "http://www.xibige.com/modules/article/search.php?searchkey={{key}}"
+}

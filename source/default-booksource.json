@@ -1,0 +1,839 @@
+[
+  {
+    "sourceName": "花火-起点中文",
+    "sourceType": 0,
+    "sourceUrl": "https://www.qidian.com",
+    "bookInfoPattern": "https?://m\\.qidian\\.com.*",
+    "exploreUrl": "月票榜::/rank/yuepiao?page={{page}}\n推荐榜::/rank/recom?style=1&page={{page}}\n收藏榜::/rank/collect?style=1&page={{page}}\nVIP更新榜::/rank/vipup?style=1&page={{page}}\nVIP收藏榜::/rank/vipcollect?style=1&page={{page}}\nVIP打赏榜::/rank/vipreward?style=1&page={{page}}\n热销榜::/rank/hotsales?style=1&page={{page}}\n限时免费::/free\n签约作家::/rank/signnewbook?style=1&page={{page}}\n公众作者::/rank/pubnewbook?style=1&page={{page}}\n新人签约::/rank/newsign?style=1&page={{page}}",
+    "header": "",
+    "ruleBookInfo": {
+      "infoAuthor": "##作者：</aria>([^<]+)<ar##$1###",
+      "infoCoverUrl": "property.og:image@content",
+      "infoIntro": "class.intro@textNodes",
+      "infoKind": "##\"book-meta\"[^>]+>([^<]+)</p##$1###",
+      "infoLastChapter": "##span>连载至([^<]+)##$1###",
+      "infoName": "##book-title\">([^<]+)</h2##$1###",
+      "infoTocUrl": "##data-book-id=\"([^\"]+)##https://druid.if.qidian.com/argus/api/v1/chapterlist/chapterlist?bookId=$1###",
+      "infoWordCount": "##\"book-meta\"[^>]+>([^<]+)<span##$1###"
+    },
+    "ruleContent": {
+      "content": "class.read-section@tag.p@all",
+      "nextContentUrl": ""
+    },
+    "ruleExplore": {
+      "exploreAuthor": "class.author@tag.a.0@text",
+      "exploreBookList": "//*[@class=\"all-book-list\"]//tr[td] || //*[@class=\"book-img-text\"]//li || //li[strong]",
+      "exploreBookUrl": "##data-bid=\"([^\"]*)\"##https://m.qidian.com/book/$1###",
+      "exploreCoverUrl": "##data-bid=\"([^\"]*)\"##https://bookcover.yuewen.com/qdbimg/349573/$1/150###",
+      "exploreIntro": "class.intro@textNodes",
+      "exploreKind": "//p[@class='author']/a[@href*='www']/text()",
+      "exploreLastChapter": "//a[contains(@href,\"chapter\")]/text()##最新更新\\s+",
+      "exploreName": "//td[2]/a//text()||//h4/a//text()||//strong/a//text()"
+    },
+    "ruleSearch": {
+      "searchAuthor": "class.author@tag.a.0@text",
+      "searchBookList": "class.book-img-text@tag.li",
+      "searchBookUrl": "##data-bid=\"([^\"]+)##https://m.qidian.com/book/$1###",
+      "searchCoverUrl": "##data-bid=\"([^\"]+)##https://bookcover.yuewen.com/qdbimg/349573/$1/300###",
+      "searchIntro": "class.intro@text",
+      "searchKind": "//p[@class='author']/a[@href*='www']/text()",
+      "searchLastChapter": "##最新更新\\s*([^<]+)<(?:[^>]+>){4}([^<]*)</span##$1·$2###",
+      "searchName": "tag.h4@text",
+      "searchWordCount": "//div[@class='total']//*[text()=\"总字数\"]//text()##总字数##字"
+    },
+    "ruleToc": {
+      "tocList": "<js>\nvar json=JSON.parse(result).Data;var bid=json.BookId;var base=\"https://m.qidian.com/book/\"+bid+\"/\";JSON.stringify(json.Chapters.slice(1).map(ch=>({title:ch.N,link:base+ch.C,vip:ch.V,time:ch.T})))\n</js>",
+      "tocName": "title",
+      "tocUrl": "link",
+      "isVip": "vip",
+      "nextTocUrl": "",
+      "tocUpdateTime": "time"
+    },
+    "searchUrl": "/search?kw={{key}}&page={{page}}"
+  },
+  {
+    "sourceName": "花火-红袖添香",
+    "sourceType": 0,
+    "sourceUrl": "https://www.hongxiu.com",
+    "bookInfoPattern": "",
+    "exploreUrl": "男频连载::/category/f1_f1_0_f1_f1_f1_0_{{page}}\n玄幻::/category/20001_f1_0_f1_f1_f1_0_{{page}}\n奇幻::/category/20005_f1_0_f1_f1_f1_0_{{page}}\n武侠::/category/20010_f1_0_f1_f1_f1_0_{{page}}\n仙侠::/category/20014_f1_0_f1_f1_f1_0_{{page}}\n都市::/category/20019_f1_0_f1_f1_f1_0_{{page}}\n现实::/category/20065_f1_0_f1_f1_f1_0_{{page}}\n军事::/category/20032_f1_0_f1_f1_f1_0_{{page}}\n历史::/category/20028_f1_0_f1_f1_f1_0_{{page}}\n游戏::/category/20050_f1_0_f1_f1_f1_0_{{page}}\n体育::/category/20054_f1_0_f1_f1_f1_0_{{page}}\n科幻::/category/20042_f1_0_f1_f1_f1_0_{{page}}\n悬疑::/category/20037_f1_0_f1_f1_f1_0_{{page}}\n轻文::/category/20059_f1_0_f1_f1_f1_0_{{page}}\n短篇::/category/20076_f1_0_f1_f1_f1_0_{{page}}\n男频完结::/category/f1_f1_1_f1_f1_f1_0_{{page}}\n玄幻::/category/20001_f1_1_f1_f1_f1_0_{{page}}\n奇幻::/category/20005_f1_1_f1_f1_f1_0_{{page}}\n武侠::/category/20010_f1_1_f1_f1_f1_0_{{page}}\n仙侠::/category/20014_f1_1_f1_f1_f1_0_{{page}}\n都市::/category/20019_f1_1_f1_f1_f1_0_{{page}}\n现实::/category/20065_f1_1_f1_f1_f1_0_{{page}}\n军事::/category/20032_f1_1_f1_f1_f1_0_{{page}}\n历史::/category/20028_f1_1_f1_f1_f1_0_{{page}}\n游戏::/category/20050_f1_1_f1_f1_f1_0_{{page}}\n体育::/category/20054_f1_1_f1_f1_f1_0_{{page}}\n科幻::/category/20042_f1_1_f1_f1_f1_0_{{page}}\n悬疑::/category/20037_f1_1_f1_f1_f1_0_{{page}}\n轻文::/category/20059_f1_1_f1_f1_f1_0_{{page}}\n短篇::/category/20076_f1_1_f1_f1_f1_0_{{page}}\n女频连载::/category/f1_f1_0_f1_f1_f1_0_{{page}}\n现代言情::/category/30020_f1_0_f1_f1_f1_0_{{page}}\n古代言情::/category/30013_f1_0_f1_f1_f1_0_{{page}}\n浪漫青春::/category/30031_f1_0_f1_f1_f1_0_{{page}}\n玄幻言情::/category/30001_f1_0_f1_f1_f1_0_{{page}}\n仙侠奇缘::/category/30008_f1_0_f1_f1_f1_0_{{page}}\n悬疑推理::/category/30036_f1_0_f1_f1_f1_0_{{page}}\n科幻空间::/category/30042_f1_0_f1_f1_f1_0_{{page}}\n游戏竞技::/category/30050_f1_0_f1_f1_f1_0_{{page}}\n短篇小说::/category/30083_f1_0_f1_f1_f1_0_{{page}}\n轻の小说::/category/30055_f1_0_f1_f1_f1_0_{{page}}\n女频完结::/category/f1_f1_1_f1_f1_f1_0_{{page}}\n现代言情::/category/30020_f1_1_f1_f1_f1_0_{{page}}\n古代言情::/category/30013_f1_1_f1_f1_f1_0_{{page}}\n浪漫青春::/category/30031_f1_1_f1_f1_f1_0_{{page}}\n玄幻言情::/category/30001_f1_1_f1_f1_f1_0_{{page}}\n仙侠奇缘::/category/30008_f1_1_f1_f1_f1_0_{{page}}\n悬疑推理::/category/30036_f1_1_f1_f1_f1_0_{{page}}\n科幻空间::/category/30042_f1_1_f1_f1_f1_0_{{page}}\n游戏竞技::/category/30050_f1_1_f1_f1_f1_0_{{page}}\n短篇小说::/category/30083_f1_1_f1_f1_f1_0_{{page}}\n轻の小说::/category/30055_f1_1_f1_f1_f1_0_{{page}}",
+    "header": "",
+    "ruleBookInfo": {
+      "infoInit": "",
+      "infoAuthor": "class.writer@tag.a@text##著",
+      "infoCoverUrl": "id.bookImg@tag.img@src",
+      "infoIntro": "class.intro@textNodes",
+      "infoKind": "class.tag@tag.i@text",
+      "infoLastChapter": "class.update@tag.a@text##更新至.",
+      "infoName": "class.book-info@tag.em.2@text",
+      "infoTocUrl": "",
+      "infoWordCount": "class.total@tag.span.0@text@js:result+'万字'"
+    },
+    "ruleContent": {
+      "content": "class.read-content@tag.p@text",
+      "nextContentUrl": "",
+      "webJs": "",
+      "sourceRegex": "",
+      "replaceRegex": ""
+    },
+    "ruleExplore": {
+      "exploreAuthor": "class.default@tag.a@text",
+      "exploreBookList": "class.right-book-list@tag.li",
+      "exploreBookUrl": "class.book-info@tag.a@href",
+      "exploreCoverUrl": "class.book-img@tag.img@src",
+      "exploreIntro": "class.intro@textNodes",
+      "exploreKind": "class.tag@tag.span.0@text&&class.tag@tag.span.1@text",
+      "exploreLastChapter": "",
+      "exploreName": "class.book-info@tag.a.0@text"
+    },
+    "ruleSearch": {
+      "searchAuthor": "class.author@tag.a.0@text",
+      "searchBookList": "id.result-list@tag.li",
+      "searchBookUrl": "tag.a@href",
+      "searchCoverUrl": "class.book-img-box@tag.img@src",
+      "searchIntro": "class.intro@textNodes",
+      "searchKind": "class.author@tag.a.1@text&&class.author@tag.span@text",
+      "searchLastChapter": "class.update@tag.a@text##最新更新.",
+      "searchName": "class.book-mid-info@tag.a.0@text",
+      "searchWordCount": "class.update@tag.span@text"
+    },
+    "ruleToc": {
+      "tocList": "class.volume@tag.ul@tag.li",
+      "tocName": "tag.a@text",
+      "tocUrl": "tag.a@href",
+      "isVip": "",
+      "nextTocUrl": "",
+      "tocUpdateTime": ""
+    },
+    "searchUrl": "https://www.hongxiu.com/search?kw={{key}}&pageNum={{page}}"
+  },
+  {
+    "sourceName": "花火-番茄免费小说",
+    "sourceType": 0,
+    "sourceUrl": "https://api5-normal-lf.fqnovel.com",
+    "bookInfoPattern": "",
+    "exploreUrl": "都市::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=1&offset=<,{{page}}>&query_gender=1&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n都市生活::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=2&offset=<,{{page}}>&query_gender=1&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n现代言情::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=3&offset=<,{{page}}>&query_gender=0&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n校园::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=4&offset=<,{{page}}>&query_gender=0&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n古代言情::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=5&offset=<,{{page}}>&query_gender=0&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n玄幻::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=7&offset=<,{{page}}>&query_gender=1&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n科幻::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=8&offset=<,{{page}}>&query_gender=1&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n悬疑::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=10&offset=<,{{page}}>&query_gender=1&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n历史::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=12&offset=<,{{page}}>&query_gender=1&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n体育::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=15&offset=<,{{page}}>&query_gender=1&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n武侠::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=16&offset=<,{{page}}>&query_gender=1&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n鉴宝::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=17&offset=<,{{page}}>&query_gender=1&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n系统::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=19&offset=<,{{page}}>&query_gender=1&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n神豪::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=20&offset=<,{{page}}>&query_gender=1&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n种田::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=23&offset=<,{{page}}>&query_gender=0&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n快穿::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=24&offset=<,{{page}}>&query_gender=0&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n赘婿::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=25&offset=<,{{page}}>&query_gender=1&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n神医::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=26&offset=<,{{page}}>&query_gender=1&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n兵王::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=27&offset=<,{{page}}>&query_gender=1&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n萌宝::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=28&offset=<,{{page}}>&query_gender=0&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n豪门总裁::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=29&offset=<,{{page}}>&query_gender=0&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n宠妻::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=30&offset=<,{{page}}>&query_gender=0&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n重生::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=36&offset=<,{{page}}>&query_gender=1&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n穿越(女)::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=32&offset=<,{{page}}>&query_gender=0&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n穿越(男)::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=37&offset=<,{{page}}>&query_gender=1&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n二次元::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=39&offset=<,{{page}}>&query_gender=1&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n海岛::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=40&offset=<,{{page}}>&query_gender=1&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n奶爸::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=42&offset=<,{{page}}>&query_gender=1&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n娱乐圈::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=43&offset=<,{{page}}>&query_gender=1&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n空间::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=44&offset=<,{{page}}>&query_gender=1&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n影视小说::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=45&offset=<,{{page}}>&query_gender=1&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n诗歌散文::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=46&offset=<,{{page}}>&query_gender=1&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n生活::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=48&offset=<,{{page}}>&query_gender=1&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n社会科学::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=50&offset=<,{{page}}>&query_gender=0&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n科技::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=52&offset=<,{{page}}>&query_gender=0&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n经济管理::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=53&offset=<,{{page}}>&query_gender=0&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n成功励志::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=56&offset=<,{{page}}>&query_gender=1&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n游戏动漫::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=57&offset=<,{{page}}>&query_gender=1&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n推理::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=61&offset=<,{{page}}>&query_gender=1&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n文化历史::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=62&offset=<,{{page}}>&query_gender=1&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n洪荒::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=66&offset=<,{{page}}>&query_gender=1&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n三国::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=67&offset=<,{{page}}>&query_gender=1&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n末世::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=68&offset=<,{{page}}>&query_gender=1&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n直播::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=69&offset=<,{{page}}>&query_gender=1&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n无限流::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=70&offset=<,{{page}}>&query_gender=1&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n诸天万界::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=71&offset=<,{{page}}>&query_gender=1&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n兽世::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=72&offset=<,{{page}}>&query_gender=1&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n大唐::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=73&offset=<,{{page}}>&query_gender=1&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n宠物::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=74&offset=<,{{page}}>&query_gender=1&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n外卖::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=75&offset=<,{{page}}>&query_gender=1&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n清穿::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=76&offset=<,{{page}}>&query_gender=0&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n星际::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=77&offset=<,{{page}}>&query_gender=1&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n美食::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=78&offset=<,{{page}}>&query_gender=1&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n年代::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=79&offset=<,{{page}}>&query_gender=1&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n剑道::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=80&offset=<,{{page}}>&query_gender=1&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n盗墓::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=81&offset=<,{{page}}>&query_gender=1&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n学霸::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=82&offset=<,{{page}}>&query_gender=1&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n公主::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=83&offset=<,{{page}}>&query_gender=0&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n皇后::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=84&offset=<,{{page}}>&query_gender=0&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n王妃::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=85&offset=<,{{page}}>&query_gender=0&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n女强::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=86&offset=<,{{page}}>&query_gender=0&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n皇叔::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=87&offset=<,{{page}}>&query_gender=0&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n嫡女::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=88&offset=<,{{page}}>&query_gender=0&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n精灵::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=89&offset=<,{{page}}>&query_gender=0&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n天才::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=90&offset=<,{{page}}>&query_gender=1&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n腹黑::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=92&offset=<,{{page}}>&query_gender=1&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n扮猪吃虎::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=93&offset=<,{{page}}>&query_gender=1&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n团宠::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=94&offset=<,{{page}}>&query_gender=0&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n虐文::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=95&offset=<,{{page}}>&query_gender=0&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n甜宠::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=96&offset=<,{{page}}>&query_gender=0&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n战争::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=97&offset=<,{{page}}>&query_gender=1&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n中国名著::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=98&offset=<,{{page}}>&query_gender=0&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n外国名著::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=99&offset=<,{{page}}>&query_gender=0&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n灵异::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=100&offset=<,{{page}}>&query_gender=1&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n都市修真::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=124&offset=<,{{page}}>&query_gender=1&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n家庭::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=125&offset=<,{{page}}>&query_gender=1&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n明朝::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=126&offset=<,{{page}}>&query_gender=1&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287\n职场::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=0&limit=10&source=front_category&category_id=127&offset=<,{{page}}>&query_gender=1&iid=1099935039893805&aid=1967&app_name=novelapp&version_code=287",
+    "header": "",
+    "ruleBookInfo": {
+      "infoInit": "",
+      "infoAuthor": ".author",
+      "infoCoverUrl": "",
+      "infoIntro": "",
+      "infoKind": "",
+      "infoLastChapter": ".last_chapter_title",
+      "infoName": ".book_name",
+      "infoTocUrl": "",
+      "infoWordCount": ""
+    },
+    "ruleContent": {
+      "content": "$..content<js>result</js>@@p@text",
+      "nextContentUrl": "",
+      "webJs": "",
+      "sourceRegex": "",
+      "replaceRegex": ""
+    },
+    "ruleExplore": {
+      "exploreAuthor": "",
+      "exploreBookList": "",
+      "exploreBookUrl": "",
+      "exploreCoverUrl": "",
+      "exploreIntro": "",
+      "exploreKind": "",
+      "exploreLastChapter": "",
+      "exploreName": ""
+    },
+    "ruleSearch": {
+      "searchAuthor": "author",
+      "searchBookList": "$..book_data[*]||$..book_info[*]",
+      "searchBookUrl": "https://api3-normal-lf.fqnovel.com/reading/bookapi/directory/all_items/v/?need_version=true&book_id={{$.book_id}}&iid=2665637677906061&aid=1967&app_name=novelapp&version_code=495",
+      "searchCoverUrl": "thumb_url",
+      "searchIntro": "abstract",
+      "searchKind": "tags||category",
+      "searchLastChapter": "",
+      "searchName": "book_name",
+      "searchWordCount": "word_number"
+    },
+    "ruleToc": {
+      "tocList": "$..item_data_list[*]",
+      "tocName": "$..title",
+      "tocUrl": "https://novel.snssdk.com/api/novel/book/reader/full/v1/?group_id={{$..item_id}}&item_id={{$..item_id}}",
+      "isVip": "",
+      "nextTocUrl": "",
+      "tocUpdateTime": ""
+    },
+    "searchUrl": "https://api5-normal-lf.fqnovel.com/reading/bookapi/search/page/v/?offset=0&passback=&query={{key}}&search_id=&iid=4125792742674311&aid=1967"
+  },
+  {
+    "sourceName": "花火-帝书阁",
+    "sourceType": 0,
+    "sourceUrl": "http://m.dishuge.com",
+    "bookInfoPattern": "",
+    "exploreUrl": "玄幻奇幻::/xuanhuanqihuan/\n武侠仙侠::/wuxiaxianxia/\n都市社会::/dushishehui/\n历史军事::/lishijunshi/\n游戏竞技::/youxijingji/\n科幻灵异::/kehuanlingyi/\n女生言情::/nvsheng/\n二次元::/erciyuan/\n文学小说::/wenxue/\n",
+    "header": "",
+    "ruleBookInfo": {
+      "infoInit": "",
+      "infoAuthor": "##作者：([^<]*)##$1###",
+      "infoCoverUrl": "img@src",
+      "infoIntro": "",
+      "infoKind": "",
+      "infoLastChapter": "class.info@a@text",
+      "infoName": "##h1>([^<]*)##$1###",
+      "infoTocUrl": "",
+      "infoWordCount": ""
+    },
+    "ruleContent": {
+      "content": "id.mycontent@p@textNodes##.*本章未完.*|.*第.*/.*页.*",
+      "nextContentUrl": "text.下一页@href",
+      "webJs": "",
+      "sourceRegex": "",
+      "replaceRegex": ""
+    },
+    "ruleExplore": {
+      "exploreAuthor": "class.info@text##分类.*\\s*.*\\s*最新.*",
+      "exploreBookList": "class.bd column-2",
+      "exploreBookUrl": "class.right@h1@tag.a@href",
+      "exploreCoverUrl": "class.left@tag.a@tag.img@src",
+      "exploreIntro": "",
+      "exploreKind": "class.status is-serialize@text&&class.info@tag.a.0@text",
+      "exploreLastChapter": "class.info@tag.a.1@text",
+      "exploreName": "class.right@h1@tag.a@text"
+    },
+    "ruleSearch": {
+      "searchAuthor": "class.info@text##作者：|分类.*",
+      "searchBookList": "class.bd column-2",
+      "searchBookUrl": "class.right@h1@tag.a@href",
+      "searchCoverUrl": "class.left@tag.a@tag.img@src",
+      "searchIntro": "",
+      "searchKind": "class.status is-serialize@text&&class.info@tag.a.0@text",
+      "searchLastChapter": "class.info@tag.a.1@text",
+      "searchName": "class.right@h1@tag.a@text",
+      "searchWordCount": ""
+    },
+    "ruleToc": {
+      "tocList": "class.mod block update@a",
+      "tocName": "text",
+      "tocUrl": "href",
+      "isVip": "",
+      "nextTocUrl": "",
+      "tocUpdateTime": ""
+    },
+    "searchUrl": "http://m.dishuge.com/search/,{\n  \"method\": \"POST\",\n  \"body\": \"searchkey={{key}}\"\n}"
+  },
+  {
+    "sourceName": "花火-得间小说",
+    "sourceType": 0,
+    "sourceUrl": "https://www.idejian.com",
+    "bookInfoPattern": "",
+    "exploreUrl": "男生小说::/books/nansheng?page={{page}}\r\n男生完本::/wanben/nansheng?page={{page}}\r\n男生人气::/bangdan/36001?page={{page}}\r\n男生点击::/bangdan/36002?page={{page}}\r\n男生收藏::/bangdan/36003?page={{page}}\r\n男生潜力::/bangdan/36004?page={{page}}\r\n女生小说::/books/nvsheng?page={{page}}\r\n女生完本::/wanben/nvsheng?page={{page}}\r\n女生人气::/bangdan/36014?page={{page}}\r\n女生点击::/bangdan/36015?page={{page}}\r\n女生收藏::/bangdan/36016?page={{page}}\r\n女生潜力::/bangdan/36017?page={{page}}\r\n女生完本::/bangdan/36021?page={{page}}\r\n奇幻小说::/books/nansheng?categoryId=1114&page={{page}}\r\n玄幻小说::/books/nansheng?categoryId=1115&page={{page}}\r\n武侠小说::/books/nansheng?categoryId=1116&page={{page}}\r\n仙侠小说::/books/nansheng?categoryId=1117&page={{page}}\r\n都市小说::/books/nansheng?categoryId=1118&page={{page}}\r\n校园小说::/books/nansheng?categoryId=1119&page={{page}}\r\n历史小说::/books/nansheng?categoryId=1120&page={{page}}\r\n军事小说::/books/nansheng?categoryId=1121&page={{page}}\r\n游戏小说::/books/nansheng?categoryId=1122&page={{page}}\r\n竞技小说::/books/nansheng?categoryId=1123&page={{page}}\r\n科幻小说::/books/nansheng?categoryId=1124&page={{page}}\r\n灵异小说::/books/nansheng?categoryId=1125&page={{page}}\r\n现代小说::/books/nvsheng?categoryId=1126&page={{page}}\r\n古代小说::/books/nvsheng?categoryId=1127&page={{page}}\r\n幻想小说::/books/nvsheng?categoryId=1128&page={{page}}\r\n青春小说::/books/nvsheng?categoryId=1129&page={{page}}\r\n同人小说::/books/nvsheng?categoryId=1130&page={{page}}\r\n恐怖小说::/books/nvsheng?categoryId=1132&page={{page}}\r\n次元小说::/books/nvsheng?categoryId=1133&page={{page}}\r\n出版小说::/books/chuban?page={{page}}\r\n人文社科::/books/chuban?categoryId=1134&page={{page}}\r\n经管励志::/books/chuban?categoryId=1135&page={{page}}\r\n文学艺术::/books/chuban?categoryId=1138&page={{page}}",
+    "header": "",
+    "ruleBookInfo": {
+      "infoInit": "",
+      "infoAuthor": "class.detail_bkauthor@text#著",
+      "infoCoverUrl": "class.detail_bkauthor img@src",
+      "infoIntro": "class.brief_con@text",
+      "infoKind": "class.light_box@text&&class.detail_bkgrade@tag.span.0@text&&class.detail_bkgrade@tag.span.1@text",
+      "infoLastChapter": "class.book_page a@text",
+      "infoName": "class.detail_bkname @text",
+      "infoTocUrl": "",
+      "infoWordCount": "class.bk_fontinfo span[0]@text"
+    },
+    "ruleContent": {
+      "content": "@css:.bodytext@textNodes",
+      "nextContentUrl": "",
+      "webJs": "",
+      "sourceRegex": "",
+      "replaceRegex": ""
+    },
+    "ruleExplore": {
+      "exploreAuthor": ".bkitem_author@text||.author@text",
+      "exploreBookList": ".v_books li||.rank_ullist li",
+      "exploreBookUrl": ".bkitem_name a@href||.rank_bkname a@href",
+      "exploreCoverUrl": "img@src",
+      "exploreIntro": ".bkitem_brief@text||.rank_bkbrief@text",
+      "exploreKind": ".bkitem_types@text||.rank_bkinfo span!0@text",
+      "exploreLastChapter": ".rank_newpage@text#更新章节：",
+      "exploreName": ".bkitem_name@text||.rank_bkname@text"
+    },
+    "ruleSearch": {
+      "searchAuthor": "$4",
+      "searchBookList": ":img\"[^\"]*\"([^\"]*)[\\s\\S]*?href=\"([^\"]*)\">([^<]*)[\\s\\S]*?author\">([^<]*)(?:[^>]*>){4}([^<]*)[\\s\\S]*?\">([^<]*)[\\s\\S]*?bktime\">([^<]*)[\\s\\S]*?章节：([^<]*)[\\s\\S]*?人气[\\s\\S]*?<i>([^<]*)",
+      "searchBookUrl": "$2",
+      "searchCoverUrl": "$1",
+      "searchIntro": "$6",
+      "searchKind": "$5,$7",
+      "searchLastChapter": "$8",
+      "searchName": "$3",
+      "searchWordCount": "$9"
+    },
+    "ruleToc": {
+      "tocList": ":li><a href=\"([^\"]*)\">([^<]*)",
+      "tocName": "$2",
+      "tocUrl": "$1",
+      "isVip": "",
+      "nextTocUrl": "",
+      "tocUpdateTime": ""
+    },
+    "searchUrl": "/search?keyword={{key}}&page={{page}}"
+  },
+  {
+    "sourceName": "花火-云中书库",
+    "sourceType": 0,
+    "sourceUrl": "http://www.yunxs.com",
+    "bookInfoPattern": "",
+    "exploreUrl": "首页::/\n排行榜::/paihangbang.html\n小说书库::/shuku_17801_{{page}}.html\n玄幻·奇幻::/xuanhuan/shuku_1949_{{page}}.html\n仙侠·武侠::/xianxia/shuku_6666_{{page}}.html\n都市·言情::/dushi/shuku_6666_{{page}}.html\n穿越·历史::/chuanyue/shuku_6666_{{page}}.html\n科幻·灵异::/kehuan/shuku_6666_{{page}}.html\n同人·网游::/tongren/shuku_6666_{{page}}.html",
+    "header": "",
+    "ruleBookInfo": {
+      "infoInit": "",
+      "infoAuthor": "@css:[property='og:novel:author']@content",
+      "infoCoverUrl": "@css:.pic img@src",
+      "infoIntro": "@css:.words>p:not([style])@html<js>result.replace(\"简介：\",\"\")</js>",
+      "infoKind": "@css:[property='og:novel:category']@content",
+      "infoLastChapter": "@css:[property='og:novel:latest_chapter_name']@content",
+      "infoName": "@css:[property='og:novel:book_name']@content",
+      "infoTocUrl": "",
+      "infoWordCount": ""
+    },
+    "ruleContent": {
+      "content": "@css:.box_box@textNodes##.*壹中文網.*|请记住本书首发域名.*",
+      "nextContentUrl": "",
+      "webJs": "",
+      "sourceRegex": "",
+      "replaceRegex": ""
+    },
+    "ruleExplore": {
+      "exploreAuthor": "@css:.author,span>a@text",
+      "exploreBookList": "@css:.ul_m_list>li,li[onmouseover]",
+      "exploreBookUrl": "@css:.t>a,dt>a@href",
+      "exploreCoverUrl": "@css:img@src",
+      "exploreIntro": "",
+      "exploreKind": "@css:.c>a,.words,.abover,strong>a@text",
+      "exploreLastChapter": "@css:.n>a:eq(1)@text",
+      "exploreName": "@css:.t,dt>a@text"
+    },
+    "ruleSearch": {
+      "searchAuthor": "@css:.state>a@text",
+      "searchBookList": "@css:.ul_b_list>li",
+      "searchBookUrl": "@css:h2>a@href",
+      "searchCoverUrl": "@css:img@src",
+      "searchIntro": "@css:p:not([class])@html<js>result.replace(\"简介：\",\"\")</js>",
+      "searchKind": "@css:h2>span@text",
+      "searchLastChapter": "@css:.arcurl@textNodes<js>result.replace(\"最后更新： \",\"\")</js>",
+      "searchName": "@css:h2>a@text",
+      "searchWordCount": ""
+    },
+    "ruleToc": {
+      "tocList": "+@css:.list_box a",
+      "tocName": "text",
+      "tocUrl": "href",
+      "isVip": "",
+      "nextTocUrl": "",
+      "tocUpdateTime": ""
+    },
+    "searchUrl": "http://www.yunxs.com/plus/search.php?kwtype=0&searchtype=搜索&q={{key}}"
+  },
+  {
+    "sourceName": "花火-蚂蚁阅读",
+    "sourceType": 0,
+    "sourceUrl": "http://www.imayitxt.com",
+    "bookInfoPattern": "",
+    "exploreUrl": "玄幻::/sort/1/1.html\n仙侠::/sort/2/1.html\n都市::/sort/3/1.html\n历史::/sort/4/1.html\n军事::/sort/5/1.html\n灵异::/sort/6/1.html\n科幻::/sort/7/1.html\n游戏::/sort/8/1.html\n现言::/sort/9/1.html\n古言::/sort/10/1.html\n穿越::/sort/11/1.html\n青春::/sort/12/1.html\n豪门总裁::/sort/14/1.html\n耽美同人::/sort/15/1.html\n其他类型::/sort/13/1.html",
+    "header": "",
+    "ruleBookInfo": {
+      "infoInit": "",
+      "infoAuthor": "class.author.0@text",
+      "infoCoverUrl": "class.book_left@tag.img@src",
+      "infoIntro": "class.brief@text",
+      "infoKind": "",
+      "infoLastChapter": "",
+      "infoName": "class.book_name@tag.h1@text",
+      "infoTocUrl": "class.button_list@tag.a.2@href",
+      "infoWordCount": ""
+    },
+    "ruleContent": {
+      "content": "class.page-content@textNodes##免费小说，无弹窗小说网，txt下载，请记住蚂蚁阅读网www.mayitxt.com|\\*\\*\\*",
+      "nextContentUrl": "",
+      "webJs": "",
+      "sourceRegex": "",
+      "replaceRegex": ""
+    },
+    "ruleExplore": {
+      "exploreAuthor": "tag.span@text",
+      "exploreBookList": "class.BOX@tag.tr!0",
+      "exploreBookUrl": "tag.a.1@href",
+      "exploreCoverUrl": "tag.a.1@href\n<js>\nvar id = result.match(/\\/(\\d+).*/)[1];\nvar iid = parseInt(id/1000);\n'/files/article/image/'+iid+'/'+id+'/'+id+'s.jpg';\n</js>",
+      "exploreIntro": "",
+      "exploreKind": "tag.td.6@text&&tag.a.0@text##\\[(.*)\\]##$1",
+      "exploreLastChapter": "class.chapter@text",
+      "exploreName": "tag.a.1@text"
+    },
+    "ruleSearch": {
+      "searchAuthor": "tag.td.5@text",
+      "searchBookList": "class.BOX@tag.tr!0",
+      "searchBookUrl": "tag.a.1@href",
+      "searchCoverUrl": "tag.a.1@href\n<js>\nvar id = result.match(/\\/(\\d+).*/)[1];\nvar iid = parseInt(id/1000);\n'/files/article/image/'+iid+'/'+id+'/'+id+'s.jpg';\n</js>",
+      "searchIntro": "",
+      "searchKind": "tag.td.6@text",
+      "searchLastChapter": "class.chapter@text",
+      "searchName": "class.red@text",
+      "searchWordCount": ""
+    },
+    "ruleToc": {
+      "tocList": "class.float-list fill-block@tag.li",
+      "tocName": "tag.a@text##正文(\\s+|_)|[\\(（【].*[求更谢乐发推].*[】）\\)]",
+      "tocUrl": "tag.a@href",
+      "isVip": "",
+      "nextTocUrl": "",
+      "tocUpdateTime": ""
+    },
+    "searchUrl": "/modules/article/search.php?q={{key}}&searchtype=all,{\n  \"charset\": \"utf-8\"\n}"
+  },
+  {
+    "sourceName": "花火-晋江文学",
+    "sourceType": 0,
+    "sourceUrl": "https://www.jjwxc.net",
+    "bookInfoPattern": "",
+    "exploreUrl": " 驻 站 榜 ::/topten.php?orderstr=19&t=0\n 字 数 榜 ::/topten.php?orderstr=8&t=0\n 长 生 殿 ::/topten.php?orderstr=9&t=0\n 新 晋 榜 ::/topten.php?orderstr=3&t=0\n 月 度 榜 ::/topten.php?orderstr=5&t=0\n 季 度 榜 ::/topten.php?orderstr=4&t=0\n 半 年 榜 ::/topten.php?orderstr=6&t=0\n 总 分 榜 ::/topten.php?orderstr=7&t=0\n霸王票榜::/topten.php?orderstr=13&t=0\n勤奋指数::/topten.php?orderstr=15&t=0\n栽培月榜::/topten.php?orderstr=18&t=0\n千字金榜::/topten.php?orderstr=21&t=0\n完结高分::/topten.php?orderstr=20&t=0\n古言完结::http://www.jjwxc.net/channeltoplist.php?channelid=14&str=7\n现言完结::http://www.jjwxc.net/channeltoplist.php?channelid=14&str=8\n衍言完结::http://www.jjwxc.net/channeltoplist.php?channelid=14&str=13\n无CP完结::http://www.jjwxc.net/channeltoplist.php?channelid=15&str=46\n衍生完结::http://www.jjwxc.net/channeltoplist.php?channelid=21&str=26\n古代言情::http://www.jjwxc.net/channeltoplist.php?channelid=14&str=1\n 编 推 文 ::http://www.jjwxc.net/channeltopten.php?channelid=1&str=1\n 新 文 榜 ::http://www.jjwxc.net/channeltopten.php?channelid=1&str=2\n 新 晋 榜 ::http://www.jjwxc.net/channeltopten.php?channelid=1&str=7\n 月 度 榜 ::http://www.jjwxc.net/channeltopten.php?channelid=1&str=4\n 季 度 榜 ::http://www.jjwxc.net/channeltopten.php?channelid=1&str=5\n 半 年 榜 ::http://www.jjwxc.net/channeltopten.php?channelid=1&str=6\n都市青春::http://www.jjwxc.net/channeltoplist.php?channelid=14&str=2\n 编 推 文 ::http://www.jjwxc.net/channeltopten.php?channelid=2&str=1\n 新 文 榜 ::http://www.jjwxc.net/channeltopten.php?channelid=2&str=2\n 新 晋 榜 ::http://www.jjwxc.net/channeltopten.php?channelid=2&str=7\n 月 度 榜::http://www.jjwxc.net/channeltopten.php?channelid=2&str=4\n 季 度 榜 ::http://www.jjwxc.net/channeltopten.php?channelid=2&str=5\n 半 年 榜 ::http://www.jjwxc.net/channeltopten.php?channelid=2&str=6\n幻想言情::http://www.jjwxc.net/channeltoplist.php?channelid=14&str=3\n 编 推 文 ::http://www.jjwxc.net/channeltopten.php?channelid=6&str=1\n 新 文 榜 ::http://www.jjwxc.net/channeltopten.php?channelid=6&str=2\n 新 晋 榜 ::http://www.jjwxc.net/channeltopten.php?channelid=6&str=7\n 月 度 榜::http://www.jjwxc.net/channeltopten.php?channelid=6&str=4\n 季 度 榜 ::http://www.jjwxc.net/channeltopten.php?channelid=6&str=5\n 半 年 榜 ::http://www.jjwxc.net/channeltopten.php?channelid=6&str=6\n古代穿越::http://www.jjwxc.net/channeltoplist.php?channelid=14&str=4\n编 推 文 ::http://www.jjwxc.net/channeltopten.php?channelid=9&str=1\n 新 文 榜 ::http://www.jjwxc.net/channeltopten.php?channelid=9&str=2\n 新 晋 榜 ::http://www.jjwxc.net/channeltopten.php?channelid=9&str=7\n 月 度 榜::http://www.jjwxc.net/channeltopten.php?channelid=9&str=4\n 季 度 榜 ::http://www.jjwxc.net/channeltopten.php?channelid=9&str=5\n 半 年 榜 ::http://www.jjwxc.net/channeltopten.php?channelid=9&str=6\n奇幻言情::http://www.jjwxc.net/channeltoplist.php?channelid=14&str=5\n编 推 文 ::http://www.jjwxc.net/channeltopten.php?channelid=5&str=1\n 新 文 榜 ::http://www.jjwxc.net/channeltopten.php?channelid=5&str=2\n 新 晋 榜 ::http://www.jjwxc.net/channeltopten.php?channelid=5&str=7\n 月 度 榜::http://www.jjwxc.net/channeltopten.php?channelid=5&str=4\n 季 度 榜 ::http://www.jjwxc.net/channeltopten.php?channelid=5&str=5\n 半 年 榜 ::http://www.jjwxc.net/channeltopten.php?channelid=5&str=6\n衍生言情::http://www.jjwxc.net/channeltoplist.php?channelid=14&str=12\n编 推 文 ::http://www.jjwxc.net/channeltopten.php?channelid=13&str=1\n 新 文 榜 ::http://www.jjwxc.net/channeltopten.php?channelid=13&str=2\n 新 晋 榜 ::http://www.jjwxc.net/channeltopten.php?channelid=13&str=7\n 月 度 榜::http://www.jjwxc.net/channeltopten.php?channelid=13&str=4\n 季 度 榜 ::http://www.jjwxc.net/channeltopten.php?channelid=13&str=5\n 半 年 榜 ::http://www.jjwxc.net/channeltopten.php?channelid=13&str=6\n二次元::http://www.jjwxc.net/channeltoplist.php?channelid=14&str=11\n编 推 文 ::http://www.jjwxc.net/channeltopten.php?channelid=4&str=1\n 新 文 榜 ::http://www.jjwxc.net/channeltopten.php?channelid=4&str=2\n 新 晋 榜 ::http://www.jjwxc.net/channeltopten.php?channelid=4&str=7\n 月 度 榜::http://www.jjwxc.net/channeltopten.php?channelid=4&str=4\n 季 度 榜 ::http://www.jjwxc.net/channeltopten.php?channelid=4&str=5\n 半 年 榜 ::http://www.jjwxc.net/channeltopten.php?channelid=4&str=6\n未来游戏::http://www.jjwxc.net/channeltoplist.php?channelid=14&str=6\n编 推 文 ::http://www.jjwxc.net/channeltopten.php?channelid=7&str=1\n 新 文 榜 ::http://www.jjwxc.net/channeltopten.php?channelid=7&str=2\n 新 晋 榜 ::http://www.jjwxc.net/channeltopten.php?channelid=7&str=7\n 月 度 榜::http://www.jjwxc.net/channeltopten.php?channelid=8&str=4\n 季 度 榜 ::http://www.jjwxc.net/channeltopten.php?channelid=7&str=5\n 半 年 榜 ::http://www.jjwxc.net/channeltopten.php?channelid=7&str=6\n无cp::http://www.jjwxc.net/channeltoplist.php?channelid=15&str=18\n 编 推 文 ::http://www.jjwxc.net/channeltopten.php?channelid=25&str=1\n 完 结 榜 ::http://www.jjwxc.net/channeltopten.php?channelid=25&str=40\n 新 文 榜 ::http://www.jjwxc.net/channeltopten.php?channelid=25&str=2\n 月 度 榜 ::http://www.jjwxc.net/channeltopten.php?channelid=25&str=4\n 季 度 榜 ::http://www.jjwxc.net/channeltopten.php?channelid=25&str=5\n 半 年 榜 ::http://www.jjwxc.net/channeltopten.php?channelid=25&str=6",
+    "header": "",
+    "ruleBookInfo": {
+      "infoInit": "",
+      "infoAuthor": "tag.h2.0@tag.span.0@text",
+      "infoCoverUrl": "class.smallreadbody.0@tag.img.0@src",
+      "infoIntro": "id.novelintro.0@text##手机地址：@js:result.replace(/(&.{3}br.{3,4};)+|[\\n\\s]+/g,\"\\n\").replace(/\\n\\s*\\n/g,\"\\n\").replace(/^\\s*\\n/g,\"\").replace(/\\n\\s*/g,\"\\n\\u3000\\u3000\").replace(/^\\s*/g,\"\\u3000\\u3000\")",
+      "infoKind": "class.rightul.0@tag.li.4@tag.span.1@text&&class.rightul.0@tag.li.2@text##作品风格：",
+      "infoLastChapter": "id.oneboolt@tag.tr.-2@tag.span.0@text&&id.oneboolt@tag.tr.-2@tag.td.-1@tag.span@text##\\n##·",
+      "infoName": "class.bigtext.0@tag.h1.0@tag.span.0@text",
+      "infoTocUrl": "http://app-cdn.jjwxc.net/androidapi/chapterList?novelId={$.novelId}&more=0&whole=1",
+      "infoWordCount": ""
+    },
+    "ruleContent": {
+      "content": "class.novelbody@class.noveltext@textNodes",
+      "nextContentUrl": "",
+      "webJs": "",
+      "sourceRegex": "",
+      "replaceRegex": ""
+    },
+    "ruleExplore": {
+      "exploreAuthor": "tag.td.1@a@text",
+      "exploreBookList": "tr[onmouseover]",
+      "exploreBookUrl": "tag.a.1@href",
+      "exploreCoverUrl": "tag.td.2@a@href@js:result.replace(/.+novelid=/, 'http:\\/\\/i9-static.jjwxc.net\\/novelimage.php?novelid=')",
+      "exploreIntro": "tag.td.3@text",
+      "exploreKind": "tag.td.5@text&&tag.td.4@text",
+      "exploreLastChapter": "tag.td.8@text",
+      "exploreName": "tag.td.2@a@text"
+    },
+    "ruleSearch": {
+      "searchAuthor": "tag.td.0@a@text",
+      "searchBookList": ".cytable@tag.tr!0",
+      "searchBookUrl": "tag.a.1@href",
+      "searchCoverUrl": "<js>\nvar a=String(result).match(/href=\"(onebook.php\\?novelid=\\d+)/)[1];\nvar url=\"http://www.jjwxc.net/\"+a;\norg.jsoup.Jsoup.connect(url).get()</js>\nclass.smallreadbody@div@img@src",
+      "searchIntro": "tag.td.2@text",
+      "searchKind": "tag.td.4@text&&tag.td.3@text",
+      "searchLastChapter": "<js>\nvar a=String(result).match(/href=\"(onebook.php\\?novelid=\\d+)/)[1];\nvar url=\"http://www.jjwxc.net/\"+a;\norg.jsoup.Jsoup.connect(url).get()</js>\nid.oneboolt@tag.tr.-2@tag.a.0@text",
+      "searchName": "tag.td.1@a@text",
+      "searchWordCount": "tag.td.5@text@js:parseInt(result/10000) + '万字'"
+    },
+    "ruleToc": {
+      "tocList": "@css:#oneboolt span[itemprop='headline']",
+      "tocName": "text##(.+)\\[VIP\\]##🔒$1",
+      "tocUrl": "tag.a.0@href||tag.a.0@rel",
+      "isVip": "",
+      "nextTocUrl": "",
+      "tocUpdateTime": ""
+    },
+    "searchUrl": "https://www.jjwxc.net/bookbase.php?searchkeywords={{key}}&page={{page}},{\n  \"charset\": \"gbk\"\n}"
+  },
+  {
+    "sourceName": "花火-笔趣谷",
+    "sourceType": 0,
+    "sourceUrl": "http://biqugu.net",
+    "bookInfoPattern": "",
+    "exploreUrl": "点击榜::http://biqugu.net/top/{{page}}/\n奇幻::http://biqugu.net/qihuan/{{page}}/\n玄幻::http://biqugu.net/xuanhuan/{{page}}/\n言情::http://biqugu.net/yanqing/{{page}}/\n都市::http://biqugu.net/dushi/{{page}}/\n游戏::http://biqugu.net/youxi/{{page}}/\n竞技::http://biqugu.net/jingji/{{page}}/\n武侠::http://biqugu.net/wuxia/{{page}}/\n历史::http://biqugu.net/lishi/{{page}}/\n军事::http://biqugu.net/junshi/{{page}}/\n科幻::http://biqugu.net/kehuan/{{page}}/\n仙侠::http://biqugu.net/xianxia/{{page}}/\n灵异::http://biqugu.net/lingyi/{{page}}/\n女性::http://biqugu.net/nvxing/{{page}}/\n其他::http://biqugu.net/qita/{{page}}/\n更新最近::http://biqugu.net/last<{{page}}>.htm\n最新入库::http://biqugu.net/new/{{page}}/",
+    "header": "",
+    "ruleBookInfo": {
+      "infoInit": "",
+      "infoAuthor": "",
+      "infoCoverUrl": "",
+      "infoIntro": "class.desc@textNodes##简介：",
+      "infoKind": "",
+      "infoLastChapter": "class.f_l t_l w4@a@text",
+      "infoName": "",
+      "infoTocUrl": "",
+      "infoWordCount": ""
+    },
+    "ruleContent": {
+      "content": "tag.h1.0@textNodes&&id.content@textNodes##(第.{1,8}章)\\s*?(\\S*?)\\s*?\\S+?.*?\\1\\2",
+      "nextContentUrl": "",
+      "webJs": "",
+      "sourceRegex": "",
+      "replaceRegex": ""
+    },
+    "ruleExplore": {
+      "exploreAuthor": "",
+      "exploreBookList": "",
+      "exploreBookUrl": "",
+      "exploreCoverUrl": "",
+      "exploreIntro": "",
+      "exploreKind": "",
+      "exploreLastChapter": "",
+      "exploreName": ""
+    },
+    "ruleSearch": {
+      "searchAuthor": "tag.li.2@tag.a@text",
+      "searchBookList": "class.list_content",
+      "searchBookUrl": "tag.li.0@tag.a@href",
+      "searchCoverUrl": "",
+      "searchIntro": "",
+      "searchKind": "tag.li.3@text",
+      "searchLastChapter": "tag.li.1@tag.a@text",
+      "searchName": "tag.li.0@tag.a@text",
+      "searchWordCount": ""
+    },
+    "ruleToc": {
+      "tocList": "class.chapter",
+      "tocName": "tag.a@text",
+      "tocUrl": "tag.a@href",
+      "isVip": "",
+      "nextTocUrl": "",
+      "tocUpdateTime": ""
+    },
+    "searchUrl": "http://biqugu.net/s_{{key}}"
+  },
+  {
+    "sourceName": "花火-顶点小说①",
+    "sourceType": 0,
+    "sourceUrl": "http://www.ddxsku.com",
+    "bookInfoPattern": "",
+    "exploreUrl": "总排行榜::http://www.ddxsku.com/top/allvisit_{{page}}.html\n月排行榜::http://www.ddxsku.com/top/monthvisit_{{page}}.html\n周排行榜::http://www.ddxsku.com/top/weekvisit_{{page}}.html\n总推荐榜::http://www.ddxsku.com/top/allvote_{{page}}.html\n月推荐榜::http://www.ddxsku.com/top/monthvote_{{page}}.html\n周推荐榜::http://www.ddxsku.com/top/weekvote_{{page}}.html\n最新入库::http://www.ddxsku.com/top/postdate_{{page}}.html\n最近更新::http://www.ddxsku.com/top/lastupdate_{{page}}.html\n总收藏榜::http://www.ddxsku.com/top/goodnum_{{page}}.html\n字数排行::http://www.ddxsku.com/top/size_{{page}}.html\n",
+    "header": "",
+    "ruleBookInfo": {
+      "infoInit": "",
+      "infoAuthor": "",
+      "infoCoverUrl": "",
+      "infoIntro": "",
+      "infoKind": "",
+      "infoLastChapter": "",
+      "infoName": "class.bdsub@tag.dd.1@tag.h3@text#作者：",
+      "infoTocUrl": "",
+      "infoWordCount": ""
+    },
+    "ruleContent": {
+      "content": "id.contents@html",
+      "nextContentUrl": "",
+      "webJs": "",
+      "sourceRegex": "",
+      "replaceRegex": ""
+    },
+    "ruleExplore": {
+      "exploreAuthor": "tag.td.2@text",
+      "exploreBookList": "tag.table@tag.tbody@tag.tr!0",
+      "exploreBookUrl": "tag.td.1@tag.a@href",
+      "exploreCoverUrl": "",
+      "exploreIntro": "",
+      "exploreKind": "tag.td.5@text",
+      "exploreLastChapter": "tag.td.1@tag.a.0@text",
+      "exploreName": "tag.td.0@tag.a@text"
+    },
+    "ruleSearch": {
+      "searchAuthor": "tag.td.2@text",
+      "searchBookList": "tag.table@tag.tr!0",
+      "searchBookUrl": "tag.td.0@tag.a.0@href",
+      "searchCoverUrl": "",
+      "searchIntro": "",
+      "searchKind": "tag.td.5@text",
+      "searchLastChapter": "tag.td.1@tag.a.0@text",
+      "searchName": "tag.td.0@tag.a.0@text",
+      "searchWordCount": ""
+    },
+    "ruleToc": {
+      "tocList": "id.at@tag.td@tag.a",
+      "tocName": "text",
+      "tocUrl": "href",
+      "isVip": "",
+      "nextTocUrl": "",
+      "tocUpdateTime": ""
+    },
+    "searchUrl": "/search/?searchkey={{key}}"
+  },
+  {
+    "sourceName": "花火-新笔趣阁",
+    "sourceType": 0,
+    "sourceUrl": "https://www.xquge.com",
+    "bookInfoPattern": "",
+    "exploreUrl": "男生全部::/booklist/?page={{page}}\n男生连载::/booklist/?status=1&page={{page}}\n玄幻-连载::/booklist/?cid=1001&status=1&page={{page}}\n科幻-连载::/booklist/?cid=1002&status=1&page={{page}}\n都市-连载::/booklist/?cid=1003&status=1&page={{page}}\n仙侠-连载::/booklist/?cid=1004&status=1&page={{page}}\n武侠-连载::/booklist/?cid=1005&status=1&page={{page}}\n悬疑-连载::/booklist/?cid=1006&status=1&page={{page}}\n游戏-连载::/booklist/?cid=1007&status=1&page={{page}}\n军事-连载::/booklist/?cid=1008&status=1&page={{page}}\n男生完结::/booklist/?status=2&page={{page}}\n玄幻-完结::/booklist/?cid=1001&status=2&page={{page}}\n科幻-完结::/booklist/?cid=1002&status=2&page={{page}}\n都市-完结::/booklist/?cid=1003&status=2&page={{page}}\n仙侠-完结::/booklist/?cid=1004&status=2&page={{page}}\n武侠-完结::/booklist/?cid=1005&status=2&page={{page}}\n悬疑-完结::/booklist/?cid=1006&status=2&page={{page}}\n游戏-完结::/booklist/?cid=1007&status=2&page={{page}}\n军事-完结::/booklist/?cid=1008&status=2&page={{page}}\n女生全部::/booklist/nvsheng?page={{page}}\n女生连载::/booklist/nvsheng?status=1&page={{page}}\n古代言情-连载::/booklist/nvsheng?cid=2000&status=1&page={{page}}\n现代言情-连载::/booklist/nvsheng?cid=2001&status=1&page={{page}}\n玄幻言情-连载::/booklist/nvsheng?cid=2002&status=1&page={{page}}\n仙侠奇缘-连载::/booklist/nvsheng?cid=2003&status=1&page={{page}}\n青春浪漫-连载::/booklist/nvsheng?cid=2004&status=1&page={{page}}\n科幻空间-连载::/booklist/nvsheng?cid=2005&status=1&page={{page}}\n女生完结::/booklist/nvsheng?status=2&page={{page}}\n古代言情-完结::/booklist/nvsheng?cid=2000&status=2&page={{page}}\n现代言情-完结::/booklist/nvsheng?cid=2001&status=2&page={{page}}\n玄幻言情-完结::/booklist/nvsheng?cid=2002&status=2&page={{page}}\n仙侠奇缘-完结::/booklist/nvsheng?cid=2003&status=2&page={{page}}\n青春浪漫-完结::/booklist/nvsheng?cid=2004&status=2&page={{page}}\n科幻空间-完结::/booklist/nvsheng?cid=2005&status=2&page={{page}}",
+    "header": "",
+    "ruleBookInfo": {
+      "infoInit": "",
+      "infoAuthor": "class.detail_bkauthor@text##著",
+      "infoCoverUrl": "class.book_img@tag.img@src",
+      "infoIntro": "class.summary@text",
+      "infoKind": "ckass.detail_bkgrade@tag.span.0@text&&ckass.detail_bkgrade@tag.span.1@text&&ckass.detail_bkgrade@tag.span.2@text",
+      "infoLastChapter": "class.bk_fontinfo@tag.a.0@text",
+      "infoName": "class.detail_bkname@tag.a.0@text",
+      "infoTocUrl": "",
+      "infoWordCount": ""
+    },
+    "ruleContent": {
+      "content": "id.content@class.bodytext!0:1@textNodes##\\★.*",
+      "nextContentUrl": "",
+      "webJs": "",
+      "sourceRegex": "",
+      "replaceRegex": ""
+    },
+    "ruleExplore": {
+      "exploreAuthor": "class.bkitem_author@tag.span.0@text",
+      "exploreBookList": "class.v_books@tag.li",
+      "exploreBookUrl": "class.bkitem_name@tag.a.0@href",
+      "exploreCoverUrl": "class.book_img@tag.img@src",
+      "exploreIntro": "class.bkitem_brief@text",
+      "exploreKind": "class.bkitem_types.0@text&&class.bkitem_types.1@text&&class.bk_fontnum@text##.*时间：",
+      "exploreLastChapter": "",
+      "exploreName": "class.bkitem_name@tag.a.0@text"
+    },
+    "ruleSearch": {
+      "searchAuthor": "class.rank_bkinfo@tag.span.0@text",
+      "searchBookList": "class.rank_ullist@tag.li",
+      "searchBookUrl": "class.rank_bkname@tag.a.0@href",
+      "searchCoverUrl": "class.book_img@tag.img@src",
+      "searchIntro": "class.rank_bkbrief@text",
+      "searchKind": "class.rank_bkinfo@tag.span.1@text&&class.rank_bkinfo@tag.span.2@text",
+      "searchLastChapter": "class.rank_newpage@tag.a.0@text",
+      "searchName": "class.rank_bkname@tag.a.0@text",
+      "searchWordCount": ""
+    },
+    "ruleToc": {
+      "tocList": "class.catelog_list.1@tag.li@tag.a",
+      "tocName": "text",
+      "tocUrl": "href",
+      "isVip": "",
+      "nextTocUrl": "",
+      "tocUpdateTime": ""
+    },
+    "searchUrl": "/search?keyword={{key}},{\n  \"charset\": \"utf-8\"\n}"
+  },
+  {
+    "sourceName": "花火-搜小说",
+    "sourceType": 0,
+    "sourceUrl": "https://www.soxs.cc",
+    "bookInfoPattern": "",
+    "exploreUrl": "连-总点击榜::/shuku/allvisit_0_1_{{page}}.html\n连-月点击榜::/shuku/monthvisit_0_1_{{page}}.html\n连-周点击榜::/shuku/weekvisit_0_1_{{page}}.html\n连-日点击榜::/shuku/dayvisit_0_1_{{page}}.html\n连-总推荐榜::/shuku/allvote_0_1_{{page}}.html\n连-月推荐榜::/shuku/monthvote_0_1_{{page}}.html\n连-周推荐榜::/shuku/weekvote_0_1_{{page}}.html\n连-日推荐榜::/shuku/dayvote_0_1_{{page}}.html\n连-总收藏榜::/shuku/goodnum_0_1_{{page}}.html\n连-字数排行::/shuku/size_0_1_{{page}}.html\n连-入库时间::/shuku/postdate_0_1_{{page}}.html\n连-玄幻奇幻::/shuku/0_1_1_{{page}}.html\n连-武侠仙侠::/shuku/0_2_1_{{page}}.html\n连-科幻未来::/shuku/0_3_1_{{page}}.html\n连-历史军事::/shuku/0_4_1_{{page}}.html\n连-游戏竞技::/shuku/0_5_1_{{page}}.html\n连-灵异悬疑::/shuku/0_6_1_{{page}}.html\n连-都市生活::/shuku/0_7_1_{{page}}.html\n连-青春校园::/shuku/0_8_1_{{page}}.html\n连-古代言情::/shuku/0_9_1_{{page}}.html\n连-现代言情::/shuku/0_10_1_{{page}}.html\n连-幻想奇缘::/shuku/0_11_1_{{page}}.html\n连-耽美同人::/shuku/0_12_1_{{page}}.html\n连-新书入库::/shuku/0_13_1_{{page}}.html\n完-总点击榜::/shuku/allvisit_0_2_{{page}}.html\n完-月点击榜::/shuku/monthvisit_0_2_{{page}}.html\n完-周点击榜::/shuku/weekvisit_0_2_{{page}}.html\n完-日点击榜::/shuku/dayvisit_0_2_{{page}}.html\n完-总推荐榜::/shuku/allvote_0_2_{{page}}.html\n完-月推荐榜::/shuku/monthvote_0_2_{{page}}.html\n完-周推荐榜::/shuku/weekvote_0_2_{{page}}.html\n完-日推荐榜::/shuku/dayvote_0_2_{{page}}.html\n完-总收藏榜::/shuku/goodnum_0_2_{{page}}.html\n完-字数排行::/shuku/size_0_2_{{page}}.html\n完-入库时间::/shuku/postdate_0_2_{{page}}.html\n完-玄幻奇幻::/shuku/0_1_2_{{page}}.html\n完-武侠仙侠::/shuku/0_2_2_{{page}}.html\n完-科幻未来::/shuku/0_3_2_{{page}}.html\n完-历史军事::/shuku/0_4_2_{{page}}.html\n完-游戏竞技::/shuku/0_5_2_{{page}}.html\n完-灵异悬疑::/shuku/0_6_2_{{page}}.html\n完-都市生活::/shuku/0_7_2_{{page}}.html\n完-青春校园::/shuku/0_8_2_{{page}}.html\n完-古代言情::/shuku/0_9_2_{{page}}.html\n完-现代言情::/shuku/0_10_2_{{page}}.html\n完-幻想奇缘::/shuku/0_11_2_{{page}}.html\n完-耽美同人::/shuku/0_12_2_{{page}}.html\n完-新书入库::/shuku/0_13_2_{{page}}.html",
+    "header": "",
+    "ruleBookInfo": {
+      "infoInit": "",
+      "infoAuthor": "",
+      "infoCoverUrl": ".cover@tag.img@src||.book_cover@img@src",
+      "infoIntro": ".info-text@tag.p.2@html||id.intro@ownText##简介.",
+      "infoKind": "",
+      "infoLastChapter": ".info-text@tag.a.0@text||.xiaoshuo@h5@a@text",
+      "infoName": "",
+      "infoTocUrl": "id.read@href",
+      "infoWordCount": ".info@tag.p@text##.*："
+    },
+    "ruleContent": {
+      "content": ".content@textNodes",
+      "nextContentUrl": "",
+      "webJs": "",
+      "sourceRegex": "",
+      "replaceRegex": "##您可以在百.*最新章节！|"
+    },
+    "ruleExplore": {
+      "exploreAuthor": "tag.td.2@text",
+      "exploreBookList": "tbody@tag.tr!0",
+      "exploreBookUrl": "tag.a.1@href",
+      "exploreCoverUrl": "",
+      "exploreIntro": "",
+      "exploreKind": "tag.td.5@text&&tag.td.4@text",
+      "exploreLastChapter": "tag.td.1@text",
+      "exploreName": "tag.td.0@tag.a.1@text"
+    },
+    "ruleSearch": {
+      "searchAuthor": ".s4@text",
+      "searchBookList": ".novelslist2@li!0",
+      "searchBookUrl": "tag.a.1@href",
+      "searchCoverUrl": "",
+      "searchIntro": "",
+      "searchKind": ".s1@text&&.s6@text&&.s5@text##\\[|]",
+      "searchLastChapter": ".s3@text",
+      "searchName": ".s2@text",
+      "searchWordCount": ""
+    },
+    "ruleToc": {
+      "tocList": ".novel_list@dd@a",
+      "tocName": "text",
+      "tocUrl": "href",
+      "isVip": "",
+      "nextTocUrl": "",
+      "tocUpdateTime": ""
+    },
+    "searchUrl": "/search.html,{\n  \"headers\": \"{Cookie:\\\"__cfduid=; mc_user=\\\"}\",\n  \"method\": \"POST\",\n  \"body\": \"searchtype=all&searchkey={{key}}\"\n}"
+  },
+  {
+    "sourceName": "花火-得间出版",
+    "sourceType": 0,
+    "sourceUrl": "https://www.idejian.com/chuban",
+    "bookInfoPattern": "",
+    "exploreUrl": "热度排行::https://www.idejian.com/books/chuban?order=1&page={{page}}\n最新上架::https://www.idejian.com/books/chuban?order=2&page={{page}}\n更新时间::https://www.idejian.com/books/chuban?order=3&page={{page}}\n评分排行::https://www.idejian.com/books/chuban?order=4&page={{page}}\n全部书籍::https://www.idejian.com/books/chuban?page={{page}}\n人文社科::https://www.idejian.com/books/chuban?categoryId=1134&page={{page}}\n经管励志::https://www.idejian.com/books/chuban?categoryId=1135&page={{page}}\n生活书籍::https://www.idejian.com/books/chuban?categoryId=1136&page={{page}}\n教育书籍::https://www.idejian.com/books/chuban?categoryId=1137&page={{page}}\n文学艺术::https://www.idejian.com/books/chuban?categoryId=1138&page={{page}}",
+    "header": "",
+    "ruleBookInfo": {
+      "infoInit": "",
+      "infoAuthor": "",
+      "infoCoverUrl": "class.book_img@img@src",
+      "infoIntro": "class.brief_con@text",
+      "infoKind": "[property=\"og:novel:category\"]@content&&[property=\"og:novel:status\"]@content",
+      "infoLastChapter": "class.link_name@a@text",
+      "infoName": "",
+      "infoTocUrl": "",
+      "infoWordCount": ""
+    },
+    "ruleContent": {
+      "content": "class.h5_mainbody@html||class.read_content@p@html",
+      "nextContentUrl": "",
+      "webJs": "",
+      "sourceRegex": "",
+      "replaceRegex": ""
+    },
+    "ruleExplore": {
+      "exploreAuthor": "",
+      "exploreBookList": "",
+      "exploreBookUrl": "",
+      "exploreCoverUrl": "",
+      "exploreIntro": "",
+      "exploreKind": "",
+      "exploreLastChapter": "",
+      "exploreName": ""
+    },
+    "ruleSearch": {
+      "searchAuthor": "class.author@text||class.bkitem_author@text",
+      "searchBookList": "class.rank_ullist@li||class.v_books@li",
+      "searchBookUrl": "tag.a.0@href",
+      "searchCoverUrl": "img@src",
+      "searchIntro": "class.rank_bkbrief@html",
+      "searchKind": "class.rank_bkinfo@span!0@text||class.bkitem_types@text",
+      "searchLastChapter": "class.rank_newpage@text||class.bk_fontnum@text##更新章节：",
+      "searchName": "class.rank_bkname@a@text||class.bkitem_name@a@text",
+      "searchWordCount": ""
+    },
+    "ruleToc": {
+      "tocList": "class.catelog_list@li@a",
+      "tocName": "text",
+      "tocUrl": "href##^##https://m.idejian.com\n<js>\nresult=result.replace(/$/,\",{\\\"headers\\\": \\\"{'User-Agent': 'Mobile'}\\\"}\")\n</js>",
+      "isVip": "",
+      "nextTocUrl": "",
+      "tocUpdateTime": ""
+    },
+    "searchUrl": "https://www.idejian.com/search?keyword={{key}}",
+    "isStar": false
+  },
+  {
+    "sourceName": "花火-笔趣阁①",
+    "sourceType": 0,
+    "sourceUrl": "https://www.xbiquge.la",
+    "bookInfoPattern": "",
+    "exploreUrl": "玄幻::https://www.xbiquge.la/fenlei/1_{{page}}.html\n修真::https://www.xbiquge.la/fenlei/2_{{page}}.html\n都市::https://www.xbiquge.la/fenlei/3_{{page}}.html\n穿越::https://www.xbiquge.la/fenlei/4_{{page}}.html\n网游::https://www.xbiquge.la/fenlei/5_{{page}}.html\n科幻::https://www.xbiquge.la/fenlei/6_{{page}}.html",
+    "header": "",
+    "ruleBookInfo": {
+      "infoInit": "",
+      "infoAuthor": "id.info@tag.p.0@text##作    者：",
+      "infoCoverUrl": "id.fmimg@tag.img.0@src",
+      "infoIntro": "id.intro@tag.p.1@text",
+      "infoKind": "",
+      "infoLastChapter": "id.info@tag.p.3@title",
+      "infoName": "id.info@tag.h1.0@text",
+      "infoTocUrl": "",
+      "infoWordCount": ""
+    },
+    "ruleContent": {
+      "content": "id.content@textNodes",
+      "nextContentUrl": "",
+      "webJs": "",
+      "sourceRegex": "",
+      "replaceRegex": ""
+    },
+    "ruleExplore": {
+      "exploreAuthor": "class.s5@text",
+      "exploreBookList": "id.newscontent@class.l@tag.ul@tag.li",
+      "exploreBookUrl": "class.s2@tag.a@href",
+      "exploreCoverUrl": "",
+      "exploreIntro": "",
+      "exploreKind": "class.s1@tag.a@text",
+      "exploreLastChapter": "class.s3@tag.a@text",
+      "exploreName": "class.s2@tag.a@text"
+    },
+    "ruleSearch": {
+      "searchAuthor": "class.even.1@text",
+      "searchBookList": "class.grid@tag.tbody@tag.tr!0",
+      "searchBookUrl": "class.even.0@tag.a@href",
+      "searchCoverUrl": "",
+      "searchIntro": "",
+      "searchKind": "",
+      "searchLastChapter": "class.odd.0@tag.a@text",
+      "searchName": "class.even.0@tag.a@text",
+      "searchWordCount": ""
+    },
+    "ruleToc": {
+      "tocList": "id.list@tag.dd",
+      "tocName": "tag.a@text",
+      "tocUrl": "tag.a@href",
+      "isVip": "",
+      "nextTocUrl": "",
+      "tocUpdateTime": ""
+    },
+    "searchUrl": "https://www.xbiquge.la/modules/article/waps.php?searchkey={{key}}"
+  },
+  {
+    "sourceName": "花火-QQ阅读",
+    "sourceType": 0,
+    "sourceUrl": "https://h5.reader.qq.com",
+    "bookInfoPattern": "",
+    "exploreUrl": "女-免费周榜::/9/sortlist?rankType=0&dateType=1&sex=2&finish=-1&feeType=1&form=0&page={{page}} &pageSize=10\n女-免费月榜::/9/sortlist?rankType=0&dateType=2&sex=2&finish=-1&feeType=1&form=0&page={{page}} &pageSize=10\n女-免费总榜::/9/sortlist?rankType=0&dateType=3&sex=2&finish=-1&feeType=1&form=0&page={{page}} &pageSize=10\n女-新书周榜::/9/sortlist?rankType=0&dateType=1&sex=2&finish=2&feeType=-1&form=0&page={{page}} &pageSize=10\n女-新书月榜::/9/sortlist?rankType=0&dateType=2&sex=2&finish=2&feeType=-1&form=0&page={{page}} &pageSize=10\n女-新书总榜::/9/sortlist?rankType=0&dateType=3&sex=2&finish=2&feeType=-1&form=0&page={{page}} &pageSize=10\n女-热销周榜::/9/sortlist?rankType=0&dateType=1&sex=2&finish=-1&feeType=0&form=0&page={{page}} &pageSize=10\n女-热销月榜::/9/sortlist?rankType=0&dateType=2&sex=2&finish=-1&feeType=0&form=0&page={{page}} &pageSize=10\n女-热销总榜::/9/sortlist?rankType=0&dateType=3&sex=2&finish=-1&feeType=0&form=0&page={{page}} &pageSize=10\n女-包月周榜::/9/sortlist?rankType=0&dateType=1&sex=2&finish=-1&feeType=2&form=0&page={{page}} &pageSize=10\n女-包月月榜::/9/sortlist?rankType=0&dateType=2&sex=2&finish=-1&feeType=2&form=0&page={{page}} &pageSize=10\n女-包月总榜::/9/sortlist?rankType=0&dateType=3&sex=2&finish=-1&feeType=2&form=0&page={{page}} &pageSize=10\n古言::/9/catelist?caid=30013&scaid=30013&fee=-1&finish=-1&sort=8&pnum={{page}}\n现言::/9/catelist?caid=30020&scaid=30020&fee=-1&finish=-1&sort=8&pnum={{page}}\n幻情::/9/catelist?caid=30001&scaid=30001&fee=-1&finish=-1&sort=8&pnum={{page}}\n仙侠::/9/catelist?caid=30008&scaid=30008&fee=-1&finish=-1&sort=8&pnum={{page}}\n青春::/9/catelist?caid=30031&scaid=30031&fee=-1&finish=-1&sort=8&pnum={{page}}\n游戏::/9/catelist?caid=30050&scaid=30050&fee=-1&finish=-1&sort=8&pnum={{page}}\n科幻::/9/catelist?caid=30042&scaid=30042&fee=-1&finish=-1&sort=8&pnum={{page}}\n悬疑::/9/catelist?caid=30036&scaid=30036&fee=-1&finish=-1&sort=8&pnum={{page}}\n轻文::/9/catelist?caid=30055&scaid=30055&fee=-1&finish=-1&sort=8&pnum={{page}}\n短篇::/9/catelist?caid=30083&scaid=30083&fee=-1&finish=-1&sort=8&pnum={{page}}\n现实::/9/catelist?caid=30120&scaid=30120&fee=-1&finish=-1&sort=8&pnum={{page}}\n男-包月周榜::/9/sortlist?rankType=0&dateType=1&sex=-1&finish=-1&feeType=2&form=1&page={{page}} &pageSize=10\n男-包月月榜::/9/sortlist?rankType=0&dateType=2&sex=-1&finish=-1&feeType=2&form=1&page={{page}} &pageSize=10\n男-包月总榜::/9/sortlist?rankType=0&dateType=3&sex=-1&finish=-1&feeType=2&form=1&page={{page}} &pageSize=10\n男-热销周榜::/9/sortlist?rankType=0&dateType=1&sex=-1&finish=-1&feeType=0&form=1&page={{page}} &pageSize=10\n男-热销月榜::/9/sortlist?rankType=0&dateType=2&sex=-1&finish=-1&feeType=0&form=1&page={{page}} &pageSize=10\n男-热销总榜::/9/sortlist?rankType=0&dateType=3&sex=-1&finish=-1&feeType=0&form=1&page={{page}} &pageSize=10\n男-新书月榜::/9/sortlist?rankType=0&dateType=1&sex=-1&finish=2&feeType=-1&form=1&page={{page}} &pageSize=10\n男-新书周榜::/9/sortlist?rankType=0&dateType=2&sex=-1&finish=2&feeType=-1&form=1&page={{page}} &pageSize=10\n男-新书总榜::/9/sortlist?rankType=0&dateType=3&sex=-1&finish=2&feeType=-1&form=1&page={{page}} &pageSize=10",
+    "header": "",
+    "ruleBookInfo": {
+      "infoInit": "",
+      "infoAuthor": "$.book.author",
+      "infoCoverUrl": "$.book.cover",
+      "infoIntro": "$.book.intro@put:{free:$.book.maxfreechapter}",
+      "infoKind": "$.caname",
+      "infoLastChapter": "$.book.lastChapterName@put:{total:$.book.lastChapter}",
+      "infoName": "$.book.title",
+      "infoTocUrl": "$.book.id##(\\d+)##/9/chapter?bid=$1&pageNo=1",
+      "infoWordCount": "$.book.totalWords"
+    },
+    "ruleContent": {
+      "content": "$.content@js:result?result:\"付费章节，换源阅读！\"",
+      "nextContentUrl": "",
+      "webJs": "",
+      "sourceRegex": "",
+      "replaceRegex": ""
+    },
+    "ruleExplore": {
+      "exploreAuthor": "$.author",
+      "exploreBookList": "$.list[*]||$.booklist[*]",
+      "exploreBookUrl": "$.id##(\\d+)##/9/intro?bid=$1",
+      "exploreCoverUrl": "",
+      "exploreIntro": "$.id@js:var json=JSON.parse(java.ajax('http://ubook.3g.qq.com/9/intro?bid='+result)).book;\njava.put('imgUrl',json.cover);\njson.intro;",
+      "exploreKind": "",
+      "exploreLastChapter": "$.lastChapterName&&$.updateDate@js:result.replace(/(\\d+-\\d+-\\d+).*/,'（$1）')",
+      "exploreName": "$.title"
+    },
+    "ruleSearch": {
+      "searchAuthor": "$.author",
+      "searchBookList": "$.booklist[*]",
+      "searchBookUrl": "$.id##(\\d+)##/9/intro?bid=$1",
+      "searchCoverUrl": "@get:{imgUrl}",
+      "searchIntro": "$.id@js:var json=JSON.parse(java.ajax('http://ubook.3g.qq.com/9/intro?bid='+result)).book;\njava.put('imgUrl',json.cover);\njson.intro;",
+      "searchKind": "",
+      "searchLastChapter": "$.lastChapterName&&$.updateDate@js:result.replace(/(\\d+-\\d+-\\d+).*/,'（$1）')",
+      "searchName": "$.title",
+      "searchWordCount": "$.totalWords"
+    },
+    "ruleToc": {
+      "tocList": "$.chapter[*]",
+      "tocName": "$.title",
+      "tocUrl": "/9/book/chapter?{{baseUrl.match(/bid=(\\d+)/)[0]}}&cid={{$.seq}}",
+      "isVip": "@get:{free}@js:result!=0?Number({{$.seq}})>Number(result): ''",
+      "nextTocUrl": "@get:{total}\n@js:\nvar n=Math.ceil(result/100);\nvar list=[];\nfor(var i=2;i<=n;i++){list.push(baseUrl.replace(/pageNo=\\d+/,'pageNo=')+i);}\nlist;",
+      "tocUpdateTime": ""
+    },
+    "searchUrl": "/9/search?key={{key}}&pageNo={{page}}"
+  }
+]

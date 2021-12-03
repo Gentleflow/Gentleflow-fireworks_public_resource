@@ -1,0 +1,56 @@
+{
+  "sourceName": "💥 笔趣阁⑩",
+  "sourceType": 0,
+  "sourceUrl": "https://www.biqugexx.com",
+  "bookInfoPattern": "",
+  "exploreUrl": "",
+  "header": "",
+  "ruleBookInfo": {
+    "infoInit": "",
+    "infoAuthor": "",
+    "infoCoverUrl": "id.fmimg@tag.img@src",
+    "infoIntro": "id.intro@text##.*简介：",
+    "infoKind": "",
+    "infoLastChapter": "id.info@tag.p.3@a@text",
+    "infoName": "",
+    "infoTocUrl": "",
+    "infoWordCount": ""
+  },
+  "ruleContent": {
+    "content": "id.content@html##天才.*]|http.*广告！|章节错误.*",
+    "nextContentUrl": "",
+    "webJs": "",
+    "sourceRegex": "",
+    "replaceRegex": ""
+  },
+  "ruleExplore": {
+    "exploreAuthor": "",
+    "exploreBookList": "",
+    "exploreBookUrl": "",
+    "exploreCoverUrl": "",
+    "exploreIntro": "",
+    "exploreKind": "",
+    "exploreLastChapter": "",
+    "exploreName": ""
+  },
+  "ruleSearch": {
+    "searchAuthor": "class.s4@text",
+    "searchBookList": "class.novelslist2@tag.li!0",
+    "searchBookUrl": "tag.a.0@href",
+    "searchCoverUrl": "tag.a.0@href##/(\\d+)_(\\d+)/##/files/article/image/$1/$2/$2s.jpg",
+    "searchIntro": "",
+    "searchKind": "",
+    "searchLastChapter": "class.s3@text",
+    "searchName": "class.s2@text",
+    "searchWordCount": ""
+  },
+  "ruleToc": {
+    "tocList": "id.list@tag.a",
+    "tocName": "text",
+    "tocUrl": "href",
+    "isVip": "",
+    "nextTocUrl": "",
+    "tocUpdateTime": ""
+  },
+  "searchUrl": "https://www.biqugexx.com/index.php?s=/web/index/search,{\n  \"method\": \"POST\",\n  \"body\": \"name={{key}}\"\n}"
+}

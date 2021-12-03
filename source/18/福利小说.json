@@ -1,0 +1,58 @@
+[
+  {
+    "sourceName": "🔞 福利小说",
+    "sourceType": 0,
+    "sourceUrl": "http://www.huang86.xyz",
+    "bookInfoPattern": "",
+    "exploreUrl": "最新小说::http://www.huang86.xyz/\n现代激情::http://www.huang86.xyz/type/list-1-2332-{{page}}.html\n古典武侠::http://www.huang86.xyz/type/list-2-1238-{{page}}.html\n暴力强奸::http://www.huang86.xyz/type/list-3-2433-{{page}}.html\n校园春色::http://www.huang86.xyz/type/list-4-2142-{{page}}.html\n家庭乱伦::http://www.huang86.xyz/type/list-5-3066-{{page}}.html\n长篇连载::http://www.huang86.xyz/type/list-6-2046-{{page}}.html\n淫妻交换::http://www.huang86.xyz/type/list-8-2220-{{page}}.html",
+    "header": "",
+    "ruleBookInfo": {
+      "infoInit": "",
+      "infoAuthor": "",
+      "infoCoverUrl": "",
+      "infoIntro": "",
+      "infoKind": "",
+      "infoLastChapter": "",
+      "infoName": "",
+      "infoTocUrl": "",
+      "infoWordCount": ""
+    },
+    "ruleContent": {
+      "content": "class.content@tag.div.1@text",
+      "nextContentUrl": "text.下一页@href",
+      "webJs": "",
+      "sourceRegex": "",
+      "replaceRegex": ""
+    },
+    "ruleExplore": {
+      "exploreAuthor": "",
+      "exploreBookList": "",
+      "exploreBookUrl": "",
+      "exploreCoverUrl": "",
+      "exploreIntro": "",
+      "exploreKind": "",
+      "exploreLastChapter": "",
+      "exploreName": ""
+    },
+    "ruleSearch": {
+      "searchAuthor": "",
+      "searchBookList": "class.list-group@li",
+      "searchBookUrl": "a@href",
+      "searchCoverUrl": "",
+      "searchIntro": "",
+      "searchKind": "",
+      "searchLastChapter": "class.float-right@text",
+      "searchName": "tag.span.0@text##【|】|作者.*|待续|全文完|完",
+      "searchWordCount": ""
+    },
+    "ruleToc": {
+      "tocList": "h4",
+      "tocName": "text##【|】.*",
+      "tocUrl": "",
+      "isVip": "",
+      "nextTocUrl": "",
+      "tocUpdateTime": ""
+    },
+    "searchUrl": "http://www.huang86.xyz/plus/search.php?keyword={{key}}"
+  }
+]

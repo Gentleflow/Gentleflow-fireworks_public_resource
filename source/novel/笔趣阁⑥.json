@@ -1,0 +1,56 @@
+{
+  "sourceName": "💥 笔趣阁⑥",
+  "sourceType": 0,
+  "sourceUrl": "https://www.biquyue.com",
+  "bookInfoPattern": "",
+  "exploreUrl": "玄幻::/xuanhuan/\n修真::/xiuzhen/\n都市::/dushi/\n历史::/lishi/\n网游::/wangyou/\n科幻::/kehuan/\n言情::/yanqing/\n其他::/qita/\n全本::/quanben/\n",
+  "header": "",
+  "ruleBookInfo": {
+    "infoInit": "",
+    "infoAuthor": "class.box_con.0@id.info@tag.p.0@text",
+    "infoCoverUrl": "id.fmimg@tag.img.0@src",
+    "infoIntro": "id.intro@text",
+    "infoKind": "",
+    "infoLastChapter": "id.info@tag.p.3@a@text",
+    "infoName": "class.box_con.0@id.info@tag.h1.0@text",
+    "infoTocUrl": "",
+    "infoWordCount": ""
+  },
+  "ruleContent": {
+    "content": "id.content@textNodes##一秒记住，.*",
+    "nextContentUrl": "",
+    "webJs": "",
+    "sourceRegex": "",
+    "replaceRegex": ""
+  },
+  "ruleExplore": {
+    "exploreAuthor": "class.s5@text||class.s4@text",
+    "exploreBookList": "id.newscontent@class.l@tag.ul@tag.li||class.novelslist2@tag.ul@tag.li!0",
+    "exploreBookUrl": "class.s2@tag.a@href",
+    "exploreCoverUrl": "",
+    "exploreIntro": "",
+    "exploreKind": "class.s1@tag.a@text",
+    "exploreLastChapter": "class.s3@tag.a@text",
+    "exploreName": "class.s2@tag.a@text"
+  },
+  "ruleSearch": {
+    "searchAuthor": "class.result-game-item-info-tag.0@tag.span.1@text",
+    "searchBookList": "class.result-item",
+    "searchBookUrl": "class.result-item-title.0@tag.a.0@href",
+    "searchCoverUrl": "tag.img.0@src",
+    "searchIntro": "",
+    "searchKind": "class.result-game-item-info-tag.1@tag.span.1@text",
+    "searchLastChapter": "class.result-game-item-info-tag.3@tag.a.0@text",
+    "searchName": "class.result-item-title.0@tag.a.0@text",
+    "searchWordCount": ""
+  },
+  "ruleToc": {
+    "tocList": "id.list@tag.dd",
+    "tocName": "tag.a@text",
+    "tocUrl": "tag.a.0@href",
+    "isVip": "",
+    "nextTocUrl": "",
+    "tocUpdateTime": ""
+  },
+  "searchUrl": "https://www.biqubu.com/search.php?q={{key}}&p={{page}}"
+}

@@ -1,0 +1,56 @@
+{
+  "sourceName": "\uD83D\uDCA5 九桃小说",
+  "sourceType": 0,
+  "sourceUrl": "https://m.9txs.com/",
+  "bookInfoPattern": "",
+  "exploreUrl": "点击总榜::/top/allvisit/{{page}}.html\n点击月榜::/top/monthvisit/{{page}}.html\n点击周榜::/top/weekvisit/{{page}}.html\n点击日榜::/top/dayvisit/{{page}}.html\n推荐总榜::/top/allvote/{{page}}.html\n推荐月榜::/top/monthvote/{{page}}.html\n推荐周榜::/top/weekvote/{{page}}.html\n推荐日榜::/top/dayvote/{{page}}.html\n收藏榜::/top/goodnum/{{page}}.html\n字数榜::/top/size/{{page}}.html\n强推榜::/top/toptime/{{page}}.html\n新书榜::/top/goodnew/{{page}}.html\n",
+  "header": "",
+  "ruleBookInfo": {
+    "infoInit": "",
+    "infoAuthor": "",
+    "infoCoverUrl": "",
+    "infoIntro": "",
+    "infoKind": "",
+    "infoLastChapter": "class.chapter@tag.a@text",
+    "infoName": "",
+    "infoTocUrl": "text.查看目录@href",
+    "infoWordCount": "class.line@tag.span.1@text"
+  },
+  "ruleContent": {
+    "content": "class.content@tag.p!0:1@textNodes",
+    "nextContentUrl": "",
+    "webJs": "",
+    "sourceRegex": "",
+    "replaceRegex": ""
+  },
+  "ruleExplore": {
+    "exploreAuthor": "class.author@ownText",
+    "exploreBookList": "class.list@tag.li",
+    "exploreBookUrl": "tag.a@href",
+    "exploreCoverUrl": "tag.a@tag.img@src",
+    "exploreIntro": "class.intro@text",
+    "exploreKind": "",
+    "exploreLastChapter": "",
+    "exploreName": "class.bookname@text"
+  },
+  "ruleSearch": {
+    "searchAuthor": "class.author@ownText",
+    "searchBookList": "class.list@tag.li",
+    "searchBookUrl": "tag.a@href",
+    "searchCoverUrl": "tag.a@tag.img@src",
+    "searchIntro": "class.intro@textNodes",
+    "searchKind": "class.data@textNodes",
+    "searchLastChapter": "",
+    "searchName": "class.bookname@textNodes",
+    "searchWordCount": ""
+  },
+  "ruleToc": {
+    "tocList": "class.read@tag.li",
+    "tocName": "tag.a@text",
+    "tocUrl": "tag.a@href",
+    "isVip": "",
+    "nextTocUrl": "text.下一页@href",
+    "tocUpdateTime": ""
+  },
+  "searchUrl": "https://so.9txs.com/m/,{\n\"method\": \"POST\",\n\"body\": \"searchkey={{key}}\"\n}"
+}

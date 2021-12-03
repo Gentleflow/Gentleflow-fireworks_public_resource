@@ -1,0 +1,56 @@
+{
+  "sourceName": "💥 读一读②",
+  "sourceType": 0,
+  "sourceUrl": "http://duyidu.net",
+  "bookInfoPattern": "",
+  "exploreUrl": "玄幻::/xuanhuanxiaoshuo/{{page}}.htm\n奇幻::/qihuanxiaoshuo/{{page}}.htm\n修真::/xiuzhenxiaoshuo/{{page}}.htm\n都市::/dushixiaoshuo/{{page}}.htm\n言情::/yanqingxiaoshuo/{{page}}.htm\n历史::/lishixiaoshuo/{{page}}.htm\n同人::/tongrenxiaoshuo/{{page}}.htm\n武侠::/wuxiaxiaoshuo/{{page}}.htm\n科幻::/kehuanxiaoshuo/{{page}}.htm\n游戏::/youxixiaoshuo/{{page}}.htm\n军事::/junshixiaoshuo/{{page}}.htm\n竞技::/jingjixiaoshuo/{{page}}.htm\n灵异::/lingyixiaoshuo/{{page}}.htm\n商战::/shangzhanxiaoshuo/{{page}}.htm\n校园::/xiaoyuanxiaoshuo/{{page}}.htm\n官场::/guanchangxiaoshuo/{{page}}.htm\n职场::/zhichangxiaoshuo/{{page}}.htm\n其他::/qitaxiaoshuo/{{page}}.htm\n",
+  "header": "",
+  "ruleBookInfo": {
+    "infoInit": "",
+    "infoAuthor": "",
+    "infoCoverUrl": ".col-xs-2 img@src",
+    "infoIntro": "#all@textNodes||#shot@textNodes",
+    "infoKind": "",
+    "infoLastChapter": "",
+    "infoName": "",
+    "infoTocUrl": ".tac a@href",
+    "infoWordCount": ""
+  },
+  "ruleContent": {
+    "content": "tag.h1.0@textNodes&&id.txtContent@textNodes##(第.{1,8}章)\\s*?(\\S*?)\\s*?\\S+?正文卷\\1\\2",
+    "nextContentUrl": "",
+    "webJs": "",
+    "sourceRegex": "",
+    "replaceRegex": ""
+  },
+  "ruleExplore": {
+    "exploreAuthor": ".col-xs-2!-1@text",
+    "exploreBookList": "class.panel-body@tag.ul@tag.li!0",
+    "exploreBookUrl": "class.col-xs-3@tag.a@href",
+    "exploreCoverUrl": "",
+    "exploreIntro": "",
+    "exploreKind": ".col-xs-1@tag.i@text",
+    "exploreLastChapter": "",
+    "exploreName": ".col-xs-3@tag.a@text"
+  },
+  "ruleSearch": {
+    "searchAuthor": ".col-xs-2!-1@text",
+    "searchBookList": "class.panel-body@tag.ul@tag.li!0",
+    "searchBookUrl": "class.col-xs-3@tag.a@href",
+    "searchCoverUrl": "",
+    "searchIntro": "",
+    "searchKind": ".col-xs-1@tag.i@text",
+    "searchLastChapter": ".col-xs-4@text",
+    "searchName": ".col-xs-3@tag.a@text",
+    "searchWordCount": ""
+  },
+  "ruleToc": {
+    "tocList": "#chapters-list li a",
+    "tocName": "text",
+    "tocUrl": "href",
+    "isVip": "",
+    "nextTocUrl": "",
+    "tocUpdateTime": ""
+  },
+  "searchUrl": "/search.htm?keyword={{key}}&pn={{page}}"
+}

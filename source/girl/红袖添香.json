@@ -1,0 +1,56 @@
+{
+  "sourceName": "💥 红袖添香",
+  "sourceType": 0,
+  "sourceUrl": "https://www.hongxiu.com",
+  "bookInfoPattern": "",
+  "exploreUrl": "男频连载::/category/f1_f1_0_f1_f1_f1_0_{{page}}\n玄幻::/category/20001_f1_0_f1_f1_f1_0_{{page}}\n奇幻::/category/20005_f1_0_f1_f1_f1_0_{{page}}\n武侠::/category/20010_f1_0_f1_f1_f1_0_{{page}}\n仙侠::/category/20014_f1_0_f1_f1_f1_0_{{page}}\n都市::/category/20019_f1_0_f1_f1_f1_0_{{page}}\n现实::/category/20065_f1_0_f1_f1_f1_0_{{page}}\n军事::/category/20032_f1_0_f1_f1_f1_0_{{page}}\n历史::/category/20028_f1_0_f1_f1_f1_0_{{page}}\n游戏::/category/20050_f1_0_f1_f1_f1_0_{{page}}\n体育::/category/20054_f1_0_f1_f1_f1_0_{{page}}\n科幻::/category/20042_f1_0_f1_f1_f1_0_{{page}}\n悬疑::/category/20037_f1_0_f1_f1_f1_0_{{page}}\n轻文::/category/20059_f1_0_f1_f1_f1_0_{{page}}\n短篇::/category/20076_f1_0_f1_f1_f1_0_{{page}}\n男频完结::/category/f1_f1_1_f1_f1_f1_0_{{page}}\n玄幻::/category/20001_f1_1_f1_f1_f1_0_{{page}}\n奇幻::/category/20005_f1_1_f1_f1_f1_0_{{page}}\n武侠::/category/20010_f1_1_f1_f1_f1_0_{{page}}\n仙侠::/category/20014_f1_1_f1_f1_f1_0_{{page}}\n都市::/category/20019_f1_1_f1_f1_f1_0_{{page}}\n现实::/category/20065_f1_1_f1_f1_f1_0_{{page}}\n军事::/category/20032_f1_1_f1_f1_f1_0_{{page}}\n历史::/category/20028_f1_1_f1_f1_f1_0_{{page}}\n游戏::/category/20050_f1_1_f1_f1_f1_0_{{page}}\n体育::/category/20054_f1_1_f1_f1_f1_0_{{page}}\n科幻::/category/20042_f1_1_f1_f1_f1_0_{{page}}\n悬疑::/category/20037_f1_1_f1_f1_f1_0_{{page}}\n轻文::/category/20059_f1_1_f1_f1_f1_0_{{page}}\n短篇::/category/20076_f1_1_f1_f1_f1_0_{{page}}\n女频连载::/category/f1_f1_0_f1_f1_f1_0_{{page}}\n现代言情::/category/30020_f1_0_f1_f1_f1_0_{{page}}\n古代言情::/category/30013_f1_0_f1_f1_f1_0_{{page}}\n浪漫青春::/category/30031_f1_0_f1_f1_f1_0_{{page}}\n玄幻言情::/category/30001_f1_0_f1_f1_f1_0_{{page}}\n仙侠奇缘::/category/30008_f1_0_f1_f1_f1_0_{{page}}\n悬疑推理::/category/30036_f1_0_f1_f1_f1_0_{{page}}\n科幻空间::/category/30042_f1_0_f1_f1_f1_0_{{page}}\n游戏竞技::/category/30050_f1_0_f1_f1_f1_0_{{page}}\n短篇小说::/category/30083_f1_0_f1_f1_f1_0_{{page}}\n轻の小说::/category/30055_f1_0_f1_f1_f1_0_{{page}}\n女频完结::/category/f1_f1_1_f1_f1_f1_0_{{page}}\n现代言情::/category/30020_f1_1_f1_f1_f1_0_{{page}}\n古代言情::/category/30013_f1_1_f1_f1_f1_0_{{page}}\n浪漫青春::/category/30031_f1_1_f1_f1_f1_0_{{page}}\n玄幻言情::/category/30001_f1_1_f1_f1_f1_0_{{page}}\n仙侠奇缘::/category/30008_f1_1_f1_f1_f1_0_{{page}}\n悬疑推理::/category/30036_f1_1_f1_f1_f1_0_{{page}}\n科幻空间::/category/30042_f1_1_f1_f1_f1_0_{{page}}\n游戏竞技::/category/30050_f1_1_f1_f1_f1_0_{{page}}\n短篇小说::/category/30083_f1_1_f1_f1_f1_0_{{page}}\n轻の小说::/category/30055_f1_1_f1_f1_f1_0_{{page}}",
+  "header": "",
+  "ruleBookInfo": {
+    "infoInit": "",
+    "infoAuthor": "class.writer@tag.a@text##著",
+    "infoCoverUrl": "id.bookImg@tag.img@src",
+    "infoIntro": "class.intro@textNodes",
+    "infoKind": "class.tag@tag.i@text",
+    "infoLastChapter": "class.update@tag.a@text##更新至.",
+    "infoName": "class.book-info@tag.em.2@text",
+    "infoTocUrl": "",
+    "infoWordCount": "class.total@tag.span.0@text@js:result+'万字'"
+  },
+  "ruleContent": {
+    "content": "class.read-content@tag.p@text",
+    "nextContentUrl": "",
+    "webJs": "",
+    "sourceRegex": "",
+    "replaceRegex": ""
+  },
+  "ruleExplore": {
+    "exploreAuthor": "class.default@tag.a@text",
+    "exploreBookList": "class.right-book-list@tag.li",
+    "exploreBookUrl": "class.book-info@tag.a@href",
+    "exploreCoverUrl": "class.book-img@tag.img@src",
+    "exploreIntro": "class.intro@textNodes",
+    "exploreKind": "class.tag@tag.span.0@text&&class.tag@tag.span.1@text",
+    "exploreLastChapter": "",
+    "exploreName": "class.book-info@tag.a.0@text"
+  },
+  "ruleSearch": {
+    "searchAuthor": "class.author@tag.a.0@text",
+    "searchBookList": "id.result-list@tag.li",
+    "searchBookUrl": "tag.a@href",
+    "searchCoverUrl": "class.book-img-box@tag.img@src",
+    "searchIntro": "class.intro@textNodes",
+    "searchKind": "class.author@tag.a.1@text&&class.author@tag.span@text",
+    "searchLastChapter": "class.update@tag.a@text##最新更新.",
+    "searchName": "class.book-mid-info@tag.a.0@text",
+    "searchWordCount": "class.update@tag.span@text"
+  },
+  "ruleToc": {
+    "tocList": "class.volume@tag.ul@tag.li",
+    "tocName": "tag.a@text",
+    "tocUrl": "tag.a@href",
+    "isVip": "",
+    "nextTocUrl": "",
+    "tocUpdateTime": ""
+  },
+  "searchUrl": "https://www.hongxiu.com/search?kw={{key}}&pageNum={{page}}"
+}

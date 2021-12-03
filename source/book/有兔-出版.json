@@ -1,0 +1,56 @@
+{
+  "sourceName": "\uD83D\uDCA5 有兔-出版",
+  "sourceType": 0,
+  "sourceUrl": "http://app.youzibank.com/chuban",
+  "bookInfoPattern": "",
+  "exploreUrl": "小编热推::http://app.youzibank.com/book/list?pageNo={{page}}&selectionModuleId=37\n经典畅销::http://app.youzibank.com/book/list?pageNo={{page}}&selectionModuleId=38\n影视原著::http://app.youzibank.com/book/list?pageNo={{page}}&selectionModuleId=39\n自我提升::http://app.youzibank.com/book/list?pageNo={{page}}&selectionModuleId=40\n特别推荐::http://app.youzibank.com/book/list?pageNo={{page}}&selectionModuleId=46\n现代小说::http://app.youzibank.com/book/list?gender=-1&clsIdFirst=163&pageNo={{page}}&orderBy=read_cnt&fullFlag=0&clsIdSecond=\n历史传记::http://app.youzibank.com/book/list?gender=-1&clsIdFirst=193&pageNo={{page}}&orderBy=read_cnt&fullFlag=0&clsIdSecond=\n经济管理::http://app.youzibank.com/book/list?gender=-1&clsIdFirst=205&pageNo={{page}}&orderBy=read_cnt&fullFlag=0&clsIdSecond=\n社科心理::http://app.youzibank.com/book/list?gender=-1&clsIdFirst=212&pageNo={{page}}&orderBy=read_cnt&fullFlag=0&clsIdSecond=\n艺术生活::http://app.youzibank.com/book/list?gender=-1&clsIdFirst=245&pageNo={{page}}&orderBy=read_cnt&fullFlag=0&clsIdSecond=\n历史著作::http://app.youzibank.com/book/list?gender=-1&clsIdFirst=258&pageNo={{page}}&orderBy=read_cnt&fullFlag=0&clsIdSecond=\n宗教哲学::https://app1.youzibank.com/book/list?gender=-1&clsIdFirst=262&pageNo={{page}}&orderBy=read_cnt&fullFlag=0&clsIdSecond=\n成功励志::http://app.youzibank.com/book/list?gender=-1&clsIdFirst=269&pageNo={{page}}&orderBy=read_cnt&fullFlag=0&clsIdSecond=\n英文著作::http://app.youzibank.com/book/list?gender=-1&clsIdFirst=276&pageNo={{page}}&orderBy=read_cnt&fullFlag=0&clsIdSecond=\n儿童读物::http://app.youzibank.com/book/list?gender=-1&clsIdFirst=280&pageNo={{page}}&orderBy=read_cnt&fullFlag=0&clsIdSecond=\n古典文学::http://app.youzibank.com/book/list?gender=-1&clsIdFirst=283&pageNo={{page}}&orderBy=read_cnt&fullFlag=0&clsIdSecond=\n现代文学::http://app.youzibank.com/book/list?gender=-1&clsIdFirst=287&pageNo={{page}}&orderBy=read_cnt&fullFlag=0&clsIdSecond=\n商业思维::http://app.youzibank.com/book/list?gender=-1&clsIdFirst=291&pageNo={{page}}&orderBy=read_cnt&fullFlag=0&clsIdSecond=",
+  "header": "",
+  "ruleBookInfo": {
+    "infoInit": "",
+    "infoAuthor": "",
+    "infoCoverUrl": "",
+    "infoIntro": "intro",
+    "infoKind": "",
+    "infoLastChapter": "",
+    "infoName": "",
+    "infoTocUrl": "",
+    "infoWordCount": ""
+  },
+  "ruleContent": {
+    "content": "@js:result",
+    "nextContentUrl": "",
+    "webJs": "",
+    "sourceRegex": "",
+    "replaceRegex": ""
+  },
+  "ruleExplore": {
+    "exploreAuthor": "",
+    "exploreBookList": "",
+    "exploreBookUrl": "",
+    "exploreCoverUrl": "",
+    "exploreIntro": "",
+    "exploreKind": "",
+    "exploreLastChapter": "",
+    "exploreName": ""
+  },
+  "ruleSearch": {
+    "searchAuthor": "author",
+    "searchBookList": "data",
+    "searchBookUrl": "http://app.youzibank.com/book/chapter/listAll?userId=376679&bookId={$.id}",
+    "searchCoverUrl": "http://book.chengxinqinye.com/book{$.photoPath}",
+    "searchIntro": "",
+    "searchKind": "clsName",
+    "searchLastChapter": "",
+    "searchName": "name",
+    "searchWordCount": ""
+  },
+  "ruleToc": {
+    "tocList": "data",
+    "tocName": "name",
+    "tocUrl": "http://book.chengxinqinye.com/book{$.filePath}",
+    "isVip": "",
+    "nextTocUrl": "",
+    "tocUpdateTime": ""
+  },
+  "searchUrl": "http://app.youzibank.com/es/search/book?q={{key}}&pageNo={{page}}&pageSize=10,{\n  \"headers\": \"{Seq: \\\"1f9caa033a22bc75e72437d8952992cd\\\",PushToken: \\\"AqJmTQBjP541B9G8V90FwOfjyWUbqhf9dOrENy47ckhK\\\"}\"\n}"
+}

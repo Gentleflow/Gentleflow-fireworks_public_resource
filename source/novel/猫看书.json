@@ -1,0 +1,56 @@
+{
+  "sourceName": "\uD83D\uDCA5 猫看书",
+  "sourceType": 0,
+  "sourceUrl": "https://www.maokanshu.com",
+  "bookInfoPattern": "",
+  "exploreUrl": "今日更新::/lastupdate/{{page}}/\n上架新书::/postdate/{{page}}/\n月点击榜::/monthvisit/{{page}}/\n总收藏榜::/goodnum/{{page}}/\n新书榜单::/goodnew/{{page}}/\n玄幻::/sort/1/{{page}}/\n奇幻::/sort/2/{{page}}/\n武侠::/sort/3/{{page}}/\n都市::/sort/4/{{page}}/\n历史::/sort/5/{{page}}/\n军事::/sort/6/{{page}}/\n悬疑::/sort/7/{{page}}/\n游戏::/sort/8/{{page}}/\n科幻::/sort/9/{{page}}/\n体育::/sort/10/{{page}}/\n古言::/sort/12/{{page}}/\n现言::/sort/13/{{page}}/\n幻言::/sort/14/{{page}}/\n仙侠::/sort/15/{{page}}/\n青春::/sort/16/{{page}}/\n穿越::/sort/17/{{page}}/\n女生::/sort/18/{{page}}/\nN次元::/sort/19/{{page}}/\n",
+  "header": "",
+  "ruleBookInfo": {
+    "infoInit": "",
+    "infoAuthor": "id.info@tag.p.0@text",
+    "infoCoverUrl": "id.fmimg@tag.img@src",
+    "infoIntro": "class.introtxt@text##简介：",
+    "infoKind": "id.info@tag.p.1@text##类 别：|\\(.*\\)",
+    "infoLastChapter": "id.info@tag.p.4@tag.a@text##nbsp; ",
+    "infoName": "id.info@tag.h1@text",
+    "infoTocUrl": "",
+    "infoWordCount": ""
+  },
+  "ruleContent": {
+    "content": "id.content@tag.p@html##手机阅读访问.*书架功能更好用.|<!-- jj:(.|\\n)* -->",
+    "nextContentUrl": "",
+    "webJs": "",
+    "sourceRegex": "",
+    "replaceRegex": ""
+  },
+  "ruleExplore": {
+    "exploreAuthor": "class.info@tag.span.0@text",
+    "exploreBookList": "id.alistbox",
+    "exploreBookUrl": "class.info@tag.h2@tag.a@href",
+    "exploreCoverUrl": "class.pic@tag.a@tag.img@src",
+    "exploreIntro": "class.intro@text",
+    "exploreKind": "",
+    "exploreLastChapter": "class.sys@tag.li@tag.a@text",
+    "exploreName": "class.info@tag.h2@tag.a@text"
+  },
+  "ruleSearch": {
+    "searchAuthor": "class.info@tag.span.0@text",
+    "searchBookList": "id.alistbox",
+    "searchBookUrl": "class.info@tag.h2@tag.a@href",
+    "searchCoverUrl": "class.pic@tag.img@src",
+    "searchIntro": "class.intro@text",
+    "searchKind": "",
+    "searchLastChapter": "class.sys@tag.li@tag.a@text",
+    "searchName": "class.info@tag.h2@tag.a@text",
+    "searchWordCount": ""
+  },
+  "ruleToc": {
+    "tocList": "id.list@tag.dd@tag.a",
+    "tocName": "text##nbsp; ",
+    "tocUrl": "href",
+    "isVip": "",
+    "nextTocUrl": "",
+    "tocUpdateTime": ""
+  },
+  "searchUrl": "https://www.maokanshu.com/search.html,{\"method\": \"POST\", \"body\": \"s=articlename&searchkey={{key}}\"}"
+}

@@ -1,0 +1,56 @@
+{
+  "sourceName": "🔞 看书楼",
+  "sourceType": 0,
+  "sourceUrl": "https://www.shumi6.com",
+  "bookInfoPattern": "",
+  "exploreUrl": "日点击榜::/modules/article/toplist.php?sort=dayvisit&page={{page}}\n周点击榜::/modules/article/toplist.php?sort=weekvisit&page={{page}}\n月点击榜::/modules/article/toplist.php?sort=monthvisit&page={{page}}\n总点击榜::/modules/article/toplist.php?sort=allvisit&page={{page}}\n总推荐榜::/modules/article/toplist.php?sort=allvote&page={{page}}\n总收藏榜::/modules/article/toplist.php?sort=goodnum&page={{page}}\n总字数榜::/modules/article/toplist.php?sort=size&page={{page}}\n最新入库::/modules/article/toplist.php?sort=postdate&page={{page}}\n最新更新::/modules/article/toplist.php?sort=lastupdate&page={{page}}\n新书榜::/modules/article/toplist.php?sort=goodnew&page={{page}}",
+  "header": "",
+  "ruleBookInfo": {
+    "infoInit": "",
+    "infoAuthor": "class.title@tag.span@text#：",
+    "infoCoverUrl": "class.img@tag.a@tag.img@src",
+    "infoIntro": "class.introCon@text",
+    "infoKind": "",
+    "infoLastChapter": "",
+    "infoName": "class.title@tag.h2.1@text",
+    "infoTocUrl": "",
+    "infoWordCount": ""
+  },
+  "ruleContent": {
+    "content": "class.content@text",
+    "nextContentUrl": "class.page@tag.p@tag.a@href",
+    "webJs": "",
+    "sourceRegex": "",
+    "replaceRegex": ""
+  },
+  "ruleExplore": {
+    "exploreAuthor": "class.con5@text",
+    "exploreBookList": "class.toplistcon@tag.li",
+    "exploreBookUrl": "class.con3@tag.a.0@href",
+    "exploreCoverUrl": "",
+    "exploreIntro": "",
+    "exploreKind": "class.con2@tag.a@text",
+    "exploreLastChapter": "",
+    "exploreName": "class.con3@tag.a.0@text"
+  },
+  "ruleSearch": {
+    "searchAuthor": "class.odd.1@text",
+    "searchBookList": "class.grid@tag.tr!0",
+    "searchBookUrl": "class.odd.0@tag.a@href",
+    "searchCoverUrl": "",
+    "searchIntro": "",
+    "searchKind": "",
+    "searchLastChapter": "class.even.0@tag.a@text",
+    "searchName": "class.odd.0@tag.a@text",
+    "searchWordCount": ""
+  },
+  "ruleToc": {
+    "tocList": "class.ocon@tag.dl@tag.dd@tag.a",
+    "tocName": "text",
+    "tocUrl": "href",
+    "isVip": "",
+    "nextTocUrl": "",
+    "tocUpdateTime": ""
+  },
+  "searchUrl": "/modules/article/search.php?searchtype=1&searchkey={{key}}&page={{page}},{\n \"method\": \"GET\",\"charset\": \"gbk\"}"
+}

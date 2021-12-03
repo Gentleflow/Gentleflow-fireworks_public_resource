@@ -1,0 +1,56 @@
+{
+  "sourceName": "💥 笔趣阁③",
+  "sourceType": 0,
+  "sourceUrl": "https://www.wqge.cc",
+  "bookInfoPattern": "",
+  "exploreUrl": "玄幻::/xuanhuanxiaoshuo/\n修真::/xiuzhenxiaoshuo/\n都市::/dushixiaoshuo/\n穿越::/chuanyuexiaoshuo/\n网游::/wangyouxiaoshuo/\n科幻::/kehuanxiaoshuo/",
+  "header": "{\n  \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36\"\n}",
+  "ruleBookInfo": {
+    "infoInit": "",
+    "infoAuthor": "",
+    "infoCoverUrl": "id.fmimg@tag.img.0@src",
+    "infoIntro": "id.intro@tag.p.0@textNodes",
+    "infoKind": "",
+    "infoLastChapter": "",
+    "infoName": "",
+    "infoTocUrl": "",
+    "infoWordCount": ""
+  },
+  "ruleContent": {
+    "content": "id.content@tag.p@text",
+    "nextContentUrl": "",
+    "webJs": "",
+    "sourceRegex": "",
+    "replaceRegex": ""
+  },
+  "ruleExplore": {
+    "exploreAuthor": "class.s5@text",
+    "exploreBookList": "id.newscontent@class.l@tag.ul@tag.li",
+    "exploreBookUrl": "class.s2@tag.a@href",
+    "exploreCoverUrl": "",
+    "exploreIntro": "",
+    "exploreKind": "class.s1@tag.a@text",
+    "exploreLastChapter": "class.s3@tag.a@text",
+    "exploreName": "class.s2@tag.a@text"
+  },
+  "ruleSearch": {
+    "searchAuthor": "class.odd.1@text",
+    "searchBookList": "class.grid@tag.tr",
+    "searchBookUrl": "class.odd.0@tag.a.0@href",
+    "searchCoverUrl": "",
+    "searchIntro": "",
+    "searchKind": "",
+    "searchLastChapter": "class.even.0@text",
+    "searchName": "class.odd.0@text",
+    "searchWordCount": ""
+  },
+  "ruleToc": {
+    "tocList": "id.list@tag.dd!0:1:2:3:4:5:6:7:8",
+    "tocName": "tag.a@text",
+    "tocUrl": "tag.a@href",
+    "isVip": "",
+    "nextTocUrl": "",
+    "tocUpdateTime": ""
+  },
+  "searchUrl": "https://www.wqge.cc/modules/article/search.php?searchkey={{key}}"
+}

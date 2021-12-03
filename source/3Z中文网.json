@@ -1,0 +1,56 @@
+{
+  "sourceName": "花火-3Z中文网",
+  "sourceType": 0,
+  "sourceUrl": "http://www.530p.com",
+  "bookInfoPattern": "",
+  "exploreUrl": "最新::/p{{page}}.htm\n奇幻::/qihuan/{{page}}.htm\n玄幻::/xuanhuan/{{page}}.htm\n言情::/yanqing/{{page}}.htm\n都市::/dushi/{{page}}.htm\n游戏::/youxi/{{page}}.htm\n竞技::/jingji/{{page}}.htm\n武侠::/wuxia/{{page}}.htm\n历史::/lishi/{{page}}.htm\n军事::/junshi/{{page}}.htm\n科幻::/kehuan/{{page}}.htm\n仙侠::/xianxia/{{page}}.htm\n灵异::/lingyi/{{page}}.htm\n女性::/nvxing/{{page}}.htm\n其他::/qita/{{page}}.htm",
+  "header": "{\n  \"User-Agent\": \"Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/82.0.3904.96 Safari/537.36\"\n}",
+  "ruleBookInfo": {
+    "infoInit": "",
+    "infoAuthor": "@css:.ffw td:eq(2)@text",
+    "infoCoverUrl": "@css:.ffw img@src",
+    "infoIntro": "@css:.ffw tr:eq(3)>td@textNodes",
+    "infoKind": "@css:.ffw td:eq(4)@text",
+    "infoLastChapter": "@css:.ffw tr:eq(1) a@text",
+    "infoName": "@css:.tna@text",
+    "infoTocUrl": "",
+    "infoWordCount": ""
+  },
+  "ruleContent": {
+    "content": "id.cp_content@html##无弹窗小说.*",
+    "nextContentUrl": "",
+    "webJs": "",
+    "sourceRegex": "",
+    "replaceRegex": ""
+  },
+  "ruleExplore": {
+    "exploreAuthor": "",
+    "exploreBookList": "",
+    "exploreBookUrl": "",
+    "exploreCoverUrl": "",
+    "exploreIntro": "",
+    "exploreKind": "",
+    "exploreLastChapter": "",
+    "exploreName": ""
+  },
+  "ruleSearch": {
+    "searchAuthor": "class.conter4.0@text",
+    "searchBookList": "class.conter@tag.ul!0",
+    "searchBookUrl": "class.conter1.0@tag.a.0@href",
+    "searchCoverUrl": "",
+    "searchIntro": "",
+    "searchKind": "",
+    "searchLastChapter": "class.conter2.0@text",
+    "searchName": "class.conter1.0@tag.a.0@text",
+    "searchWordCount": ""
+  },
+  "ruleToc": {
+    "tocList": "+@css:div.clc a",
+    "tocName": "text",
+    "tocUrl": "href",
+    "isVip": "",
+    "nextTocUrl": "",
+    "tocUpdateTime": ""
+  },
+  "searchUrl": "http://www.530p.com/s/{{key}}"
+}

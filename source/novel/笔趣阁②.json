@@ -1,0 +1,56 @@
+{
+  "sourceName": "💥 笔趣阁②",
+  "sourceType": 0,
+  "sourceUrl": "https://www.bqg99.cc",
+  "bookInfoPattern": "",
+  "exploreUrl": "玄幻::/xuanhuan/\n武侠::/wuxia/\n都市::/dushi/\n历史::/lishi/\n网游::/wangyou/\n科幻::/kehuan/\n女生::/mm/\n全本::/quanben/\n",
+  "header": "",
+  "ruleBookInfo": {
+    "infoInit": "",
+    "infoAuthor": "",
+    "infoCoverUrl": "class.cover@tag.img@src",
+    "infoIntro": "class.intro@text##简介：",
+    "infoKind": "",
+    "infoLastChapter": "class.last@a@text",
+    "infoName": "",
+    "infoTocUrl": "",
+    "infoWordCount": ""
+  },
+  "ruleContent": {
+    "content": "id.content@html##请记住.*cc",
+    "nextContentUrl": "",
+    "webJs": "",
+    "sourceRegex": "",
+    "replaceRegex": ""
+  },
+  "ruleExplore": {
+    "exploreAuthor": "class.s4@text",
+    "exploreBookList": "class.l bd@tag.ul@tag.li",
+    "exploreBookUrl": "class.s2@tag.a@href",
+    "exploreCoverUrl": "",
+    "exploreIntro": "",
+    "exploreKind": "class.s1@text",
+    "exploreLastChapter": "class.s3@tag.a@text",
+    "exploreName": "class.s2@tag.a@text"
+  },
+  "ruleSearch": {
+    "searchAuthor": "class.author@text##作者：",
+    "searchBookList": "class.bookbox",
+    "searchBookUrl": "tag.a.1@href",
+    "searchCoverUrl": "class.bookimg@tag.img@src",
+    "searchIntro": "",
+    "searchKind": "class.cat@text##分类：",
+    "searchLastChapter": "tag.a.2@text",
+    "searchName": "tag.a.1@text",
+    "searchWordCount": ""
+  },
+  "ruleToc": {
+    "tocList": "class.listmain@tag.a",
+    "tocName": "text",
+    "tocUrl": "href",
+    "isVip": "",
+    "nextTocUrl": "",
+    "tocUpdateTime": ""
+  },
+  "searchUrl": "https://www.bqg99.cc/s.php?q={{key}}"
+}

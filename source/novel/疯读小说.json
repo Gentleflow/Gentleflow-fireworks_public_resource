@@ -1,0 +1,56 @@
+{
+  "sourceName": "\uD83D\uDCA5 疯读小说",
+  "sourceType": 0,
+  "sourceUrl": "https://fiction.fengduxiaoshuo.com",
+  "bookInfoPattern": "",
+  "exploreUrl": "都市小说::https://fiction.fengduxiaoshuo.com/doReader/get_book_info_by_tab?_token=7cbd25c8-07fa-4d93-8b0f-fe09908e3d28&gender=0&classificationId=4&wordsNum=-1&bookIsFinished=-1&sortTitle=0&page={{page}}&count=10&ntu=1201705000&nid=82eaf9444d8db8b985b2ac71cde4b691&api_version=v1&_sv=v1&_ts=1602868844&_sign=M2RjM2U2ZjhkMzZkMzljMDFhNTRjYjVlZTk4YWY0OW\n玄幻小说::https://fiction.fengduxiaoshuo.com/doReader/get_book_info_by_tab?_token=7cbd25c8-07fa-4d93-8b0f-fe09908e3d28&gender=0&classificationId=13&wordsNum=-1&bookIsFinished=-1&sortTitle=0&page={{page}}&count=10&ntu=1201705000&nid=9a66ac1561a4dfc28ee20d6f120b5033&api_version=v1&_sv=v1&_ts=1602869126&_sign=YzhkNzc0YTlkNzYwMWU2MmFmNmY3NTJiMzQ0NWU2ZW\n仙侠小说::https://fiction.fengduxiaoshuo.com/doReader/get_book_info_by_tab?_token=7cbd25c8-07fa-4d93-8b0f-fe09908e3d28&gender=0&classificationId=12&wordsNum=-1&bookIsFinished=-1&sortTitle=0&page={{page}}&count=10&ntu=1201705000&nid=26577fc884ce13bdb6bf14c098743daf&api_version=v1&_sv=v1&_ts=1602869270&_sign=ZTMwNDM2NjJlNmY1YTNkYWNjMTRjOGY3ZWU5ZTQyND\n历史小说::https://fiction.fengduxiaoshuo.com/doReader/get_book_info_by_tab?_token=7cbd25c8-07fa-4d93-8b0f-fe09908e3d28&gender=0&classificationId=17&wordsNum=-1&bookIsFinished=-1&sortTitle=0&page={{page}}&count=10&ntu=1201705000&nid=bc656761c4d77e09bdc29901a4921b24&api_version=v1&_sv=v1&_ts=1602869361&_sign=ZmRmOTE4ZjZkMWMwZGRlYzI4NzFhNzlmNzNhOTU3YW\n科幻小说::https://fiction.fengduxiaoshuo.com/doReader/get_book_info_by_tab?_token=7cbd25c8-07fa-4d93-8b0f-fe09908e3d28&gender=0&classificationId=16&wordsNum=-1&bookIsFinished=-1&sortTitle=0&page={{page}}&count=10&ntu=1201705000&nid=d02610e08301e8309c9d1079d8755352&api_version=v1&_sv=v1&_ts=1602869576&_sign=OGYwMzQ3YTZlMDlkYTk3NDJmZjI2YjMxNjVhYzU5N2\n游戏小说::https://fiction.fengduxiaoshuo.com/doReader/get_book_info_by_tab?_token=7cbd25c8-07fa-4d93-8b0f-fe09908e3d28&gender=0&classificationId=18&wordsNum=-1&bookIsFinished=-1&sortTitle=0&page={{page}}&count=10&ntu=1201705000&nid=38a98da018285f5d480c18576d4723f3&api_version=v1&_sv=v1&_ts=1602869741&_sign=NTIxNzBmMmNhMzBjOGYzOWUwZGNhY2QzZjllYmExNT\n奇幻小说::https://fiction.fengduxiaoshuo.com/doReader/get_book_info_by_tab?_token=7cbd25c8-07fa-4d93-8b0f-fe09908e3d28&gender=0&classificationId=9&wordsNum=-1&bookIsFinished=-1&sortTitle=0&page={{page}}&count=10&ntu=1201705000&nid=a11af07a6f283b0894d7cad041b11862&api_version=v1&_sv=v1&_ts=1602869796&_sign=ZWYzOWVjMGUyZDVmYzBiNDg2NjI5NDhiYzZkNzA5ZG\n现代言情::https://fiction.fengduxiaoshuo.com/doReader/get_book_info_by_tab?_token=7cbd25c8-07fa-4d93-8b0f-fe09908e3d28&gender=1&classificationId=10&wordsNum=-1&bookIsFinished=-1&sortTitle=0&page={{page}}&count=10&ntu=1201805000&nid=30ddfb4846022b495872a142c9371fc0&api_version=v1&_sv=v1&_ts=1602870028&_sign=NWJkYTNjZDQ3OGQ0ZDkzNGUxMDdiNjhlMTYxMTdlMG\n古代言情::https://fiction.fengduxiaoshuo.com/doReader/get_book_info_by_tab?_token=7cbd25c8-07fa-4d93-8b0f-fe09908e3d28&gender=1&classificationId=5&wordsNum=-1&bookIsFinished=-1&sortTitle=0&page={{page}}&count=10&ntu=1201805000&nid=1546e2d86a13ed58a044f176c1d21a8e&api_version=v1&_sv=v1&_ts=1602870140&_sign=OTVkYzVhZjg2ZDZiNmM5M2U1YjdiZjY3OGI3ZTI3YT\n浪漫青春::https://fiction.fengduxiaoshuo.com/doReader/get_book_info_by_tab?_token=7cbd25c8-07fa-4d93-8b0f-fe09908e3d28&gender=1&classificationId=6&wordsNum=-1&bookIsFinished=-1&sortTitle=0&page={{page}}&count=10&ntu=1201805000&nid=91961c794a395c96871d14b9109e59d9&api_version=v1&_sv=v1&_ts=1602870180&_sign=MjZlMWNkZTNlMjI0YmEzZjVkZDllYTAzNGI1ZTc0MT\n玄幻言情::https://fiction.fengduxiaoshuo.com/doReader/get_book_info_by_tab?_token=7cbd25c8-07fa-4d93-8b0f-fe09908e3d28&gender=1&classificationId=3&wordsNum=-1&bookIsFinished=-1&sortTitle=0&page={{page}}&count=10&ntu=1201805000&nid=e0973f2178612332a06d430d7feb3b0b&api_version=v1&_sv=v1&_ts=1602870273&_sign=ZjM3MzllMzg2NTlkNDA2ZWY1Y2I5ZWE0ZjQ0MGNjMW\n仙侠奇缘::https://fiction.fengduxiaoshuo.com/doReader/get_book_info_by_tab?_token=7cbd25c8-07fa-4d93-8b0f-fe09908e3d28&gender=1&classificationId=7&wordsNum=-1&bookIsFinished=-1&sortTitle=0&page={{page}}&count=10&ntu=1201805000&nid=d5a1b3706c4619e9d4ddfa541f66ef39&api_version=v1&_sv=v1&_ts=1602870313&_sign=YzgyZjBjMTQwOWE2OWEzNWI2ZGRjMmM1NTg4MTBmN2\nN次い元::https://fiction.fengduxiaoshuo.com/doReader/get_book_info_by_tab?_token=7cbd25c8-07fa-4d93-8b0f-fe09908e3d28&gender=1&classificationId=29&wordsNum=-1&bookIsFinished=-1&sortTitle=0&page={{page}}&count=10&ntu=1201805000&nid=935a7398dffe11653d9c3b2052f5b4d2&api_version=v1&_sv=v1&_ts=1602870359&_sign=YTEwMTUwN2MzN2VjNjljNGM3YWM4ZTY1NTRhMDc2ZW",
+  "header": "",
+  "ruleBookInfo": {
+    "infoInit": "",
+    "infoAuthor": "",
+    "infoCoverUrl": "",
+    "infoIntro": "",
+    "infoKind": "",
+    "infoLastChapter": "",
+    "infoName": "",
+    "infoTocUrl": "",
+    "infoWordCount": ""
+  },
+  "ruleContent": {
+    "content": "@js:result",
+    "nextContentUrl": "",
+    "webJs": "",
+    "sourceRegex": "",
+    "replaceRegex": ""
+  },
+  "ruleExplore": {
+    "exploreAuthor": "$.bookAuthor",
+    "exploreBookList": "$..classficationBooks[*]",
+    "exploreBookUrl": "https://fiction.fengduxiaoshuo.com/doReader/enter_bookinfo_index?_token=869b9667-c66c-44d1-bba4-73e82cf2daee&bookId={{$.bookId}}",
+    "exploreCoverUrl": "",
+    "exploreIntro": "$.bookDesc",
+    "exploreKind": "$.c_class_name&&{$.crazy_rating}分&&\n$.chapters_update_time",
+    "exploreLastChapter": "第{$.bookChapterNumber}章",
+    "exploreName": "$.bookTitle"
+  },
+  "ruleSearch": {
+    "searchAuthor": "$.bookAuthor",
+    "searchBookList": "$.result[*]",
+    "searchBookUrl": "https://fiction.fengduxiaoshuo.com/doReader/enter_bookinfo_index?_token=869b9667-c66c-44d1-bba4-73e82cf2daee&bookId={{$.bookId}}",
+    "searchCoverUrl": "$.bookCoverImage",
+    "searchIntro": "$.bookDesc",
+    "searchKind": "$.c_class_name&&{$.crazy_rating}分&&\n$.chapters_update_time",
+    "searchLastChapter": "第{$.bookChapterNumber}章",
+    "searchName": "$.bookTitle",
+    "searchWordCount": "{$.book_words_num}字"
+  },
+  "ruleToc": {
+    "tocList": "$..detailedBookInfo.bookChapterAllInfo[*]",
+    "tocName": "$.chapterTitle##[\\(（].*[求更谢乐发推].*[）\\)]",
+    "tocUrl": "$.content_url",
+    "isVip": "",
+    "nextTocUrl": "",
+    "tocUpdateTime": ""
+  },
+  "searchUrl": "https://fiction.fengduxiaoshuo.com/doReader/search_book?_token=869b9667-c66c-44d1-bba4-73e82cf2daee&action=search_book&search_keyword={{key}}"
+}

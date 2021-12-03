@@ -1,0 +1,56 @@
+{
+  "sourceName": "💥 笔趣阁5200",
+  "sourceType": 0,
+  "sourceUrl": "http://www.b5200.net",
+  "bookInfoPattern": "",
+  "exploreUrl": "玄幻::/xuanhuanxiaoshuo/\n修真::/xiuzhenxiaoshuo/\n都市::/dushixiaoshuo/\n穿越::/chuanyuexiaoshuo/\n网游::/wangyouxiaoshuo/\n科幻::/kehuanxiaoshuo/",
+  "header": "{\n  \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; WOW64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36\"\n}",
+  "ruleBookInfo": {
+    "infoInit": "",
+    "infoAuthor": "id.info@tag.p@text#作    者：",
+    "infoCoverUrl": "id.fmimg@tag.img@src",
+    "infoIntro": "id.intro@tag.p@text",
+    "infoKind": "",
+    "infoLastChapter": "",
+    "infoName": "id.info@tag.h1@text",
+    "infoTocUrl": "",
+    "infoWordCount": ""
+  },
+  "ruleContent": {
+    "content": "@css:#content@html",
+    "nextContentUrl": "",
+    "webJs": "",
+    "sourceRegex": "",
+    "replaceRegex": ""
+  },
+  "ruleExplore": {
+    "exploreAuthor": "class.s5@text",
+    "exploreBookList": "id.newscontent@class.l@tag.ul@tag.li",
+    "exploreBookUrl": "class.s2@tag.a@href",
+    "exploreCoverUrl": "",
+    "exploreIntro": "",
+    "exploreKind": "class.s1@tag.a@text",
+    "exploreLastChapter": "class.s3@tag.a@text",
+    "exploreName": "class.s2@tag.a@text"
+  },
+  "ruleSearch": {
+    "searchAuthor": "//td[3]/text()",
+    "searchBookList": "//table[class=grid]//tr[position()>1]",
+    "searchBookUrl": "@css:.odd>a@href",
+    "searchCoverUrl": "",
+    "searchIntro": "",
+    "searchKind": "//td[6]/text()",
+    "searchLastChapter": "//td[2]/text()",
+    "searchName": "//td[1]/text()",
+    "searchWordCount": ""
+  },
+  "ruleToc": {
+    "tocList": "id.list@tag.dd!0:1:2:3:4:5:6:7:8",
+    "tocName": "tag.a@text",
+    "tocUrl": "tag.a@href",
+    "isVip": "",
+    "nextTocUrl": "",
+    "tocUpdateTime": ""
+  },
+  "searchUrl": "/modules/article/search.php?searchkey={{key}}"
+}

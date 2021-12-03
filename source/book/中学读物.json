@@ -1,0 +1,56 @@
+{
+  "sourceName": "\uD83D\uDCA5 中学读物",
+  "sourceType": 0,
+  "sourceUrl": "https://fox2008.cn",
+  "bookInfoPattern": "",
+  "exploreUrl": "散文::https://fox2008.cn/Article/List_256/\n诗歌::https://fox2008.cn/Article/List_96/<index,index_2,index_3,index_{{page+1}}>.html\n小说::https://fox2008.cn/Article/List_9/<index,index_2,index_3,index_{{page+1}}>.html\n中国文学::https://fox2008.cn/Article/List_10/<index,index_2,index_3,index_{{page+1}}>.html\n外国名著::https://fox2008.cn/Article/List_176/<index,index_2,index_3,index_{{page+1}}>.html\n名著导读::https://fox2008.cn/Article/List_374/\n经部作品::https://fox2008.cn/Article/List_28/\n史部作品::https://fox2008.cn/Article/List_29/\n四库全书::https://fox2008.cn/Article/List_26/\n古典文学::https://fox2008.cn/Article/List_15/<index,index_2,index_3,index_{{page+1}}>.html\n寓意童话::https://fox2008.cn/Article/List_13/<index,index_2,index_3,index_{{page+1}}>.html\n武侠小说::https://fox2008.cn/Article/List_335/<index,index_2,index_3,index_{{page+1}}>.html\n百家讲坛::https://fox2008.cn/Article/List_190/<index,index_2,index_3,index_{{page+1}}>.html\n中外名人::https://fox2008.cn/Article/List_259/\n故事会集::https://fox2008.cn/Article/List_72/<index,index_2,index_3,index_{{page+1}}>.html\n美文欣赏::https://fox2008.cn/Article/List_2/\n礼仪知识::https://fox2008.cn/Article/List_360/\n民俗风情::https://fox2008.cn/Article/List_12/\n谜语大全::https://fox2008.cn/Article/List_76/\n百科知识::https://fox2008.cn/Article/List_80/<index,index_2,index_3,index_{{page+1}}>.html\n教育成才::https://fox2008.cn/Article/List_396/<index,index_2,index_3,index_{{page+1}}>.html\n十大将军::https://fox2008.cn/Article/List_759/\n十大元帅::https://fox2008.cn/Article/List_1163/\n名人故事::https://fox2008.cn/Article/List_334/\n其他阅读::https://fox2008.cn/qtyd/<index,index_2,index_3,index_{{page+1}}>.html\n莫言合集::https://fox2008.cn/Article/List_1156/\n亦舒文集::https://fox2008.cn/Article/List_1468/\n张爱玲集::https://fox2008.cn/Article/List_1448/\n张小娴集::https://fox2008.cn/Article/List_1503/\n郑渊洁集::https://fox2008.cn/Article/List_914/\n余秋雨集::https://fox2008.cn/Article/List_941/\n沈从文集::https://fox2008.cn/Article/List_973/\n冯骥才集::https://fox2008.cn/Article/List_1137/\n张恨水文集::https://fox2008.cn/Article/List_262/\n贾平凹文集::https://fox2008.cn/Article/List_278/\n曹文轩文集::https://fox2008.cn/Article/List_230/\n郭敬明文集::https://fox2008.cn/Article/List_422/\n张贤亮文集::https://fox2008.cn/Article/List_895/\n茶人三部曲::https://fox2008.cn/Article/List_808/\n菜根谭全集::https://fox2008.cn/Article/List_589/\n白话文解析::https://fox2008.cn/Article/List_758/<index,index_2,index_3,index_{{page+1}}>.html\n唐宋八大家::https://fox2008.cn/Article/List_216/",
+  "header": "",
+  "ruleBookInfo": {
+    "infoInit": "",
+    "infoAuthor": "",
+    "infoCoverUrl": "",
+    "infoIntro": "class.txt@tag.p@text",
+    "infoKind": "",
+    "infoLastChapter": "",
+    "infoName": "tag.h3.0@text",
+    "infoTocUrl": "",
+    "infoWordCount": ""
+  },
+  "ruleContent": {
+    "content": "id.chapterContent@tag.p@textNodes||id.chapterContent@tag.span@html",
+    "nextContentUrl": "",
+    "webJs": "",
+    "sourceRegex": "",
+    "replaceRegex": ""
+  },
+  "ruleExplore": {
+    "exploreAuthor": "",
+    "exploreBookList": "",
+    "exploreBookUrl": "",
+    "exploreCoverUrl": "",
+    "exploreIntro": "",
+    "exploreKind": "",
+    "exploreLastChapter": "",
+    "exploreName": ""
+  },
+  "ruleSearch": {
+    "searchAuthor": "class.author-container@text",
+    "searchBookList": "class.yd-book-item",
+    "searchBookUrl": "tag.a@href",
+    "searchCoverUrl": "tag.img@src",
+    "searchIntro": "",
+    "searchKind": "",
+    "searchLastChapter": "class.summery@text",
+    "searchName": "tag.h2.0@text",
+    "searchWordCount": ""
+  },
+  "ruleToc": {
+    "tocList": "class.directory@tag.li@tag.a",
+    "tocName": "text",
+    "tocUrl": "href",
+    "isVip": "",
+    "nextTocUrl": "",
+    "tocUpdateTime": ""
+  },
+  "searchUrl": "-"
+}

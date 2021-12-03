@@ -1,0 +1,56 @@
+{
+  "sourceName": "\uD83D\uDD1E 御书屋",
+  "sourceType": 0,
+  "sourceUrl": "https://www.eyushuwu.com",
+  "bookInfoPattern": "",
+  "exploreUrl": "总榜::/top/allvisit/{{page}}.html\n月榜::/top/monthvisit/{{page}}.html\n周榜::/top/weekvisit/{{page}}.html\n总推::/top/allvote/{{page}}.html\n月推::/top/monthvote/{{page}}.html\n周推::/top/weekvote/{{page}}.html\n站推::/top/toptime/{{page}}.html\n收藏::/top/goodnum/{{page}}.html\n字数::/top/size/{{page}}.html\n最近::/top/lastupdate/{{page}}.html\n最新::/top/postdate/{{page}}.html\n玄幻::/list/8/{{page}}.html\n修真::/list/9/{{page}}.html\n都市::/list/12/{{page}}.html\n历史::/list/16/{{page}}.html\n网游::/list/14/{{page}}.html\n科幻::/list/13/{{page}}.html\n恐怖::/list/15/{{page}}.html\n言情::/list/3/{{page}}.html\n耽美::/list/1/{{page}}.html\n其他::/list/10/{{page}}.html",
+  "header": "{\"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.105 Safari/537.36 Edg/84.0.522.52\"}",
+  "ruleBookInfo": {
+    "infoInit": "",
+    "infoAuthor": "[property=\"og:novel:author\"]@content",
+    "infoCoverUrl": "[property=\"og:image\"]@content",
+    "infoIntro": "[property=\"og:description\"]@content",
+    "infoKind": "[property=\"og:novel:category\"]@content&&[property=\"og:novel:status\"]@content&&[property=\"og:novel:update_time\"]@content##小说",
+    "infoLastChapter": "[property=\"og:novel:latest_chapter_name\"]@content",
+    "infoName": "[property=\"og:novel:book_name\"]@content",
+    "infoTocUrl": "",
+    "infoWordCount": "class.blue.0@text##字数."
+  },
+  "ruleContent": {
+    "content": "id.htmlContent@html",
+    "nextContentUrl": "",
+    "webJs": "",
+    "sourceRegex": "",
+    "replaceRegex": ""
+  },
+  "ruleExplore": {
+    "exploreAuthor": "tag.td.2@text",
+    "exploreBookList": "class.table@tag.tr!0",
+    "exploreBookUrl": "tag.a.0@href",
+    "exploreCoverUrl": "",
+    "exploreIntro": "",
+    "exploreKind": "tag.td.3@text&&tag.td.4@text",
+    "exploreLastChapter": "tag.a.1@text",
+    "exploreName": "tag.a.0@text"
+  },
+  "ruleSearch": {
+    "searchAuthor": "tag.li.2@text##作者.",
+    "searchBookList": "class.mySearch@tag.ul",
+    "searchBookUrl": "tag.a.0@href",
+    "searchCoverUrl": "tag.a.0@href@js:id=result.match(/(\\d+)/)[1];\nresult=\"http://img.eyushuwu.com/image/\"+id.slice(0,2)+\"/\"+id+\"/\"+id+\"s.jpg\"",
+    "searchIntro": "",
+    "searchKind": "tag.li.4@text&&tag.li.5@text##状态.|更新时间.",
+    "searchLastChapter": "tag.a.1@text",
+    "searchName": "tag.a.0@text",
+    "searchWordCount": "tag.li.3@text##大小."
+  },
+  "ruleToc": {
+    "tocList": "class.panel-chapterlist.1@tag.dd",
+    "tocName": "tag.a@text",
+    "tocUrl": "tag.a@href",
+    "isVip": "",
+    "nextTocUrl": "",
+    "tocUpdateTime": ""
+  },
+  "searchUrl": "/modules/article/search.php,{\n  \"charset\": \"gbk\",\n  \"method\": \"POST\",\n  \"body\": \"searchkey={{key}}&page={{page}}\"\n}"
+}

@@ -1,0 +1,56 @@
+{
+  "sourceName": "💥 千千小说",
+  "sourceType": 0,
+  "sourceUrl": "https://www.qqxsnew.com",
+  "bookInfoPattern": "",
+  "exploreUrl": "玄幻::/list/1-{{page}}.html\n仙侠::/list/2-{{page}}.html\n言情::/list/3-{{page}}.html\n历史::/list/4-{{page}}.html\n网游::/list/5-{{page}}.html\n科幻::/list/6-{{page}}.html\n恐怖::/list/7-{{page}}.html\n其他::/list/8-{{page}}.html",
+  "header": "",
+  "ruleBookInfo": {
+    "infoInit": "",
+    "infoAuthor": "id.info@tag.p.0@a@text",
+    "infoCoverUrl": "id.fmimg@img@src",
+    "infoIntro": "id.intro@text",
+    "infoKind": "",
+    "infoLastChapter": "",
+    "infoName": "id.bookdetail@h1@text",
+    "infoTocUrl": "",
+    "infoWordCount": ""
+  },
+  "ruleContent": {
+    "content": "id.content@textNodes",
+    "nextContentUrl": "",
+    "webJs": "",
+    "sourceRegex": "",
+    "replaceRegex": ""
+  },
+  "ruleExplore": {
+    "exploreAuthor": "class.s4@tag.a@text",
+    "exploreBookList": "id.newscontent@class.l@tag.ul@tag.li",
+    "exploreBookUrl": "class.s2@tag.a@href",
+    "exploreCoverUrl": "",
+    "exploreIntro": "",
+    "exploreKind": "class.s1@text",
+    "exploreLastChapter": "class.s3@tag.a@text",
+    "exploreName": "class.s2@tag.a@text"
+  },
+  "ruleSearch": {
+    "searchAuthor": "class.s4@a@text",
+    "searchBookList": "class.novelslist2@ul@li",
+    "searchBookUrl": "class.s2@a@href",
+    "searchCoverUrl": "",
+    "searchIntro": "",
+    "searchKind": "",
+    "searchLastChapter": "class.s3@a@text",
+    "searchName": "class.s2@a@text",
+    "searchWordCount": ""
+  },
+  "ruleToc": {
+    "tocList": "//*[@id='list']//dd[position()>12]//a",
+    "tocName": "text",
+    "tocUrl": "href",
+    "isVip": "",
+    "nextTocUrl": "",
+    "tocUpdateTime": ""
+  },
+  "searchUrl": "https://www.qqxsnew.com/index.php?s=/web/index/search&name={{key}}"
+}

@@ -1,0 +1,56 @@
+{
+  "sourceName": "\uD83D\uDCA5 雅文言情",
+  "sourceType": 0,
+  "sourceUrl": "https://www.yawenb.com",
+  "bookInfoPattern": "",
+  "exploreUrl": "穿越时空::/chuanyue/\n古代言情::/gudai/\n都市言情::/dushi/\n校园言情::/xiaoyuan/\n魔法言情::/mofa/\n港台言情::/gangtai/\n经典美文::/meiwen/\n仙侠武侠::/xianxia/\n玄幻魔法::/xuanhuan/\n其他::/book/\n全本::/full/\n",
+  "header": "",
+  "ruleBookInfo": {
+    "infoInit": "",
+    "infoAuthor": "",
+    "infoCoverUrl": "id.fmimg@tag.img@src",
+    "infoIntro": "id.intro@text##各位书友要是觉得.*",
+    "infoKind": "",
+    "infoLastChapter": "",
+    "infoName": "",
+    "infoTocUrl": "",
+    "infoWordCount": ""
+  },
+  "ruleContent": {
+    "content": "id.content@html",
+    "nextContentUrl": "",
+    "webJs": "",
+    "sourceRegex": "",
+    "replaceRegex": ""
+  },
+  "ruleExplore": {
+    "exploreAuthor": "class.s5@text||class.s4@text",
+    "exploreBookList": "id.newscontent@class.l@tag.ul@tag.li||class.novelslist2@tag.ul@tag.li!0",
+    "exploreBookUrl": "class.s2@tag.a@href",
+    "exploreCoverUrl": "",
+    "exploreIntro": "",
+    "exploreKind": "class.s1@tag.a@text",
+    "exploreLastChapter": "class.s3@tag.a@text",
+    "exploreName": "class.s2@tag.a@text"
+  },
+  "ruleSearch": {
+    "searchAuthor": "class.s4@text",
+    "searchBookList": "class.novelslist2@tag.li!0",
+    "searchBookUrl": "class.s2@tag.a@href",
+    "searchCoverUrl": "",
+    "searchIntro": "",
+    "searchKind": "class.s1@tag.a@text",
+    "searchLastChapter": "class.s3@tag.a@text",
+    "searchName": "class.s2@tag.a@text",
+    "searchWordCount": ""
+  },
+  "ruleToc": {
+    "tocList": "id.list@tag.dd!0:1:2:3:4:5:6:7:8:9",
+    "tocName": "tag.a@text",
+    "tocUrl": "tag.a@href",
+    "isVip": "",
+    "nextTocUrl": "",
+    "tocUpdateTime": ""
+  },
+  "searchUrl": "https://www.yawenb.com/modules/article/search.php?keyword={{key}},{\n  \"charset\": \"gbk\"\n}"
+}

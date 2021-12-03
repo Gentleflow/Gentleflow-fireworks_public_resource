@@ -1,0 +1,56 @@
+{
+  "sourceName": "💥 笔趣阁⑦",
+  "sourceType": 0,
+  "sourceUrl": "https://www.vbiquge.com",
+  "bookInfoPattern": "",
+  "exploreUrl": "玄幻奇幻::/xclass/1/1.html\n武侠仙侠::/xclass/2/1.html\n都市言情::/xclass/3/1.html\n历史军事::/xclass/4/1.html\n科幻灵异::/xclass/5/1.html\n网游竞技::/xclass/6/1.html\n女频频道::/xclass/7/1.html\n全本::/quanben/\n排行榜单::/xbqgph.html\n",
+  "header": "",
+  "ruleBookInfo": {
+    "infoInit": "",
+    "infoAuthor": "class.box_con.0@id.info@tag.p.0@text",
+    "infoCoverUrl": "id.fmimg@tag.img.0@src",
+    "infoIntro": "id.intro@tag.p@text",
+    "infoKind": "",
+    "infoLastChapter": "id.info@tag.p.3@a@text",
+    "infoName": "class.box_con.0@id.info@tag.h1.0@text",
+    "infoTocUrl": "",
+    "infoWordCount": ""
+  },
+  "ruleContent": {
+    "content": "id.content@textNodes",
+    "nextContentUrl": "",
+    "webJs": "",
+    "sourceRegex": "",
+    "replaceRegex": ""
+  },
+  "ruleExplore": {
+    "exploreAuthor": "class.s5@text||class.s4@text",
+    "exploreBookList": "id.newscontent@class.l@tag.ul@tag.li||class.novelslist2@tag.ul@tag.li!0",
+    "exploreBookUrl": "class.s2@tag.a@href",
+    "exploreCoverUrl": "",
+    "exploreIntro": "",
+    "exploreKind": "class.s1@tag.a@text",
+    "exploreLastChapter": "class.s3@tag.a@text",
+    "exploreName": "class.s2@tag.a@text"
+  },
+  "ruleSearch": {
+    "searchAuthor": "class.result-game-item-info-tag.0@tag.span.1@text",
+    "searchBookList": "class.result-item",
+    "searchBookUrl": "class.result-item-title.0@tag.a.0@href",
+    "searchCoverUrl": "tag.img.0@src",
+    "searchIntro": "",
+    "searchKind": "class.result-game-item-info-tag.1@tag.span.1@text",
+    "searchLastChapter": "class.result-game-item-info-tag.3@tag.a.0@text",
+    "searchName": "class.result-item-title.0@tag.a.0@text",
+    "searchWordCount": ""
+  },
+  "ruleToc": {
+    "tocList": "id.list@tag.dd",
+    "tocName": "tag.a.0@text",
+    "tocUrl": "tag.a.0@href",
+    "isVip": "",
+    "nextTocUrl": "",
+    "tocUpdateTime": ""
+  },
+  "searchUrl": "https://www.vbiquge.com/search.php?keyword={{key}}"
+}

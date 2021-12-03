@@ -1,0 +1,56 @@
+{
+  "sourceName": "\uD83D\uDCA5 番茄免费小说",
+  "sourceType": 0,
+  "sourceUrl": "https://novel.snssdk.com",
+  "bookInfoPattern": "",
+  "exploreUrl": "",
+  "header": "",
+  "ruleBookInfo": {
+    "infoInit": "",
+    "infoAuthor": "",
+    "infoCoverUrl": "",
+    "infoIntro": "",
+    "infoKind": "",
+    "infoLastChapter": "{$.data.book_info.last_chapter_title}##小说：",
+    "infoName": "",
+    "infoTocUrl": "<js>\nstr='';\nvar url = 'https://novel.snssdk.com/api/novel/book/directory/detail/v1/?item_ids=';\nvar s = JSON.parse(result).data.item_list;\njava.put('list',s);\nfor (i in s){\n    str=str+s[i] + '%2C';\n    u = url + str;\n   if(i==99) break;\n}\nu;\n</js>",
+    "infoWordCount": ""
+  },
+  "ruleContent": {
+    "content": "$.data.content",
+    "nextContentUrl": "",
+    "webJs": "",
+    "sourceRegex": "",
+    "replaceRegex": ""
+  },
+  "ruleExplore": {
+    "exploreAuthor": "",
+    "exploreBookList": "",
+    "exploreBookUrl": "",
+    "exploreCoverUrl": "",
+    "exploreIntro": "",
+    "exploreKind": "",
+    "exploreLastChapter": "",
+    "exploreName": ""
+  },
+  "ruleSearch": {
+    "searchAuthor": "author",
+    "searchBookList": "$.data.ret_data.[*]",
+    "searchBookUrl": "https://novel.snssdk.com/api/novel/book/directory/list/v1?book_id={$.book_id}",
+    "searchCoverUrl": "thumb_url",
+    "searchIntro": "",
+    "searchKind": "category",
+    "searchLastChapter": "",
+    "searchName": "title@put:{book_id: book_id}##<em>|<\\/em>",
+    "searchWordCount": ""
+  },
+  "ruleToc": {
+    "tocList": "$.data",
+    "tocName": "$.title",
+    "tocUrl": "https://novel.snssdk.com/api/novel/book/reader/full/v1/?group_id={$.group_id}&item_id={$.item_id}",
+    "isVip": "",
+    "nextTocUrl": "@js:\nlist=java.get('list').split(',');\nfunction chunkArr (arr, size) {\n    if (!arr.length || !size || size < 1) return [];\n    let [start, end, result] = [null, null, []];\n    for (let i = 0; i < Math.ceil(arr.length / size); i++) {\n        start = i * size;\n        end = start + size;\n        result.push(arr.slice(start, end));\n    }\n    return result;\n}\nl=chunkArr(list,99);\nvar url = 'https://novel.snssdk.com/api/novel/book/directory/detail/v1/?item_ids=';\nr=[];\nfor(i in l){\n    r.push(url+l[i]);\n}\nr",
+    "tocUpdateTime": ""
+  },
+  "searchUrl": "https://novel.snssdk.com/api/novel/channel/homepage/search/search/v1/?aid=13&q={{key}}"
+}

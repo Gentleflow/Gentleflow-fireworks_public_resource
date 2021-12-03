@@ -1,0 +1,56 @@
+{
+  "sourceName": "💥 笔趣阁⑨",
+  "sourceType": 0,
+  "sourceUrl": "https://www.biquge5200.cc",
+  "bookInfoPattern": "",
+  "exploreUrl": "",
+  "header": "{\n  \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko, By Black Prism) Chrome/99.0 Safari/537.36\"\n}",
+  "ruleBookInfo": {
+    "infoInit": "",
+    "infoAuthor": "",
+    "infoCoverUrl": "id.fmimg.0@tag.img.0@src",
+    "infoIntro": "id.intro.0@tag.p.0@text",
+    "infoKind": "",
+    "infoLastChapter": "",
+    "infoName": "",
+    "infoTocUrl": "",
+    "infoWordCount": ""
+  },
+  "ruleContent": {
+    "content": "id.content@tag.p@text",
+    "nextContentUrl": "",
+    "webJs": "",
+    "sourceRegex": "",
+    "replaceRegex": ""
+  },
+  "ruleExplore": {
+    "exploreAuthor": "",
+    "exploreBookList": "",
+    "exploreBookUrl": "",
+    "exploreCoverUrl": "",
+    "exploreIntro": "",
+    "exploreKind": "",
+    "exploreLastChapter": "",
+    "exploreName": ""
+  },
+  "ruleSearch": {
+    "searchAuthor": "class.odd.1@text",
+    "searchBookList": "class.grid@tag.tr",
+    "searchBookUrl": "class.odd.0@tag.a.0@href",
+    "searchCoverUrl": "",
+    "searchIntro": "",
+    "searchKind": "",
+    "searchLastChapter": "class.even.0@tag.a.0@text",
+    "searchName": "class.odd.0@tag.a.0@text",
+    "searchWordCount": ""
+  },
+  "ruleToc": {
+    "tocList": "class.box_con@tag.dd!0:1:2:3:4:5:6:7:8",
+    "tocName": "tag.a@text",
+    "tocUrl": "tag.a@href",
+    "isVip": "",
+    "nextTocUrl": "",
+    "tocUpdateTime": ""
+  },
+  "searchUrl": "https://www.biquge5200.cc/modules/article/search.php?searchkey={{key}}"
+}

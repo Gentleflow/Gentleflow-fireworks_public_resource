@@ -1,0 +1,56 @@
+{
+  "sourceName": "💥 53中文",
+  "sourceType": 0,
+  "sourceUrl": "https://www.53zw.net",
+  "bookInfoPattern": "",
+  "exploreUrl": "玄幻魔法::/xuanhuanxiaoshuo/\n武侠修真::/xiuzhenxiaoshuo/\n都市言情::/dushixiaoshuo/\n历史军事::/chuanyuexiaoshuo/\n网游竞技::/wangyouxiaoshuo/\n科幻小说::/kehuanxiaoshuo/\n",
+  "header": "",
+  "ruleBookInfo": {
+    "infoInit": "",
+    "infoAuthor": "[property='og:novel:author']@content",
+    "infoCoverUrl": "[property='og:image']@content",
+    "infoIntro": "id.intro@text",
+    "infoKind": "[property='og:novel:category']@content",
+    "infoLastChapter": "[property='og:novel:latest_chapter_name']@content##/m.*",
+    "infoName": "[property='og:title']@content",
+    "infoTocUrl": "",
+    "infoWordCount": ""
+  },
+  "ruleContent": {
+    "content": "id.content@html##喜欢.*速度最快。",
+    "nextContentUrl": "text.下一页@href",
+    "webJs": "",
+    "sourceRegex": "",
+    "replaceRegex": ""
+  },
+  "ruleExplore": {
+    "exploreAuthor": "class.s5@text||class.s4@text",
+    "exploreBookList": "id.newscontent@class.l@tag.ul@tag.li||class.novelslist2@tag.ul@tag.li!0",
+    "exploreBookUrl": "class.s2@tag.a@href",
+    "exploreCoverUrl": "",
+    "exploreIntro": "",
+    "exploreKind": "class.s1@tag.a@text",
+    "exploreLastChapter": "class.s3@tag.a@text",
+    "exploreName": "class.s2@tag.a@text"
+  },
+  "ruleSearch": {
+    "searchAuthor": "class.book_other.0@tag.span.0@text",
+    "searchBookList": "id.sitembox@dl",
+    "searchBookUrl": "tag.a.1@href",
+    "searchCoverUrl": "tag.a.0@img@src",
+    "searchIntro": "class.book_des@text",
+    "searchKind": "class.book_other.0@tag.span.2@text",
+    "searchLastChapter": "class.book_other.1@text##最新章节：|更新时间.*",
+    "searchName": "h3@tag.a.0@text",
+    "searchWordCount": ""
+  },
+  "ruleToc": {
+    "tocList": "//*[@id='list']//dd[position()>12]//a",
+    "tocName": "text",
+    "tocUrl": "href",
+    "isVip": "",
+    "nextTocUrl": "",
+    "tocUpdateTime": ""
+  },
+  "searchUrl": "/search.html?searchkey={{key}}"
+}

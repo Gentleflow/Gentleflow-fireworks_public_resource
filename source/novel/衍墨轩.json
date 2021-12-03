@@ -1,0 +1,56 @@
+{
+  "sourceName": "💥 衍墨轩𖤓",
+  "sourceType": 0,
+  "sourceUrl": "http://www.ymoxuan.org",
+  "bookInfoPattern": "",
+  "exploreUrl": "玄幻::/xuanhuan/{{page}}.htm\n奇幻::/qihuan/{{page}}.htm\n修真::/xiuzhen/{{page}}.htm\n都市::/dushi/{{page}}.htm\n言情::/yanqing/{{page}}.htm\n历史::/lishi/{{page}}.htm\n同人::/tongren/{{page}}.htm\n武侠::/wuxia/{{page}}.htm\n科幻::/kehuan/{{page}}.htm\n游戏::/youxi/{{page}}.htm\n军事::/junshi/{{page}}.htm\n竞技::/jingji/{{page}}.htm\n灵异::/lingyi/{{page}}.htm\n其他::/qita/{{page}}.htm",
+  "header": "{\n  \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 UBrowser/6.2.4098.3 Safari/537.36\"\n}",
+  "ruleBookInfo": {
+    "infoInit": "",
+    "infoAuthor": "tag.i.0@tag.a.0@text",
+    "infoCoverUrl": "class.cover@tag.img@src",
+    "infoIntro": "class.desc@tag.p.0@text",
+    "infoKind": "tag.i.1@tag.a.0@text",
+    "infoLastChapter": "",
+    "infoName": "class.line@tag.hl.0@text",
+    "infoTocUrl": "class.operate@tag.a.2@href",
+    "infoWordCount": ""
+  },
+  "ruleContent": {
+    "content": "tag.h1.0@textNodes&&id.content@textNodes##(第.{1,8}章)\\s*?(\\S*?)\\s*?\\S+?.*?\\1\\2",
+    "nextContentUrl": "",
+    "webJs": "",
+    "sourceRegex": "",
+    "replaceRegex": ""
+  },
+  "ruleExplore": {
+    "exploreAuthor": "",
+    "exploreBookList": "",
+    "exploreBookUrl": "",
+    "exploreCoverUrl": "",
+    "exploreIntro": "",
+    "exploreKind": "",
+    "exploreLastChapter": "",
+    "exploreName": ""
+  },
+  "ruleSearch": {
+    "searchAuthor": "class.a2@tag.a.0@text",
+    "searchBookList": "class.left@tag.li!0",
+    "searchBookUrl": "class.n2@tag.a.0@href",
+    "searchCoverUrl": "",
+    "searchIntro": "",
+    "searchKind": "class.nt@text",
+    "searchLastChapter": "class.c2@tag.a.0@text",
+    "searchName": "class.n2@tag.a.0@text",
+    "searchWordCount": ""
+  },
+  "ruleToc": {
+    "tocList": "class.info@tag.li",
+    "tocName": "tag.a@text",
+    "tocUrl": "tag.a@href",
+    "isVip": "",
+    "nextTocUrl": "",
+    "tocUpdateTime": ""
+  },
+  "searchUrl": "http://www.ymoxuan.org/search.htm?keyword={{key}}"
+}

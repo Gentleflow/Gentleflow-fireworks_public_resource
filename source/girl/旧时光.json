@@ -1,0 +1,56 @@
+{
+  "sourceName": "\uD83D\uDCA5 旧时光",
+  "sourceType": 0,
+  "sourceUrl": "https://www.oldtimescc.cc",
+  "bookInfoPattern": "",
+  "exploreUrl": "玄幻::/xuanhuan-{{page}}.html\n仙侠::/xianxia-{{page}}.html\n都市::/dushi-{{page}}.html\n军史::/junshi-{{page}}.html\n网游::/wangyou-{{page}}.html\n科幻::/kehuan-{{page}}.html\n灵异::/lingyi-{{page}}.html\n言情::/yanqing-{{page}}.html\n其他::/qita-{{page}}.html",
+  "header": "",
+  "ruleBookInfo": {
+    "infoInit": "",
+    "infoAuthor": "class.booktag@tag.a.0@text",
+    "infoCoverUrl": "tag.img@src",
+    "infoIntro": "class.bookintro@text",
+    "infoKind": "//*[@property=\"og:novel:category\"]/@content",
+    "infoLastChapter": "class.bookchapter@text##章节目录",
+    "infoName": "class.booktitle@tag.h1@text",
+    "infoTocUrl": "",
+    "infoWordCount": "class.booktag@tag.span.0@text"
+  },
+  "ruleContent": {
+    "content": "class.readcontent@textNodes##本站.*最新章节！",
+    "nextContentUrl": "text.下一页.0@href",
+    "webJs": "",
+    "sourceRegex": "",
+    "replaceRegex": ""
+  },
+  "ruleExplore": {
+    "exploreAuthor": "",
+    "exploreBookList": "",
+    "exploreBookUrl": "",
+    "exploreCoverUrl": "",
+    "exploreIntro": "",
+    "exploreKind": "",
+    "exploreLastChapter": "",
+    "exploreName": ""
+  },
+  "ruleSearch": {
+    "searchAuthor": "class.author@text",
+    "searchBookList": "id.fengtui@class.bookbox",
+    "searchBookUrl": "class.bookname@tag.a.0@href",
+    "searchCoverUrl": "class.bookname@tag.a.0@href<js>\nvar id = result.match(/(\\d+)\\/?$/)[1];\nvar iid = parseInt(id/1000);\n'https://www.oldtimescc.cc/files/article/image/'+iid+'/'+id+'/'+id+'s.jpg';\n</js>",
+    "searchIntro": "class.update@text##简介：",
+    "searchKind": "",
+    "searchLastChapter": "class.cat@tag.a.0@text",
+    "searchName": "class.bookname@tag.a.0@text",
+    "searchWordCount": ""
+  },
+  "ruleToc": {
+    "tocList": "id.list-chapterAll@tag.dd",
+    "tocName": "tag.a@text",
+    "tocUrl": "tag.a@href",
+    "isVip": "",
+    "nextTocUrl": "",
+    "tocUpdateTime": ""
+  },
+  "searchUrl": "https://www.oldtimescc.cc/modules/article/search.php?searchkey={{key}}&action=login&submit=,{\n  \"charset\": \"gbk\"\n}"
+}

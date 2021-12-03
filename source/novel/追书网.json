@@ -1,0 +1,56 @@
+{
+  "sourceName": "💥 追书网",
+  "sourceType": 0,
+  "sourceUrl": "https://www.biquya.com",
+  "bookInfoPattern": "",
+  "exploreUrl": "玄幻奇幻::/id_1/\n武侠仙侠::/id_2/\n都市言情::/id_3/\n历史军事::/id_4/\n游戏竞技::/id_6/\n科幻灵异::/id_5/\n女生频道::/id_7/\n全本::/ClassicBook.html",
+  "header": "",
+  "ruleBookInfo": {
+    "infoInit": "",
+    "infoAuthor": "class.box_con.0@id.info@tag.p.0@text##作\\s*者：",
+    "infoCoverUrl": "id.fmimg@tag.img.0@src",
+    "infoIntro": "id.intro@tag.p.0@text",
+    "infoKind": "",
+    "infoLastChapter": "",
+    "infoName": "class.box_con.0@id.info@tag.h1.0@text",
+    "infoTocUrl": "",
+    "infoWordCount": ""
+  },
+  "ruleContent": {
+    "content": "id.content@html",
+    "nextContentUrl": "",
+    "webJs": "",
+    "sourceRegex": "",
+    "replaceRegex": ""
+  },
+  "ruleExplore": {
+    "exploreAuthor": "class.s5@text||class.s4@text",
+    "exploreBookList": "id.newscontent@class.l@tag.ul@tag.li||class.novelslist2@tag.ul@tag.li!0",
+    "exploreBookUrl": "class.s2@tag.a@href",
+    "exploreCoverUrl": "",
+    "exploreIntro": "",
+    "exploreKind": "class.s1@tag.a@text",
+    "exploreLastChapter": "class.s3@tag.a@text",
+    "exploreName": "class.s2@tag.a@text"
+  },
+  "ruleSearch": {
+    "searchAuthor": "class.result-game-item-info-tag.0@tag.span.1@text",
+    "searchBookList": "class.result-item",
+    "searchBookUrl": "class.result-item-title.0@tag.a.0@href",
+    "searchCoverUrl": "class.result-game-item-pic.0@tag.img.0@src",
+    "searchIntro": "",
+    "searchKind": "",
+    "searchLastChapter": "class.result-game-item-info-tag.3@tag.a.0@text",
+    "searchName": "class.result-item-title.0@tag.a.0@text",
+    "searchWordCount": ""
+  },
+  "ruleToc": {
+    "tocList": "id.list@tag.dd",
+    "tocName": "tag.a@text",
+    "tocUrl": "tag.a.0@href",
+    "isVip": "",
+    "nextTocUrl": "",
+    "tocUpdateTime": ""
+  },
+  "searchUrl": "https://www.mangg.com/search.php?q={{key}}"
+}

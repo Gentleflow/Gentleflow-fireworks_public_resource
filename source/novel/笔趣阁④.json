@@ -1,0 +1,56 @@
+{
+  "sourceName": "💥 笔趣阁④",
+  "sourceType": 0,
+  "sourceUrl": "https://www.biqubao.com",
+  "bookInfoPattern": "",
+  "exploreUrl": "玄幻::/xuanhuan/\n修真::/xiuzhen/\n都市::/dushi/\n历史::/lishi/\n网游::/wangyou/\n科幻::/kehuan/\n恐怖::/yanqing/\n其他::/qita/\n全本::/quanben/\n",
+  "header": "",
+  "ruleBookInfo": {
+    "infoInit": "",
+    "infoAuthor": "@css:[property='og:novel:author']@content",
+    "infoCoverUrl": "@css:[property='og:image']@content",
+    "infoIntro": "@css:[property='og:description']@content",
+    "infoKind": "@css:[property='og:novel:category']@content",
+    "infoLastChapter": "@css:[property='og:novel:latest_chapter_name']@content",
+    "infoName": "@css:[property='og:title']@content",
+    "infoTocUrl": "",
+    "infoWordCount": ""
+  },
+  "ruleContent": {
+    "content": "@css:#content@textNodes##一秒记住.*?免费阅读！|笔.{0,8}趣.{0,8}阁.*",
+    "nextContentUrl": "",
+    "webJs": "",
+    "sourceRegex": "",
+    "replaceRegex": ""
+  },
+  "ruleExplore": {
+    "exploreAuthor": "class.s5@text||class.s4@text",
+    "exploreBookList": "id.newscontent@class.l@tag.ul@tag.li||class.novelslist2@tag.ul@tag.li!0",
+    "exploreBookUrl": "class.s2@tag.a@href",
+    "exploreCoverUrl": "",
+    "exploreIntro": "",
+    "exploreKind": "class.s1@tag.a@text",
+    "exploreLastChapter": "class.s3@tag.a@text",
+    "exploreName": "class.s2@tag.a@text"
+  },
+  "ruleSearch": {
+    "searchAuthor": "$5",
+    "searchBookList": ":result-game-item\"(?:[^<]*<){2}[^>]*href=\"([^\"]*)\"(?:[^<]*<){1}img src=\"([^\"]*)\"(?:[^<]*<){6}span>([^<]*)(?:[^<]*<){4}[^>]*desc\">([^<]*)(?:[^>]*>){4}作者：(?:[^>]*>){2}\\s*([^<]*?)\\s*<(?:[^>]*>){4}类型：(?:[^>]*>){2}([^<]*)(?:[^>]*>){12}([^<]*)",
+    "searchBookUrl": "$1",
+    "searchCoverUrl": "$2",
+    "searchIntro": "$4",
+    "searchKind": "$6",
+    "searchLastChapter": "$7",
+    "searchName": "$3",
+    "searchWordCount": ""
+  },
+  "ruleToc": {
+    "tocList": ":dd><a href=\"([^\"]+)\"[^>]*>([^<]+)",
+    "tocName": "$2",
+    "tocUrl": "$1",
+    "isVip": "",
+    "nextTocUrl": "",
+    "tocUpdateTime": ""
+  },
+  "searchUrl": "/search.php?q={{key}}&p={{page}}"
+}

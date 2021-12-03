@@ -1,0 +1,56 @@
+{
+  "sourceName": "\uD83D\uDCA5 期刊杂志",
+  "sourceType": 0,
+  "sourceUrl": "http://qk.lifves.com",
+  "bookInfoPattern": "",
+  "exploreUrl": "读者校园::http://qk.lifves.com/magazine.php?s=%E8%AF%BB%E8%80%85&key=9e236705-8f62-4007-9dc6-0ce02ae32a4c<,&page={{page}}>\n读者::http://qk.lifves.com/magazine.php?s=%E8%AF%BB%E8%80%85&key=ea265b17-0d79-4240-b3db-0b4cf94de08b<,&page={{page}}>\n读者欣赏::http://qk.lifves.com/magazine.php?s=%E8%AF%BB%E8%80%85&key=b4f38850-dda4-4559-a1a7-59479a2e05e6<,&page={{page}}>\n意林原创::http://qk.lifves.com/magazine.php?s=%E6%84%8F%E6%9E%97&key=4fd8f670-f98d-459d-8263-044f6d5e4d4a<,&page={{page}}>\n意林::http://qk.lifves.com/magazine.php?s=%E6%84%8F%E6%9E%97&key=7e788766-77a0-4093-b1f1-e3f55dd55137<,&page={{page}}>\n上海故事::http://qk.lifves.com/magazine.php?s=%E6%95%85%E4%BA%8B&key=2f49b65d-8585-4b27-84d8-c59949902ac8<,&page={{page}}>\n今古传奇::http://qk.lifves.com/magazine.php?s=%E6%95%85%E4%BA%8B&key=52db49e5-51e0-4658-ab8c-7f7e1f19b662<,&page={{page}}>\n南都::http://qk.lifves.com/magazine.php?s=%E5%91%A8%E5%88%8A&key=ab027cf3-8a09-4d9f-b4bf-c4a99de3aba4<,&page={{page}}>\nVia看天下::http://qk.lifves.com/magazine.php?s=%E7%9C%8B%E5%A4%A9%E4%B8%8B&key=65545c2e-bb1c-4f32-8cdf-5995ef0bd73f<,&page={{page}}>\n文苑美文::http://qk.lifves.com/magazine.php?s=%E6%96%87%E8%8B%91&key=8eb793ed-1e66-4579-b9df-bd0341d56f03<,&page={{page}}>\n故事会::http://qk.lifves.com/magazine.php?s=%E6%95%85%E4%BA%8B&key=08dc3c17-262e-4f58-b7d9-932ab966e582<,&page={{page}}>\n民间故事上::http://qk.lifves.com/magazine.php?s=%E6%95%85%E4%BA%8B&key=4b794331-6c37-4d62-8ab4-c9bbd553afb1<,&page={{page}}>\n文苑感悟::http://qk.lifves.com/magazine.php?s=%E6%96%87%E8%8B%91&key=352bb7fa-2bea-47e8-bbe0-ef14bad0fd7b<,&page={{page}}>\n故事林::http://qk.lifves.com/magazine.php?s=%E6%95%85%E4%BA%8B&key=95ad621a-64c6-4535-a0b1-7168523387d7<,&page={{page}}>\n民间故事下::http://qk.lifves.com/magazine.php?s=%E6%95%85%E4%BA%8B&key=fff4cc15-0856-43e8-b431-3163b53fb57d<,&page={{page}}>",
+  "header": "{\n  \"User-Agent\": \"Mozilla/5.0 (Linux; Android 8.0.0; MI 5 Build/OPR1.170623.032; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/75.0.3770.89 Mobile Safari/537.36\"\n}",
+  "ruleBookInfo": {
+    "infoInit": "",
+    "infoAuthor": "",
+    "infoCoverUrl": "",
+    "infoIntro": "class.layui-field-box.0@text",
+    "infoKind": "",
+    "infoLastChapter": "",
+    "infoName": "",
+    "infoTocUrl": "",
+    "infoWordCount": ""
+  },
+  "ruleContent": {
+    "content": "class.layui-field-box@html",
+    "nextContentUrl": "",
+    "webJs": "",
+    "sourceRegex": "",
+    "replaceRegex": ""
+  },
+  "ruleExplore": {
+    "exploreAuthor": "",
+    "exploreBookList": "",
+    "exploreBookUrl": "",
+    "exploreCoverUrl": "",
+    "exploreIntro": "",
+    "exploreKind": "",
+    "exploreLastChapter": "",
+    "exploreName": ""
+  },
+  "ruleSearch": {
+    "searchAuthor": "",
+    "searchBookList": "class.layui-container",
+    "searchBookUrl": "tag.a.0@href",
+    "searchCoverUrl": "img@src",
+    "searchIntro": "",
+    "searchKind": "tag.a@text",
+    "searchLastChapter": "",
+    "searchName": "tag.a@text",
+    "searchWordCount": ""
+  },
+  "ruleToc": {
+    "tocList": "class.layui-card@tag.a",
+    "tocName": "text",
+    "tocUrl": "href",
+    "isVip": "",
+    "nextTocUrl": "",
+    "tocUpdateTime": ""
+  },
+  "searchUrl": "#"
+}

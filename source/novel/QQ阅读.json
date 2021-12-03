@@ -1,0 +1,56 @@
+{
+  "sourceName": "\uD83D\uDCA5 QQ阅读",
+  "sourceType": 0,
+  "sourceUrl": "https://h5.reader.qq.com",
+  "bookInfoPattern": "",
+  "exploreUrl": "女-免费周榜::/9/sortlist?rankType=0&dateType=1&sex=2&finish=-1&feeType=1&form=0&page={{page}} &pageSize=10\n女-免费月榜::/9/sortlist?rankType=0&dateType=2&sex=2&finish=-1&feeType=1&form=0&page={{page}} &pageSize=10\n女-免费总榜::/9/sortlist?rankType=0&dateType=3&sex=2&finish=-1&feeType=1&form=0&page={{page}} &pageSize=10\n女-新书周榜::/9/sortlist?rankType=0&dateType=1&sex=2&finish=2&feeType=-1&form=0&page={{page}} &pageSize=10\n女-新书月榜::/9/sortlist?rankType=0&dateType=2&sex=2&finish=2&feeType=-1&form=0&page={{page}} &pageSize=10\n女-新书总榜::/9/sortlist?rankType=0&dateType=3&sex=2&finish=2&feeType=-1&form=0&page={{page}} &pageSize=10\n女-热销周榜::/9/sortlist?rankType=0&dateType=1&sex=2&finish=-1&feeType=0&form=0&page={{page}} &pageSize=10\n女-热销月榜::/9/sortlist?rankType=0&dateType=2&sex=2&finish=-1&feeType=0&form=0&page={{page}} &pageSize=10\n女-热销总榜::/9/sortlist?rankType=0&dateType=3&sex=2&finish=-1&feeType=0&form=0&page={{page}} &pageSize=10\n女-包月周榜::/9/sortlist?rankType=0&dateType=1&sex=2&finish=-1&feeType=2&form=0&page={{page}} &pageSize=10\n女-包月月榜::/9/sortlist?rankType=0&dateType=2&sex=2&finish=-1&feeType=2&form=0&page={{page}} &pageSize=10\n女-包月总榜::/9/sortlist?rankType=0&dateType=3&sex=2&finish=-1&feeType=2&form=0&page={{page}} &pageSize=10\n古言::/9/catelist?caid=30013&scaid=30013&fee=-1&finish=-1&sort=8&pnum={{page}}\n现言::/9/catelist?caid=30020&scaid=30020&fee=-1&finish=-1&sort=8&pnum={{page}}\n幻情::/9/catelist?caid=30001&scaid=30001&fee=-1&finish=-1&sort=8&pnum={{page}}\n仙侠::/9/catelist?caid=30008&scaid=30008&fee=-1&finish=-1&sort=8&pnum={{page}}\n青春::/9/catelist?caid=30031&scaid=30031&fee=-1&finish=-1&sort=8&pnum={{page}}\n游戏::/9/catelist?caid=30050&scaid=30050&fee=-1&finish=-1&sort=8&pnum={{page}}\n科幻::/9/catelist?caid=30042&scaid=30042&fee=-1&finish=-1&sort=8&pnum={{page}}\n悬疑::/9/catelist?caid=30036&scaid=30036&fee=-1&finish=-1&sort=8&pnum={{page}}\n轻文::/9/catelist?caid=30055&scaid=30055&fee=-1&finish=-1&sort=8&pnum={{page}}\n短篇::/9/catelist?caid=30083&scaid=30083&fee=-1&finish=-1&sort=8&pnum={{page}}\n现实::/9/catelist?caid=30120&scaid=30120&fee=-1&finish=-1&sort=8&pnum={{page}}\n男-包月周榜::/9/sortlist?rankType=0&dateType=1&sex=-1&finish=-1&feeType=2&form=1&page={{page}} &pageSize=10\n男-包月月榜::/9/sortlist?rankType=0&dateType=2&sex=-1&finish=-1&feeType=2&form=1&page={{page}} &pageSize=10\n男-包月总榜::/9/sortlist?rankType=0&dateType=3&sex=-1&finish=-1&feeType=2&form=1&page={{page}} &pageSize=10\n男-热销周榜::/9/sortlist?rankType=0&dateType=1&sex=-1&finish=-1&feeType=0&form=1&page={{page}} &pageSize=10\n男-热销月榜::/9/sortlist?rankType=0&dateType=2&sex=-1&finish=-1&feeType=0&form=1&page={{page}} &pageSize=10\n男-热销总榜::/9/sortlist?rankType=0&dateType=3&sex=-1&finish=-1&feeType=0&form=1&page={{page}} &pageSize=10\n男-新书月榜::/9/sortlist?rankType=0&dateType=1&sex=-1&finish=2&feeType=-1&form=1&page={{page}} &pageSize=10\n男-新书周榜::/9/sortlist?rankType=0&dateType=2&sex=-1&finish=2&feeType=-1&form=1&page={{page}} &pageSize=10\n男-新书总榜::/9/sortlist?rankType=0&dateType=3&sex=-1&finish=2&feeType=-1&form=1&page={{page}} &pageSize=10",
+  "header": "",
+  "ruleBookInfo": {
+    "infoInit": "",
+    "infoAuthor": "$.book.author",
+    "infoCoverUrl": "$.book.cover",
+    "infoIntro": "$.book.intro@put:{free:$.book.maxfreechapter}",
+    "infoKind": "$.caname",
+    "infoLastChapter": "$.book.lastChapterName@put:{total:$.book.lastChapter}",
+    "infoName": "$.book.title",
+    "infoTocUrl": "$.book.id##(\\d+)##/9/chapter?bid=$1&pageNo=1",
+    "infoWordCount": "$.book.totalWords"
+  },
+  "ruleContent": {
+    "content": "$.content@js:result?result:\"付费章节，换源阅读！\"",
+    "nextContentUrl": "",
+    "webJs": "",
+    "sourceRegex": "",
+    "replaceRegex": ""
+  },
+  "ruleExplore": {
+    "exploreAuthor": "$.author",
+    "exploreBookList": "$.list[*]||$.booklist[*]",
+    "exploreBookUrl": "$.id##(\\d+)##/9/intro?bid=$1",
+    "exploreCoverUrl": "",
+    "exploreIntro": "$.id@js:var json=JSON.parse(java.ajax('http://ubook.3g.qq.com/9/intro?bid='+result)).book;\njava.put('imgUrl',json.cover);\njson.intro;",
+    "exploreKind": "",
+    "exploreLastChapter": "$.lastChapterName&&$.updateDate@js:result.replace(/(\\d+-\\d+-\\d+).*/,'（$1）')",
+    "exploreName": "$.title"
+  },
+  "ruleSearch": {
+    "searchAuthor": "$.author",
+    "searchBookList": "$.booklist[*]",
+    "searchBookUrl": "$.id##(\\d+)##/9/intro?bid=$1",
+    "searchCoverUrl": "@get:{imgUrl}",
+    "searchIntro": "$.id@js:var json=JSON.parse(java.ajax('http://ubook.3g.qq.com/9/intro?bid='+result)).book;\njava.put('imgUrl',json.cover);\njson.intro;",
+    "searchKind": "",
+    "searchLastChapter": "$.lastChapterName&&$.updateDate@js:result.replace(/(\\d+-\\d+-\\d+).*/,'（$1）')",
+    "searchName": "$.title",
+    "searchWordCount": "$.totalWords"
+  },
+  "ruleToc": {
+    "tocList": "$.chapter[*]",
+    "tocName": "$.title",
+    "tocUrl": "/9/book/chapter?{{baseUrl.match(/bid=(\\d+)/)[0]}}&cid={{$.seq}}",
+    "isVip": "@get:{free}@js:result!=0?Number({{$.seq}})>Number(result): ''",
+    "nextTocUrl": "@get:{total}\n@js:\nvar n=Math.ceil(result/100);\nvar list=[];\nfor(var i=2;i<=n;i++){list.push(baseUrl.replace(/pageNo=\\d+/,'pageNo=')+i);}\nlist;",
+    "tocUpdateTime": ""
+  },
+  "searchUrl": "/9/search?key={{key}}&pageNo={{page}}"
+}

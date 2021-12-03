@@ -1,0 +1,56 @@
+{
+  "sourceName": "\uD83D\uDCA5 言情小筑",
+  "sourceType": 0,
+  "sourceUrl": "https://www.yqxz.org",
+  "bookInfoPattern": "",
+  "exploreUrl": "总排行::/hot/index<,_{{page}}>.html\n周榜::/hot_zhou/index<,_{{page}}>.html\n月榜::/hot_yue/index<,_{{page}}>.html\n现代言情::/xdyq/index<,_{{page}}>.html\n古代言情::/gdyq/index<,_{{page}}>.html\n穿越重生::/cycs/index<,_{{page}}>.html\n玄幻仙侠::/xhxx/index<,_{{page}}>.html\n网游竞技::/wyjj/index<,_{{page}}>.html\n台湾小言::/twxy/index<,_{{page}}>.html\nBG 同人::/BGTR/index<,_{{page}}>.html",
+  "header": "",
+  "ruleBookInfo": {
+    "infoInit": "",
+    "infoAuthor": "",
+    "infoCoverUrl": "",
+    "infoIntro": "class.infos@tag.p@textNodes##^##<br>",
+    "infoKind": "class.tags@tag.a@text&&class.date@tag.span!0@text##时间|状态|：",
+    "infoLastChapter": "",
+    "infoName": "",
+    "infoTocUrl": "",
+    "infoWordCount": ""
+  },
+  "ruleContent": {
+    "content": "class.read_chapterDetail@html",
+    "nextContentUrl": "",
+    "webJs": "",
+    "sourceRegex": "",
+    "replaceRegex": ""
+  },
+  "ruleExplore": {
+    "exploreAuthor": "",
+    "exploreBookList": "",
+    "exploreBookUrl": "",
+    "exploreCoverUrl": "",
+    "exploreIntro": "",
+    "exploreKind": "",
+    "exploreLastChapter": "",
+    "exploreName": ""
+  },
+  "ruleSearch": {
+    "searchAuthor": "class.autor@text",
+    "searchBookList": "@css:.bk a",
+    "searchBookUrl": "href",
+    "searchCoverUrl": "",
+    "searchIntro": "tag.p@textNodes",
+    "searchKind": "class.date@text##日期\\:\\s",
+    "searchLastChapter": "{{'完本'}}",
+    "searchName": "tag.h3@text",
+    "searchWordCount": "class.size@text##大小\\:\\s"
+  },
+  "ruleToc": {
+    "tocList": "@css:.book_list li a",
+    "tocName": "text##章##节",
+    "tocUrl": "href",
+    "isVip": "",
+    "nextTocUrl": "",
+    "tocUpdateTime": ""
+  },
+  "searchUrl": "/e/search/index.php,{\n\"charset\": \"gbk\",\n\"method\": \"POST\",\n\"body\": \"keyboard={{key}}&show=title&classid=0\"\n}"
+}

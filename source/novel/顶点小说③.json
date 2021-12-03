@@ -1,0 +1,56 @@
+{
+  "sourceName": "💥 顶点小说③",
+  "sourceType": 0,
+  "sourceUrl": "https://www.villadroman.com",
+  "bookInfoPattern": "",
+  "exploreUrl": "",
+  "header": "",
+  "ruleBookInfo": {
+    "infoInit": "",
+    "infoAuthor": "class.booktag@tag.a.0@text",
+    "infoCoverUrl": "img@src",
+    "infoIntro": "id.bookIntro@text",
+    "infoKind": "",
+    "infoLastChapter": "class.col-md-10@tag.p.1@a@text",
+    "infoName": "tag.h1@text",
+    "infoTocUrl": "class.btn btn-success@tag.a@href",
+    "infoWordCount": ""
+  },
+  "ruleContent": {
+    "content": "id.txt@html##天才.*网站\\《.*\\》.*网站!|第.*章.* (.*)",
+    "nextContentUrl": "class.next@tag.a@href",
+    "webJs": "",
+    "sourceRegex": "",
+    "replaceRegex": ""
+  },
+  "ruleExplore": {
+    "exploreAuthor": "",
+    "exploreBookList": "",
+    "exploreBookUrl": "",
+    "exploreCoverUrl": "",
+    "exploreIntro": "",
+    "exploreKind": "",
+    "exploreLastChapter": "",
+    "exploreName": ""
+  },
+  "ruleSearch": {
+    "searchAuthor": "class.odd.1@text",
+    "searchBookList": "class.table@tag.tbody@tag.tr!0",
+    "searchBookUrl": "class.odd.0@tag.a.0@href",
+    "searchCoverUrl": "",
+    "searchIntro": "",
+    "searchKind": "class.even.2@text",
+    "searchLastChapter": "class.hidden-xs.0@text",
+    "searchName": "class.odd.0@tag.a.0@text",
+    "searchWordCount": ""
+  },
+  "ruleToc": {
+    "tocList": "class.row clearfix@tag.dd",
+    "tocName": "tag.a@text",
+    "tocUrl": "tag.a@href",
+    "isVip": "",
+    "nextTocUrl": "",
+    "tocUpdateTime": ""
+  },
+  "searchUrl": "https://www.villadroman.com/search.html?keyword={{key}}"
+}

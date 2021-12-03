@@ -1,0 +1,56 @@
+{
+  "sourceName": "\uD83D\uDCA5 小说天堂",
+  "sourceType": 0,
+  "sourceUrl": "https://www.xstt5.com",
+  "bookInfoPattern": "",
+  "exploreUrl": "畅销\n文学名著::/mingzhu/<,index_{{page}}.html>\n现代小说::/dangdai/<,index_{{page}}.html>\n世界名著::/waiwen/<,index_{{page}}.html>\n儿童文学::/ertong/<,index_{{page}}.html>\n古典名著::/gudian/<,index_{{page}}.html>\n散文随笔::/sanwen/<,index_{{page}}.html>\n青春校园::/qingchun/<,index_{{page}}.html>\n文学评论::/pinglun/<,index_{{page}}.html>\n网络\n玄幻仙侠::/xuanhuan/<,index_{{page}}.html>\n言情小说::/yanqing/<,index_{{page}}.html>\n武侠小说::/wuxia/<,index_{{page}}.html>\n穿越小说::/chuanyue/<,index_{{page}}.html>\n侦探悬疑::/xuanyi/<,index_{{page}}.html>\n科幻小说::/kehuan/<,index_{{page}}.html>\n网游小说::/wangyou/<,index_{{page}}.html>\n人文\n人文社科::/renwen/<,index_{{page}}.html>\n人物传记::/zhuanji/<,index_{{page}}.html>\n历史小说::/lishi/<,index_{{page}}.html>\n军事小说::/junshi/<,index_{{page}}.html>\n励志书籍::/lizhi/<,index_{{page}}.html>\n生活科普::/shenghuo/<,index_{{page}}.html>",
+  "header": "",
+  "ruleBookInfo": {
+    "infoInit": "id.zuo",
+    "infoAuthor": "tag.a.0@text",
+    "infoCoverUrl": "tag.img.0@src",
+    "infoIntro": "p@textNodes",
+    "infoKind": "tag.a.1@text&&tag.li.3@text&&tag.li.5@text##写作进程.|更新时间.",
+    "infoLastChapter": "",
+    "infoName": "tag.h1@text##txt.*",
+    "infoTocUrl": "",
+    "infoWordCount": "##字数：([^<]+)<##$1###@js:result+'字'"
+  },
+  "ruleContent": {
+    "content": "class.zw@html",
+    "nextContentUrl": "",
+    "webJs": "",
+    "sourceRegex": "",
+    "replaceRegex": ""
+  },
+  "ruleExplore": {
+    "exploreAuthor": "tag.a.2@text",
+    "exploreBookList": "class.bbox",
+    "exploreBookUrl": "tag.a.0@href",
+    "exploreCoverUrl": "",
+    "exploreIntro": "##简介：([^<]+)<##$1###",
+    "exploreKind": "tag.span.0@text",
+    "exploreLastChapter": "tag.a.1@text",
+    "exploreName": "tag.a.0@text"
+  },
+  "ruleSearch": {
+    "searchAuthor": "",
+    "searchBookList": "class.sbintro",
+    "searchBookUrl": "tag.a.0@href",
+    "searchCoverUrl": "",
+    "searchIntro": "tag.div.1@textNodes",
+    "searchKind": "tag.div.2@text##.*状态.",
+    "searchLastChapter": "",
+    "searchName": "tag.a.0@text",
+    "searchWordCount": "tag.div.2@text##.*更新.|状态.*"
+  },
+  "ruleToc": {
+    "tocList": "id.yuedu@tag.li!-1@tag.a",
+    "tocName": "text",
+    "tocUrl": "href",
+    "isVip": "",
+    "nextTocUrl": "",
+    "tocUpdateTime": ""
+  },
+  "searchUrl": "/e/search/index.php,{\n  \"charset\": \"UTF-8\",\n  \"method\": \"POST\",\n  \"body\": \"show=title&entry=1&keyboard={{key}}&x=20&y=5\"\n}"
+}

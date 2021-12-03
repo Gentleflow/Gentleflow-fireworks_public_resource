@@ -1,0 +1,56 @@
+{
+  "sourceName": "\uD83D\uDCA5 有度中文",
+  "sourceType": 0,
+  "sourceUrl": "https://www.yoduzw.com/",
+  "bookInfoPattern": "",
+  "exploreUrl": "传记回忆::/zhuanjihuiyi/{{page}}.html\n杂文随笔::/zawensuibi/{{page}}.html\n经典历史::/jingdianlishi/{{page}}.html\n侦探推理::/zhentantuili/{{page}}.html\n惊悚悬疑::/jingsongxuanyi/{{page}}.html\n网络玄幻::/wangluoxuanhuan/{{page}}.html\n青春都市::/qingchundushi/{{page}}.html\n社会心理::/shehuixinli/{{page}}.html\n经典科幻::/jingdiankehuan/{{page}}.html\n外国小说::/waiguoxiaoshuo/{{page}}.html\n当代小说::/dangdaixiaoshuo/{{page}}.html\n现代小说::/xiandaixiaoshuo/{{page}}.html\n官场小说::/guanchangxiaoshuo/{{page}}.html\n经典武侠::/jingdianwuxia/{{page}}.html\n纪实报告::/jishibaogao/{{page}}.html\n世界历史::/shijielishi/{{page}}.html\n中国历史::/zhongguolishi/{{page}}.html\n科普学习::/kepuxuexi/{{page}}.html\n宗教哲学::/zongjiaozhexue/{{page}}.html\n文学理论::/wenxuelilun/{{page}}.html\n寓言童话::/yuyantonghua/{{page}}.html\n作  品  集::/zuopinji/{{page}}.html\n国学古籍::/guoxueguji/{{page}}.html\n战争军事::/zhanzhengjunshi/{{page}}.html\n政治经济::/zhengzhijingji/{{page}}.html\n古典文学::/gudianwenxue/{{page}}.html\n经典言情::/jingdianyanqing/{{page}}.html\n英文读本::/yingwenduben/{{page}}.html\n日语读物::/riyuduwu/{{page}}.html\n诗歌戏曲::/shigexiqu/{{page}}.html\n玄    幻::/xuanhuanxiaoshuo/{{page}}.html\n仙    侠::/xianxiaxiaoshuo/{{page}}.html\n都    市::/dushixiaoshuo/{{page}}.html\n武    侠::/wuxiaxiaoshuo/{{page}}.html\n悬    疑::/xuanyixiaoshuo/{{page}}.html\n军    事::/junshixiaoshuo/{{page}}.html\n灵    异::/lingyixiaoshuo/{{page}}.html\n科    幻::/kehuanxiaoshuo/{{page}}.html\n历    史::/lishixiaoshuo/{{page}}.html\n竞    技::/jingjixiaoshuo/{{page}}.html\n穿    越::/chuanyuexiaoshuo/{{page}}.html\n言    情::/yanqingxiaoshuo/{{page}}.html\n网    游::/wangyouxiaoshuo/{{page}}.html\n富士见文库::/fushijianwenku/{{page}}.html\nFami通文库::/Famitongwenku/{{page}}.html\n  电击文库  ::/dianjiwenku/{{page}}.html\n  角川文库  ::/jiaochuanwenku/{{page}}.html\n  少女文库  ::/shaonvwenku/{{page}}.html\n  其他文库  ::/qitawenku/{{page}}.html\n   MF文库J  ::/MFwenkuJ/{{page}}.html\n   GA文库   ::/GAwenku/{{page}}.html\n   HJ文库   ::/HJwenku/{{page}}.html\n一迅社::/yixunshe/{{page}}.html\n集英社::/jiyingshe/{{page}}.html\n小学馆::/xiaoxueguan/{{page}}.html\n讲谈社::/jiangtanshe/{{page}}.html",
+  "header": "",
+  "ruleBookInfo": {
+    "infoInit": "",
+    "infoAuthor": "class.mb15 ell _tags pt2@tag.span.0@tag.a@text",
+    "infoCoverUrl": "class.cover g_col_4@tag.img@src",
+    "infoIntro": "class.h112 mb15 det-abt lh1d8 c_strong fs16 hm-scroll@tag.p@text",
+    "infoKind": "class.mb15 ell _tags pt2@tag.span.1@text&&class.mb15 ell _tags pt2@tag.span.2@text",
+    "infoLastChapter": "class.ell lst-chapter dib vam@text",
+    "infoName": "class.g_col_8 pr@tag.h1@text",
+    "infoTocUrl": "",
+    "infoWordCount": "class.mb15 ell _tags pt2@tag.span.3@text"
+  },
+  "ruleContent": {
+    "content": "class.read-content@tag.p@textNodes##(本章未完)",
+    "nextContentUrl": "class.mlfy_page@tag.a.4@href",
+    "webJs": "",
+    "sourceRegex": "",
+    "replaceRegex": ""
+  },
+  "ruleExplore": {
+    "exploreAuthor": "class.mb5 ell _tags pt2@tag.span.0@text",
+    "exploreBookList": "class.g_row lis-mn j_bookList@tag.li",
+    "exploreBookUrl": "class.lst-item pr lh1d5@tag.a.1@href",
+    "exploreCoverUrl": "",
+    "exploreIntro": "class.lst-item pr lh1d5@tag.a.1@text",
+    "exploreKind": "class.mb5 ell _tags pt2@tag.span.1@text||class.mb5 ell _tags pt2@tag.span.2@text",
+    "exploreLastChapter": "",
+    "exploreName": "class.mb5 fs20 f_mbo pt5 oh@text"
+  },
+  "ruleSearch": {
+    "searchAuthor": "class.c_small db mb5 ell ttc fs14@tag.span.1@text",
+    "searchBookList": "class.ser-ret lh1d5@tag.li",
+    "searchBookUrl": "class.mb5 fs20 f_mbo pt5 ell@tag.a@href",
+    "searchCoverUrl": "tag.img@_src",
+    "searchIntro": "class.fs16 mb10 c_strong g_ells@text",
+    "searchKind": "class.c_small db mb5 ell ttc fs14@tag.span.2@text",
+    "searchLastChapter": "class.db mb5 ell ttc fs16@class.vam@tag.a@text",
+    "searchName": "class.mb5 fs20 f_mbo pt5 ell@tag.a@text",
+    "searchWordCount": ""
+  },
+  "ruleToc": {
+    "tocList": "id.chapterList@tag.li",
+    "tocName": "class.w33p@tag.span@text",
+    "tocUrl": "class.w33p@tag.a@href",
+    "isVip": "",
+    "nextTocUrl": "",
+    "tocUpdateTime": ""
+  },
+  "searchUrl": "https://www.yoduzw.com/search,\n{\n  \"method\": \"POST\",\n  \"body\": \"searchkey={{key}}\"\n}"
+}

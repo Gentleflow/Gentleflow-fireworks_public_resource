@@ -1,0 +1,56 @@
+{
+  "sourceName": "💥 手打吧",
+  "sourceType": 0,
+  "sourceUrl": "https://m.shouda8.com",
+  "bookInfoPattern": "",
+  "exploreUrl": "玄幻奇幻::/xuanhuan/\n武侠仙侠::/wuxia/\n科幻未来::/kehuan/\n历史军事::/lishi/\n游戏竞技::/youxi/\n恐怖悬疑::/xuanyi/\n都市生活::/dushi/\n二次元::/erciyuan/\n古代言情::/guyan/\n现代言情::/xianyan/\n幻想奇缘::/huanqing/\n浪漫青春::/qingchun/\n网络情缘::/mmyouxi/\n科幻空间::/mmkehuan/\n鬼怪灵异::/lingyi/\nN次元::/Nciyuan/\n言情美文::/yanqing/\n",
+  "header": "",
+  "ruleBookInfo": {
+    "infoInit": "",
+    "infoAuthor": "class.author@tag.a@text",
+    "infoCoverUrl": "class.detail@tag.img@src",
+    "infoIntro": "",
+    "infoKind": "class.layui-btn layui-btn-xs layui-btn-radius@text",
+    "infoLastChapter": "class.new@tag.a@text",
+    "infoName": "class.name@tag.strong@text",
+    "infoTocUrl": "",
+    "infoWordCount": ""
+  },
+  "ruleContent": {
+    "content": "class.content@text",
+    "nextContentUrl": "",
+    "webJs": "",
+    "sourceRegex": "",
+    "replaceRegex": ""
+  },
+  "ruleExplore": {
+    "exploreAuthor": "class.data.0@tag.a@text",
+    "exploreBookList": "class.list@tag.li",
+    "exploreBookUrl": "class.bookname@tag.a@href",
+    "exploreCoverUrl": "tag.a@tag.img@src",
+    "exploreIntro": "class.intro@text",
+    "exploreKind": "class.data.0@tag.span@text",
+    "exploreLastChapter": "",
+    "exploreName": "class.bookname@tag.a@text"
+  },
+  "ruleSearch": {
+    "searchAuthor": "class.s4@text",
+    "searchBookList": "class.novelslist2@tag.li!0",
+    "searchBookUrl": "class.s2@tag.a@href",
+    "searchCoverUrl": "tag.img@src",
+    "searchIntro": "class.intro@text",
+    "searchKind": "tag.span.0@text",
+    "searchLastChapter": "class.s3@text",
+    "searchName": "class.s2@tag.a@text",
+    "searchWordCount": ""
+  },
+  "ruleToc": {
+    "tocList": ":chapter-id(?:[^\"]*\"){3}([^\"]*)[^>]*>([^<]*)",
+    "tocName": "$2",
+    "tocUrl": "$1",
+    "isVip": "",
+    "nextTocUrl": "@css:select>option:not(:first-child)@value",
+    "tocUpdateTime": ""
+  },
+  "searchUrl": "https://m.shouda8.com/search.html,{\n  \"method\": \"POST\",\n  \"body\": \"searchkey={{key}}\"\n}"
+}

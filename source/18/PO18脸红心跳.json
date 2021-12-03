@@ -1,0 +1,58 @@
+[
+  {
+    "sourceName": "🔞 PO18脸红心跳(偶尔需墙)",
+    "sourceType": 0,
+    "sourceUrl": "https://m.po18s.com",
+    "bookInfoPattern": "",
+    "exploreUrl": "日点击榜::/top/dayvisit_{{page}}/\n周点击榜::/top/weekvisit_{{page}}/\n月点击榜::/top/monthvisit_{{page}}/\n点击总榜:://top/allvisit_{{page}}/\n总受藏榜::/top/goodnum_{{page}}/\n字数排行::/size_{{page}}/\n日推荐榜::/top/dayvote_{{page}}/\n周推荐榜::/top/weekvote_{{page}}/\n月推荐榜::/top/monthvote_{{page}}/\n推荐总榜::/top/allvote_{{page}}/\n最新入库::/top/postdate_{{page}}/\n最近更新::/top/lastupdate_{{page}}/",
+    "header": "",
+    "ruleBookInfo": {
+      "infoInit": "",
+      "infoAuthor": "class.infotype@tag.p.0@text",
+      "infoCoverUrl": "class.pic@img@src",
+      "infoIntro": "class.intro@text",
+      "infoKind": "class.infotype@tag.p.1@text",
+      "infoLastChapter": "class.infotype@tag.p.-1@text",
+      "infoName": "class.cataloginfo@tag.h3@text",
+      "infoTocUrl": "class.infolink@tag.a.1@href",
+      "infoWordCount": ""
+    },
+    "ruleContent": {
+      "content": "tag.p.5@textNodes",
+      "nextContentUrl": "",
+      "webJs": "",
+      "sourceRegex": "",
+      "replaceRegex": ""
+    },
+    "ruleExplore": {
+      "exploreAuthor": "class.p3@text",
+      "exploreBookList": "class.ranking_general@class.articlegeneral",
+      "exploreBookUrl": "class.p2@tag.a@href",
+      "exploreCoverUrl": "",
+      "exploreIntro": "",
+      "exploreKind": "class.p1@text",
+      "exploreLastChapter": "",
+      "exploreName": "class.p2@text"
+    },
+    "ruleSearch": {
+      "searchAuthor": "class.author@text",
+      "searchBookList": "class.searchresult@p",
+      "searchBookUrl": "class.sone@tag.a@href",
+      "searchCoverUrl": "",
+      "searchIntro": "",
+      "searchKind": "",
+      "searchLastChapter": "",
+      "searchName": "class.sone@tag.a.0@text",
+      "searchWordCount": ""
+    },
+    "ruleToc": {
+      "tocList": "class.chapters@tag.li",
+      "tocName": "tag.a@text",
+      "tocUrl": "tag.a@href",
+      "isVip": "",
+      "nextTocUrl": "//a[text()=\"下一页\"]/@href",
+      "tocUpdateTime": ""
+    },
+    "searchUrl": "https://m.po18s.com/s.php,{\n \"charset\": \"gbk\",\"method\": \"POST\",\"body\": \"submit=&type=articlename&s={{key}} \"\n}"
+  }
+]

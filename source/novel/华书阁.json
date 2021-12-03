@@ -1,0 +1,56 @@
+{
+  "sourceName": "\uD83D\uDCA5 华书阁",
+  "sourceType": 0,
+  "sourceUrl": "https://www.huashuge.com",
+  "bookInfoPattern": "",
+  "exploreUrl": "玄幻魔法::/xuanhuanxiaoshuo/\n武侠修真::/xiuzhenxiaoshuo/\n都市言情::/dushixiaoshuo/\n历史军事::/chuanyuexiaoshuo/\n侦探推理::/zhentan/\n网游竞技::/wangyouxiaoshuo/\n科幻小说::/kehuanxiaoshuo/\n恐怖灵异::/kongbu/\n其他类型::/othersbooks/\n全本小说::/wanben/1_1/\n",
+  "header": "",
+  "ruleBookInfo": {
+    "infoInit": "",
+    "infoAuthor": "",
+    "infoCoverUrl": "",
+    "infoIntro": "",
+    "infoKind": "",
+    "infoLastChapter": "",
+    "infoName": "",
+    "infoTocUrl": "",
+    "infoWordCount": ""
+  },
+  "ruleContent": {
+    "content": "id.content@textNodes##http.*html|天才.*com",
+    "nextContentUrl": "",
+    "webJs": "",
+    "sourceRegex": "",
+    "replaceRegex": ""
+  },
+  "ruleExplore": {
+    "exploreAuthor": "class.s4@text",
+    "exploreBookList": "class.l bd@tag.ul@tag.li",
+    "exploreBookUrl": "class.s2@tag.a@href",
+    "exploreCoverUrl": "",
+    "exploreIntro": "",
+    "exploreKind": "",
+    "exploreLastChapter": "class.s3@tag.a@text",
+    "exploreName": "class.s2@tag.a@text"
+  },
+  "ruleSearch": {
+    "searchAuthor": "class.author@text##作\\s*者：",
+    "searchBookList": "class.bookbox",
+    "searchBookUrl": "class.bookname@tag.a.0@href",
+    "searchCoverUrl": "class.bookimg@tag.img@src",
+    "searchIntro": "",
+    "searchKind": "",
+    "searchLastChapter": "class.update@tag.a.0@text",
+    "searchName": "class.bookname@tag.a.0@text",
+    "searchWordCount": ""
+  },
+  "ruleToc": {
+    "tocList": "class.listmain@tag.dd!0:1:2:3:4:5@tag.a",
+    "tocName": "text",
+    "tocUrl": "href",
+    "isVip": "",
+    "nextTocUrl": "",
+    "tocUpdateTime": ""
+  },
+  "searchUrl": "https://www.huashuge.com/s.php?ie=gbk&q={{key}}"
+}

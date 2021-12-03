@@ -1,0 +1,56 @@
+{
+  "sourceName": "💥 八一中文网",
+  "sourceType": 0,
+  "sourceUrl": "https://www.zwdu.com",
+  "bookInfoPattern": "",
+  "exploreUrl": "玄幻::/xuanhuan/\n修真::/xiuzhen/\n都市::/dushi/\n历史::/lishi/\n网游::/wangyou/\n科幻::/kehuan/\n言情::/言情/\n其他::/qita/\n全本::/quanben/\n",
+  "header": "{\n  \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/47.0.2526.73 Safari/537.36\"\n}",
+  "ruleBookInfo": {
+    "infoInit": "",
+    "infoAuthor": "",
+    "infoCoverUrl": "",
+    "infoIntro": "id.intro@tag.p.0@textNodes",
+    "infoKind": "",
+    "infoLastChapter": "",
+    "infoName": "",
+    "infoTocUrl": "",
+    "infoWordCount": ""
+  },
+  "ruleContent": {
+    "content": "id.content@textNodes",
+    "nextContentUrl": "",
+    "webJs": "",
+    "sourceRegex": "",
+    "replaceRegex": ""
+  },
+  "ruleExplore": {
+    "exploreAuthor": "class.s5@text||class.s4@text",
+    "exploreBookList": "id.newscontent@class.l@tag.ul@tag.li||class.novelslist2@tag.ul@tag.li!0",
+    "exploreBookUrl": "class.s2@tag.a@href",
+    "exploreCoverUrl": "",
+    "exploreIntro": "",
+    "exploreKind": "class.s1@tag.a@text",
+    "exploreLastChapter": "class.s3@tag.a@text",
+    "exploreName": "class.s2@tag.a@text"
+  },
+  "ruleSearch": {
+    "searchAuthor": "class.result-game-item-info-tag.0@tag.span.1@text",
+    "searchBookList": "class.result-list@class.result-item result-game-item",
+    "searchBookUrl": "class.result-item-title.0@tag.a.0@href",
+    "searchCoverUrl": "tag.img.0@src",
+    "searchIntro": "",
+    "searchKind": "class.result-game-item-info-tag.1@tag.span.1@text",
+    "searchLastChapter": "class.result-game-item-info-tag.3@tag.a.0@text",
+    "searchName": "tag.h3@text",
+    "searchWordCount": ""
+  },
+  "ruleToc": {
+    "tocList": "id.list@tag.dd",
+    "tocName": "tag.a@text",
+    "tocUrl": "tag.a@href",
+    "isVip": "",
+    "nextTocUrl": "",
+    "tocUpdateTime": ""
+  },
+  "searchUrl": "https://www.zwdu.com/search.php?keyword={{key}}"
+}

@@ -1,0 +1,394 @@
+[
+  {
+    "sourceName": "花火-番茄小说出版",
+    "sourceType": 0,
+    "sourceUrl": "https://api5-normal-lf.fqnovel.com/chuban",
+    "bookInfoPattern": "",
+    "exploreUrl": "科学幻想::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=160&limit=10&source=front_category&category_id=8&offset=<,{{page}}>&query_gender=2&iid=1662886704841607&aid=1967&app_name=novelapp&version_code=500\n悬疑解密::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=160&limit=10&source=front_category&category_id=10&offset=<,{{page}}>&query_gender=2&iid=1662886704841607&aid=1967&app_name=novelapp&version_code=500\n历史纪实::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=160&limit=10&source=front_category&category_id=12&offset=<,{{page}}>&query_gender=2&iid=1662886704841607&aid=1967&app_name=novelapp&version_code=500\n现代武侠::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=160&limit=10&source=front_category&category_id=16&offset=<,{{page}}>&query_gender=2&iid=1662886704841607&aid=1967&app_name=novelapp&version_code=500\n影视小说::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=160&limit=10&source=front_category&category_id=45&offset=<,{{page}}>&query_gender=2&iid=1662886704841607&aid=1967&app_name=novelapp&version_code=500\n诗歌散文::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=160&limit=10&source=front_category&category_id=46&offset=<,{{page}}>&query_gender=2&iid=1662886704841607&aid=1967&app_name=novelapp&version_code=500\n生活日常::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=160&limit=10&source=front_category&category_id=48&offset=<,{{page}}>&query_gender=2&iid=1662886704841607&aid=1967&app_name=novelapp&version_code=500\n社会科学::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=160&limit=10&source=front_category&category_id=50&offset=<,{{page}}>&query_gender=2&iid=1662886704841607&aid=1967&app_name=novelapp&version_code=500\n科技探索::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=160&limit=10&source=front_category&category_id=52&offset=<,{{page}}>&query_gender=2&iid=1662886704841607&aid=1967&app_name=novelapp&version_code=500\n经济管理::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=160&limit=10&source=front_category&category_id=53&offset=<,{{page}}>&query_gender=2&iid=1662886704841607&aid=1967&app_name=novelapp&version_code=500\n成功励志::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=160&limit=10&source=front_category&category_id=56&offset=<,{{page}}>&query_gender=2&iid=1662886704841607&aid=1967&app_name=novelapp&version_code=500\n文化历史::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=160&limit=10&source=front_category&category_id=62&offset=<,{{page}}>&query_gender=2&iid=1662886704841607&aid=1967&app_name=novelapp&version_code=500\n军事战争::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=160&limit=10&source=front_category&category_id=97&offset=<,{{page}}>&query_gender=2&iid=1662886704841607&aid=1967&app_name=novelapp&version_code=500\n中国名著::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=160&limit=10&source=front_category&category_id=98&offset=<,{{page}}>&query_gender=2&iid=1662886704841607&aid=1967&app_name=novelapp&version_code=500\n外国名著::https://api5-normal-lf.fqnovel.com/reading/bookapi/new_category/landing/v/?genre_type=160&limit=10&source=front_category&category_id=99&offset=<,{{page}}>&query_gender=2&iid=1662886704841607&aid=1967&app_name=novelapp&version_code=500",
+    "header": "",
+    "ruleBookInfo": {
+      "infoInit": "",
+      "infoAuthor": ".author",
+      "infoCoverUrl": "",
+      "infoIntro": "",
+      "infoKind": "",
+      "infoLastChapter": ".last_chapter_title",
+      "infoName": ".book_name",
+      "infoTocUrl": "",
+      "infoWordCount": ""
+    },
+    "ruleContent": {
+      "content": "$..content<js>result</js>",
+      "nextContentUrl": "",
+      "webJs": "",
+      "sourceRegex": "",
+      "replaceRegex": ""
+    },
+    "ruleExplore": {
+      "exploreAuthor": "",
+      "exploreBookList": "",
+      "exploreBookUrl": "",
+      "exploreCoverUrl": "",
+      "exploreIntro": "",
+      "exploreKind": "",
+      "exploreLastChapter": "",
+      "exploreName": ""
+    },
+    "ruleSearch": {
+      "searchAuthor": "author",
+      "searchBookList": "$..book_data[*]||$..book_info[*]",
+      "searchBookUrl": "https://api3-normal-lf.fqnovel.com/reading/bookapi/directory/all_items/v/?need_version=true&book_id={$.book_id}&iid=2665637677906061&aid=1967&app_name=novelapp&version_code=495",
+      "searchCoverUrl": "thumb_url",
+      "searchIntro": "abstract",
+      "searchKind": "tags||category",
+      "searchLastChapter": "",
+      "searchName": "book_name",
+      "searchWordCount": "word_number"
+    },
+    "ruleToc": {
+      "tocList": "$..item_data_list[*]",
+      "tocName": "$..title",
+      "tocUrl": "https://novel.snssdk.com/api/novel/book/reader/full/v1/?group_id={$..item_id}&item_id={$..item_id}",
+      "isVip": "",
+      "nextTocUrl": "",
+      "tocUpdateTime": ""
+    },
+    "searchUrl": "https://api5-normal-lf.fqnovel.com/reading/bookapi/search/page/v/?offset=0&passback=&query={{key}}&search_id=&iid=4125792742674311&aid=1967"
+  },
+  {
+    "sourceName": "花火-天涯书库",
+    "sourceType": 0,
+    "sourceUrl": "https://www.tianyabooks.com",
+    "bookInfoPattern": "",
+    "exploreUrl": "华人文学::https://www.tianyabooks.com/cn/\n世界文学::https://www.tianyabooks.com/world/\n言情小说::https://www.tianyabooks.com/romance/\n网络小说::https://www.tianyabooks.com/net/\n恐怖灵异::https://www.tianyabooks.com/horror/\n侦探推理::https://www.tianyabooks.com/spy/\n科幻小说::https://www.tianyabooks.com/sf/\n玄幻小说::https://www.tianyabooks.com/fantasy/",
+    "header": "",
+    "ruleBookInfo": {
+      "infoInit": "",
+      "infoAuthor": "class.book@tag.h2@text",
+      "infoCoverUrl": "",
+      "infoIntro": "class.book@tag.div@tag.p@text",
+      "infoKind": "",
+      "infoLastChapter": "",
+      "infoName": "class.book@tag.h1@text",
+      "infoTocUrl": "",
+      "infoWordCount": ""
+    },
+    "ruleContent": {
+      "content": "id.main@tag.p.1@html",
+      "nextContentUrl": "id.main@tag.table.1@tag.tbody@tag.tr@tag.td@tag.table.0@tag.tbody@tag.tr@tag.td.2@tag.strong@tag.a@href",
+      "webJs": "",
+      "sourceRegex": "",
+      "replaceRegex": ""
+    },
+    "ruleExplore": {
+      "exploreAuthor": "",
+      "exploreBookList": "",
+      "exploreBookUrl": "",
+      "exploreCoverUrl": "",
+      "exploreIntro": "",
+      "exploreKind": "",
+      "exploreLastChapter": "",
+      "exploreName": ""
+    },
+    "ruleSearch": {
+      "searchAuthor": "",
+      "searchBookList": "class.leftbox@tag.ul@tag.li",
+      "searchBookUrl": "tag.a@href",
+      "searchCoverUrl": "",
+      "searchIntro": "",
+      "searchKind": "",
+      "searchLastChapter": "",
+      "searchName": "tag.a@text",
+      "searchWordCount": ""
+    },
+    "ruleToc": {
+      "tocList": "class.book@tag.dl@tag.dd",
+      "tocName": "tag.a@text",
+      "tocUrl": "tag.a@href",
+      "isVip": "",
+      "nextTocUrl": "",
+      "tocUpdateTime": ""
+    },
+    "searchUrl": "https://www.tianyabooks.com"
+  },
+  {
+    "sourceName": "花火-古典文学",
+    "sourceType": 0,
+    "sourceUrl": "http://www.cngdwx.com",
+    "bookInfoPattern": "",
+    "exploreUrl": "全部典籍::http://www.cngdwx.com/shuku_1518_{{page}}.html\n先秦两汉::http://www.cngdwx.com/xianqinlianghan/shuku_155_{{page}}.html\n魏晋南北::http://www.cngdwx.com/weijinnanbeichao/shuku_91_{{page}}.html\n国学启蒙::http://www.cngdwx.com/guoxueqimeng/shuku.html\n译文赏析::http://www.cngdwx.com/yiwenshangxi/shuku_99_{{page}}.html\n唐宋时代::http://www.cngdwx.com/tangsong/shuku_317_{{page}}.html\n元明清史::http://www.cngdwx.com/yuanmingqing/shuku_598_{{page}}.html\n近现代史::http://www.cngdwx.com/jinxiandai/shuku_198_{{page}}.html\n杂谈类别::http://www.cngdwx.com/zatan/shuku.html",
+    "header": "",
+    "ruleBookInfo": {
+      "infoInit": "",
+      "infoAuthor": "class.info@tag.li.0@text",
+      "infoCoverUrl": "",
+      "infoIntro": "class.words@tag.p@text",
+      "infoKind": "",
+      "infoLastChapter": "",
+      "infoName": "class.title@tag.h1@text",
+      "infoTocUrl": "",
+      "infoWordCount": ""
+    },
+    "ruleContent": {
+      "content": "class.box_box@tag.p@html",
+      "nextContentUrl": "",
+      "webJs": "",
+      "sourceRegex": "",
+      "replaceRegex": ""
+    },
+    "ruleExplore": {
+      "exploreAuthor": "",
+      "exploreBookList": "",
+      "exploreBookUrl": "",
+      "exploreCoverUrl": "",
+      "exploreIntro": "",
+      "exploreKind": "",
+      "exploreLastChapter": "",
+      "exploreName": ""
+    },
+    "ruleSearch": {
+      "searchAuthor": "class.author@tag.a.0@text||tag.div.1@tag.p.0@tag.a.0@text",
+      "searchBookList": "-class.ul_m_list@tag.li||class.ul_b_list@tag.li",
+      "searchBookUrl": "class.title1@tag.a.0@href||tag.h2@tag.a.0@href",
+      "searchCoverUrl": "tag.div.0@tag.a.0@tag.img@src",
+      "searchIntro": "",
+      "searchKind": "class.c@tag.a.0@text||tag.div.1@tag.p.0@tag.a.1@text",
+      "searchLastChapter": "class.title1@tag.a.1@text",
+      "searchName": "class.title1@tag.a.0@text||tag.h2@tag.a.0@text",
+      "searchWordCount": ""
+    },
+    "ruleToc": {
+      "tocList": "class.list_box@tag.li@tag.a",
+      "tocName": "text",
+      "tocUrl": "href",
+      "isVip": "",
+      "nextTocUrl": "",
+      "tocUpdateTime": ""
+    },
+    "searchUrl": "http://www.cngdwx.com/plus/search.php?kwtype=0&searchtype=&q={{key}},{\n  \"charset\": \"utf-8\"\n}"
+  },
+  {
+    "sourceName": "花火-期刊杂志",
+    "sourceType": 0,
+    "sourceUrl": "http://qk.lifves.com",
+    "bookInfoPattern": "",
+    "exploreUrl": "信息时报::http://qk.lifves.com/magazine.php?s=%E6%8A%A5%E7%BA%B8&key=320700000922<,&page={{page}}>\n经济日报::http://qk.lifves.com/magazine.php?s=%E6%8A%A5%E7%BA%B8&key=320700000125<,&page={{page}}>\n新民晚报::http://qk.lifves.com/magazine.php?s=%E6%8A%A5%E7%BA%B8&key=320700001254<,&page={{page}}>\n扬子晚报::http://qk.lifves.com/magazine.php?s=%E6%8A%A5%E7%BA%B8&key=320700001264<,&page={{page}}>\n羊城晚报::http://qk.lifves.com/magazine.php?s=%E6%8A%A5%E7%BA%B8&key=320700001265<,&page={{page}}>",
+    "header": "{\n  \"User-Agent\": \"Mozilla/5.0 (Linux; Android 8.0.0; MI 5 Build/OPR1.170623.032; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/75.0.3770.89 Mobile Safari/537.36\"\n}",
+    "ruleBookInfo": {
+      "infoInit": "",
+      "infoAuthor": "",
+      "infoCoverUrl": "",
+      "infoIntro": "class.layui-field-box.0@text",
+      "infoKind": "",
+      "infoLastChapter": "",
+      "infoName": "",
+      "infoTocUrl": "",
+      "infoWordCount": ""
+    },
+    "ruleContent": {
+      "content": "class.layui-field-box@html",
+      "nextContentUrl": "",
+      "webJs": "",
+      "sourceRegex": "",
+      "replaceRegex": ""
+    },
+    "ruleExplore": {
+      "exploreAuthor": "",
+      "exploreBookList": "",
+      "exploreBookUrl": "",
+      "exploreCoverUrl": "",
+      "exploreIntro": "",
+      "exploreKind": "",
+      "exploreLastChapter": "",
+      "exploreName": ""
+    },
+    "ruleSearch": {
+      "searchAuthor": "",
+      "searchBookList": "class.layui-container",
+      "searchBookUrl": "tag.a.0@href",
+      "searchCoverUrl": "img@src",
+      "searchIntro": "",
+      "searchKind": "tag.a@text",
+      "searchLastChapter": "",
+      "searchName": "tag.a@text",
+      "searchWordCount": ""
+    },
+    "ruleToc": {
+      "tocList": "class.layui-card@tag.a",
+      "tocName": "text",
+      "tocUrl": "href",
+      "isVip": "",
+      "nextTocUrl": "",
+      "tocUpdateTime": ""
+    },
+    "searchUrl": "#"
+  },
+  {
+    "sourceName": "花火-读书网-社科",
+    "sourceType": 0,
+    "sourceUrl": "https://www.dushu.com/sheke",
+    "bookInfoPattern": "",
+    "exploreUrl": "经济管理::https://www.dushu.com/lianzai/1116_{{page}}.html\n企业管理::https://www.dushu.com/lianzai/1140_{{page}}.html\n经济金融::https://www.dushu.com/lianzai/1141_{{page}}.html\n投资理财::https://www.dushu.com/lianzai/1142_{{page}}.html\n市场营销::https://www.dushu.com/lianzai/1143_{{page}}.html\n财会统计::https://www.dushu.com/lianzai/1144_{{page}}.html\n通俗读物::https://www.dushu.com/lianzai/1145_{{page}}.html\n成功励志::https://www.dushu.com/lianzai/1117_{{page}}.html\n成功学说::https://www.dushu.com/lianzai/1146_{{page}}.html\n人在职场::https://www.dushu.com/lianzai/1147_{{page}}.html\n演讲口才::https://www.dushu.com/lianzai/1148_{{page}}.html\n人际处事::https://www.dushu.com/lianzai/1149_{{page}}.html\n心灵修养::https://www.dushu.com/lianzai/1150_{{page}}.html\n性格情绪::https://www.dushu.com/lianzai/1151_{{page}}.html\n青少励志::https://www.dushu.com/lianzai/1152_{{page}}.html\n历史传记::https://www.dushu.com/lianzai/1118_{{page}}.html\n中国历史::https://www.dushu.com/lianzai/1153_{{page}}.html\n世界历史::https://www.dushu.com/lianzai/1154_{{page}}.html\n历史普及::https://www.dushu.com/lianzai/1155_{{page}}.html\n人物传记::https://www.dushu.com/lianzai/1156_{{page}}.html\n两性情感::https://www.dushu.com/lianzai/1119_{{page}}.html\n两性关系::https://www.dushu.com/lianzai/1157_{{page}}.html\n婚姻家庭::https://www.dushu.com/lianzai/1158_{{page}}.html\n情感恋爱::https://www.dushu.com/lianzai/1159_{{page}}.html\n生活时尚::https://www.dushu.com/lianzai/1120_{{page}}.html\n烹调饮食::https://www.dushu.com/lianzai/1160_{{page}}.html\n健康养生::https://www.dushu.com/lianzai/1161_{{page}}.html\n占星风水::https://www.dushu.com/lianzai/1162_{{page}}.html\n时尚摄影::https://www.dushu.com/lianzai/1163_{{page}}.html\n旅游地理::https://www.dushu.com/lianzai/1164_{{page}}.html\n家居手工::https://www.dushu.com/lianzai/1165_{{page}}.html\n美容塑身::https://www.dushu.com/lianzai/1166_{{page}}.html\n运动健身::https://www.dushu.com/lianzai/1167_{{page}}.html\n休闲娱乐::https://www.dushu.com/lianzai/1168_{{page}}.html\n文学艺术::https://www.dushu.com/lianzai/1121_{{page}}.html\n散文随笔::https://www.dushu.com/lianzai/1169_{{page}}.html\n绘本画册::https://www.dushu.com/lianzai/1170_{{page}}.html\n美术设计::https://www.dushu.com/lianzai/1171_{{page}}.html\n音乐戏剧::https://www.dushu.com/lianzai/1172_{{page}}.html\n纪实文学::https://www.dushu.com/lianzai/1173_{{page}}.html\n文学理论::https://www.dushu.com/lianzai/1174_{{page}}.html\n诗词歌赋::https://www.dushu.com/lianzai/1175_{{page}}.html\n世界名著::https://www.dushu.com/lianzai/1176_{{page}}.html\n民间文学::https://www.dushu.com/lianzai/1200_{{page}}.html\n艺术理论::https://www.dushu.com/lianzai/1201_{{page}}.html\n影视艺术::https://www.dushu.com/lianzai/1202_{{page}}.html\n书法摄影::https://www.dushu.com/lianzai/1203_{{page}}.html\n社会科学::https://www.dushu.com/lianzai/1122_{{page}}.html\n社会科普::https://www.dushu.com/lianzai/1177_{{page}}.html\n心理著作::https://www.dushu.com/lianzai/1178_{{page}}.html\n哲学宗教::https://www.dushu.com/lianzai/1179_{{page}}.html\n军事法律::https://www.dushu.com/lianzai/1180_{{page}}.html\n时事政治::https://www.dushu.com/lianzai/1181_{{page}}.html\n文化研究::https://www.dushu.com/lianzai/1182_{{page}}.html\n教育考试::https://www.dushu.com/lianzai/1183_{{page}}.html\n美学传播::https://www.dushu.com/lianzai/1204_{{page}}.html\n其他类型::https://www.dushu.com/lianzai/1184_{{page}}.html\n亲子少儿::https://www.dushu.com/lianzai/1123_{{page}}.html\n孕产育儿::https://www.dushu.com/lianzai/1185_{{page}}.html\n幼儿启蒙::https://www.dushu.com/lianzai/1186_{{page}}.html\n儿童文学::https://www.dushu.com/lianzai/1187_{{page}}.html\n科普百科::https://www.dushu.com/lianzai/1188_{{page}}.html\n电脑网络::https://www.dushu.com/lianzai/1124_{{page}}.html\n综合开发::https://www.dushu.com/lianzai/1189_{{page}}.html\n图形图像::https://www.dushu.com/lianzai/1190_{{page}}.html\n网络通信::https://www.dushu.com/lianzai/1191_{{page}}.html\n家庭办公::https://www.dushu.com/lianzai/1192_{{page}}.html\n技术人文::https://www.dushu.com/lianzai/1193_{{page}}.html\n科学技术::https://www.dushu.com/lianzai/1125_{{page}}.html\n科普读物::https://www.dushu.com/lianzai/1194_{{page}}.html\n自然科学::https://www.dushu.com/lianzai/1195_{{page}}.html\n医学读物::https://www.dushu.com/lianzai/1196_{{page}}.html\n工业技术::https://www.dushu.com/lianzai/1197_{{page}}.html\n其他书籍::https://www.dushu.com/lianzai/1198_{{page}}.html",
+    "header": "{\n  \"User-Agent\": \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36\"\n}",
+    "ruleBookInfo": {
+      "infoInit": "",
+      "infoAuthor": "class.book-details-left@tag.a.0@text",
+      "infoCoverUrl": "class.pic@img@src",
+      "infoIntro": "class.text txtsummary.0@text",
+      "infoKind": "class.crumbs@tag.a.3@text",
+      "infoLastChapter": "class.booklist-table@tag.td.-1@a@text",
+      "infoName": "class.book-title@h1@text",
+      "infoTocUrl": "",
+      "infoWordCount": ""
+    },
+    "ruleContent": {
+      "content": "class.content_txt@html",
+      "nextContentUrl": "",
+      "webJs": "",
+      "sourceRegex": "",
+      "replaceRegex": ""
+    },
+    "ruleExplore": {
+      "exploreAuthor": "",
+      "exploreBookList": "",
+      "exploreBookUrl": "",
+      "exploreCoverUrl": "",
+      "exploreIntro": "",
+      "exploreKind": "",
+      "exploreLastChapter": "",
+      "exploreName": ""
+    },
+    "ruleSearch": {
+      "searchAuthor": "tag.p.0@text##，.*",
+      "searchBookList": "class.searchlist@li||class.bookslist@li",
+      "searchBookUrl": "a@href",
+      "searchCoverUrl": "img@data-original",
+      "searchIntro": "",
+      "searchKind": "",
+      "searchLastChapter": "",
+      "searchName": "h3@a@text",
+      "searchWordCount": ""
+    },
+    "ruleToc": {
+      "tocList": "class.booklist-table@td@a",
+      "tocName": "text",
+      "tocUrl": "href",
+      "isVip": "",
+      "nextTocUrl": "",
+      "tocUpdateTime": ""
+    },
+    "searchUrl": "https://www.dushu.com/search.aspx?wd={{key}}&f=0&r=3&t=0&p={{page}}"
+  },
+  {
+    "sourceName": "花火-有兔-出版",
+    "sourceType": 0,
+    "sourceUrl": "http://app.youzibank.com/chuban",
+    "bookInfoPattern": "",
+    "exploreUrl": "小编热推::http://app.youzibank.com/book/list?pageNo={{page}}&selectionModuleId=37\n经典畅销::http://app.youzibank.com/book/list?pageNo={{page}}&selectionModuleId=38\n影视原著::http://app.youzibank.com/book/list?pageNo={{page}}&selectionModuleId=39\n自我提升::http://app.youzibank.com/book/list?pageNo={{page}}&selectionModuleId=40\n特别推荐::http://app.youzibank.com/book/list?pageNo={{page}}&selectionModuleId=46\n现代小说::http://app.youzibank.com/book/list?gender=-1&clsIdFirst=163&pageNo={{page}}&orderBy=read_cnt&fullFlag=0&clsIdSecond=\n历史传记::http://app.youzibank.com/book/list?gender=-1&clsIdFirst=193&pageNo={{page}}&orderBy=read_cnt&fullFlag=0&clsIdSecond=\n经济管理::http://app.youzibank.com/book/list?gender=-1&clsIdFirst=205&pageNo={{page}}&orderBy=read_cnt&fullFlag=0&clsIdSecond=\n社科心理::http://app.youzibank.com/book/list?gender=-1&clsIdFirst=212&pageNo={{page}}&orderBy=read_cnt&fullFlag=0&clsIdSecond=\n艺术生活::http://app.youzibank.com/book/list?gender=-1&clsIdFirst=245&pageNo={{page}}&orderBy=read_cnt&fullFlag=0&clsIdSecond=\n历史著作::http://app.youzibank.com/book/list?gender=-1&clsIdFirst=258&pageNo={{page}}&orderBy=read_cnt&fullFlag=0&clsIdSecond=\n宗教哲学::https://app1.youzibank.com/book/list?gender=-1&clsIdFirst=262&pageNo={{page}}&orderBy=read_cnt&fullFlag=0&clsIdSecond=\n成功励志::http://app.youzibank.com/book/list?gender=-1&clsIdFirst=269&pageNo={{page}}&orderBy=read_cnt&fullFlag=0&clsIdSecond=\n英文著作::http://app.youzibank.com/book/list?gender=-1&clsIdFirst=276&pageNo={{page}}&orderBy=read_cnt&fullFlag=0&clsIdSecond=\n儿童读物::http://app.youzibank.com/book/list?gender=-1&clsIdFirst=280&pageNo={{page}}&orderBy=read_cnt&fullFlag=0&clsIdSecond=\n古典文学::http://app.youzibank.com/book/list?gender=-1&clsIdFirst=283&pageNo={{page}}&orderBy=read_cnt&fullFlag=0&clsIdSecond=\n现代文学::http://app.youzibank.com/book/list?gender=-1&clsIdFirst=287&pageNo={{page}}&orderBy=read_cnt&fullFlag=0&clsIdSecond=\n商业思维::http://app.youzibank.com/book/list?gender=-1&clsIdFirst=291&pageNo={{page}}&orderBy=read_cnt&fullFlag=0&clsIdSecond=",
+    "header": "",
+    "ruleBookInfo": {
+      "infoInit": "",
+      "infoAuthor": "",
+      "infoCoverUrl": "",
+      "infoIntro": "intro",
+      "infoKind": "",
+      "infoLastChapter": "",
+      "infoName": "",
+      "infoTocUrl": "",
+      "infoWordCount": ""
+    },
+    "ruleContent": {
+      "content": "@js:result",
+      "nextContentUrl": "",
+      "webJs": "",
+      "sourceRegex": "",
+      "replaceRegex": ""
+    },
+    "ruleExplore": {
+      "exploreAuthor": "",
+      "exploreBookList": "",
+      "exploreBookUrl": "",
+      "exploreCoverUrl": "",
+      "exploreIntro": "",
+      "exploreKind": "",
+      "exploreLastChapter": "",
+      "exploreName": ""
+    },
+    "ruleSearch": {
+      "searchAuthor": "author",
+      "searchBookList": "data",
+      "searchBookUrl": "http://app.youzibank.com/book/chapter/listAll?userId=376679&bookId={$.id}",
+      "searchCoverUrl": "http://book.chengxinqinye.com/book{$.photoPath}",
+      "searchIntro": "",
+      "searchKind": "clsName",
+      "searchLastChapter": "",
+      "searchName": "name",
+      "searchWordCount": ""
+    },
+    "ruleToc": {
+      "tocList": "data",
+      "tocName": "name",
+      "tocUrl": "http://book.chengxinqinye.com/book{$.filePath}",
+      "isVip": "",
+      "nextTocUrl": "",
+      "tocUpdateTime": ""
+    },
+    "searchUrl": "http://app.youzibank.com/es/search/book?q={{key}}&pageNo={{page}}&pageSize=10,{\n  \"headers\": \"{Seq: \\\"1f9caa033a22bc75e72437d8952992cd\\\",PushToken: \\\"AqJmTQBjP541B9G8V90FwOfjyWUbqhf9dOrENy47ckhK\\\"}\"\n}"
+  },
+  {
+    "sourceName": "花火-中学生读书网",
+    "sourceType": 0,
+    "sourceUrl": "https://fox2008.cn",
+    "bookInfoPattern": "",
+    "exploreUrl": "散文::https://fox2008.cn/Article/List_256/\n诗歌::https://fox2008.cn/Article/List_96/<index,index_2,index_3,index_{{page+1}}>.html\n小说::https://fox2008.cn/Article/List_9/<index,index_2,index_3,index_{{page+1}}>.html\n中国文学::https://fox2008.cn/Article/List_10/<index,index_2,index_3,index_{{page+1}}>.html\n外国名著::https://fox2008.cn/Article/List_176/<index,index_2,index_3,index_{{page+1}}>.html\n名著导读::https://fox2008.cn/Article/List_374/\n经部作品::https://fox2008.cn/Article/List_28/\n史部作品::https://fox2008.cn/Article/List_29/\n四库全书::https://fox2008.cn/Article/List_26/\n古典文学::https://fox2008.cn/Article/List_15/<index,index_2,index_3,index_{{page+1}}>.html\n寓意童话::https://fox2008.cn/Article/List_13/<index,index_2,index_3,index_{{page+1}}>.html\n武侠小说::https://fox2008.cn/Article/List_335/<index,index_2,index_3,index_{{page+1}}>.html\n百家讲坛::https://fox2008.cn/Article/List_190/<index,index_2,index_3,index_{{page+1}}>.html\n中外名人::https://fox2008.cn/Article/List_259/\n故事会集::https://fox2008.cn/Article/List_72/<index,index_2,index_3,index_{{page+1}}>.html\n美文欣赏::https://fox2008.cn/Article/List_2/\n礼仪知识::https://fox2008.cn/Article/List_360/\n民俗风情::https://fox2008.cn/Article/List_12/\n谜语大全::https://fox2008.cn/Article/List_76/\n百科知识::https://fox2008.cn/Article/List_80/<index,index_2,index_3,index_{{page+1}}>.html\n教育成才::https://fox2008.cn/Article/List_396/<index,index_2,index_3,index_{{page+1}}>.html\n十大将军::https://fox2008.cn/Article/List_759/\n十大元帅::https://fox2008.cn/Article/List_1163/\n名人故事::https://fox2008.cn/Article/List_334/\n其他阅读::https://fox2008.cn/qtyd/<index,index_2,index_3,index_{{page+1}}>.html\n莫言合集::https://fox2008.cn/Article/List_1156/\n亦舒文集::https://fox2008.cn/Article/List_1468/\n张爱玲集::https://fox2008.cn/Article/List_1448/\n张小娴集::https://fox2008.cn/Article/List_1503/\n郑渊洁集::https://fox2008.cn/Article/List_914/\n余秋雨集::https://fox2008.cn/Article/List_941/\n沈从文集::https://fox2008.cn/Article/List_973/\n冯骥才集::https://fox2008.cn/Article/List_1137/\n张恨水文集::https://fox2008.cn/Article/List_262/\n贾平凹文集::https://fox2008.cn/Article/List_278/\n曹文轩文集::https://fox2008.cn/Article/List_230/\n郭敬明文集::https://fox2008.cn/Article/List_422/\n张贤亮文集::https://fox2008.cn/Article/List_895/\n茶人三部曲::https://fox2008.cn/Article/List_808/\n菜根谭全集::https://fox2008.cn/Article/List_589/\n白话文解析::https://fox2008.cn/Article/List_758/<index,index_2,index_3,index_{{page+1}}>.html\n唐宋八大家::https://fox2008.cn/Article/List_216/",
+    "header": "",
+    "ruleBookInfo": {
+      "infoInit": "",
+      "infoAuthor": "",
+      "infoCoverUrl": "",
+      "infoIntro": "class.txt@tag.p@text",
+      "infoKind": "",
+      "infoLastChapter": "",
+      "infoName": "tag.h3.0@text",
+      "infoTocUrl": "",
+      "infoWordCount": ""
+    },
+    "ruleContent": {
+      "content": "id.chapterContent@class.MsoNormal@text||id.chapterContent@tag.p@textNodes||id.chapterContent@tag.span@html",
+      "nextContentUrl": "",
+      "webJs": "",
+      "sourceRegex": "",
+      "replaceRegex": ""
+    },
+    "ruleExplore": {
+      "exploreAuthor": "",
+      "exploreBookList": "",
+      "exploreBookUrl": "",
+      "exploreCoverUrl": "",
+      "exploreIntro": "",
+      "exploreKind": "",
+      "exploreLastChapter": "",
+      "exploreName": ""
+    },
+    "ruleSearch": {
+      "searchAuthor": "class.author-container@text",
+      "searchBookList": "class.yd-book-item",
+      "searchBookUrl": "tag.a@href",
+      "searchCoverUrl": "tag.img@src",
+      "searchIntro": "",
+      "searchKind": "",
+      "searchLastChapter": "class.summery@text",
+      "searchName": "tag.h2.0@text",
+      "searchWordCount": ""
+    },
+    "ruleToc": {
+      "tocList": "class.directory@tag.li@tag.a",
+      "tocName": "text",
+      "tocUrl": "href",
+      "isVip": "",
+      "nextTocUrl": "",
+      "tocUpdateTime": ""
+    },
+    "searchUrl": "-"
+  }
+]

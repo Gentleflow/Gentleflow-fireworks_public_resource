@@ -1,0 +1,56 @@
+{
+  "sourceName": "💥 顶点小说②",
+  "sourceType": 0,
+  "sourceUrl": "https://www.208xs.com",
+  "bookInfoPattern": "",
+  "exploreUrl": "玄幻奇幻::/book_1_{{page}}/\n武侠修真::/book_2_{{page}}/\n言情都市::/book_3_{{page}}/\n历史穿越::/book_4_{{page}}/\n网游动漫::/book_6_{{page}}/\n科幻小说::/book_7_{{page}}/\n恐怖灵异::/book_8_{{page}}/\n其他类型::/book_10_{{page}}/\n",
+  "header": "",
+  "ruleBookInfo": {
+    "infoInit": "",
+    "infoAuthor": "",
+    "infoCoverUrl": "",
+    "infoIntro": "id.intro@tag.p.0@text",
+    "infoKind": "",
+    "infoLastChapter": "",
+    "infoName": "",
+    "infoTocUrl": "",
+    "infoWordCount": ""
+  },
+  "ruleContent": {
+    "content": "id.book_text@tag.p@text##天才.*网址.*",
+    "nextContentUrl": "",
+    "webJs": "",
+    "sourceRegex": "",
+    "replaceRegex": ""
+  },
+  "ruleExplore": {
+    "exploreAuthor": "class.name@tag.span.1@text#作者：",
+    "exploreBookList": "class.nr@tag.li",
+    "exploreBookUrl": "class.name@tag.strong@tag.a@href",
+    "exploreCoverUrl": "class.pic@tag.a@tag.img@src",
+    "exploreIntro": "class.nrrk@tag.p@text",
+    "exploreKind": "class.name@tag.span.0@text#类别：",
+    "exploreLastChapter": "class.nrrk@tag.dt@tag.a@text",
+    "exploreName": "class.name@tag.strong@tag.a@text"
+  },
+  "ruleSearch": {
+    "searchAuthor": "class.name.0@tag.span.1@text##作者：",
+    "searchBookList": "class.nr@tag.li",
+    "searchBookUrl": "class.name.0@tag.strong@tag.a.0@href",
+    "searchCoverUrl": "class.pic.0@tag.img.0@src",
+    "searchIntro": "",
+    "searchKind": "class.name.0@tag.span.0@text##类别：",
+    "searchLastChapter": "class.nrrk.0@tag.dt.0@tag.a.0@text##正文",
+    "searchName": "class.name.0@tag.strong@tag.a.0@text",
+    "searchWordCount": ""
+  },
+  "ruleToc": {
+    "tocList": "class.article@tag.li",
+    "tocName": "tag.a@text",
+    "tocUrl": "tag.a@href",
+    "isVip": "",
+    "nextTocUrl": "",
+    "tocUpdateTime": ""
+  },
+  "searchUrl": "https://www.208xs.com/searchbook.php?search_key={{key}}"
+}

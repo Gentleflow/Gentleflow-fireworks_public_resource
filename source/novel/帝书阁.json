@@ -1,0 +1,56 @@
+{
+  "sourceName": "💥 帝书阁",
+  "sourceType": 0,
+  "sourceUrl": "http://m.dishuge.com",
+  "bookInfoPattern": "",
+  "exploreUrl": "玄幻奇幻::/xuanhuanqihuan/\n武侠仙侠::/wuxiaxianxia/\n都市社会::/dushishehui/\n历史军事::/lishijunshi/\n游戏竞技::/youxijingji/\n科幻灵异::/kehuanlingyi/\n女生言情::/nvsheng/\n二次元::/erciyuan/\n文学小说::/wenxue/\n",
+  "header": "",
+  "ruleBookInfo": {
+    "infoInit": "",
+    "infoAuthor": "##作者：([^<]*)##$1###",
+    "infoCoverUrl": "img@src",
+    "infoIntro": "",
+    "infoKind": "##分类：([^<]*)##$1###",
+    "infoLastChapter": "class.info@a@text",
+    "infoName": "##h1>([^<]*)##$1###",
+    "infoTocUrl": "",
+    "infoWordCount": ""
+  },
+  "ruleContent": {
+    "content": "id.mycontent@p@textNodes##.*本章未完.*|.*第.*/.*页.*",
+    "nextContentUrl": "text.下一页@href",
+    "webJs": "",
+    "sourceRegex": "",
+    "replaceRegex": ""
+  },
+  "ruleExplore": {
+    "exploreAuthor": "class.info@text##作者：|分类.*",
+    "exploreBookList": "class.bd column-2",
+    "exploreBookUrl": "class.right@h1@tag.a@href",
+    "exploreCoverUrl": "class.left@tag.a@tag.img@src",
+    "exploreIntro": "",
+    "exploreKind": "class.info@tag.a.0@text",
+    "exploreLastChapter": "class.info@tag.a.1@text",
+    "exploreName": "class.right@h1@tag.a@text"
+  },
+  "ruleSearch": {
+    "searchAuthor": "class.info@text##作者：|分类.*",
+    "searchBookList": "class.bd column-2",
+    "searchBookUrl": "class.right@h1@tag.a@href",
+    "searchCoverUrl": "class.left@tag.a@tag.img@src",
+    "searchIntro": "",
+    "searchKind": "class.info@tag.a.0@text",
+    "searchLastChapter": "class.info@tag.a.1@text",
+    "searchName": "class.right@h1@tag.a@text",
+    "searchWordCount": ""
+  },
+  "ruleToc": {
+    "tocList": "class.mod block update@a",
+    "tocName": "text",
+    "tocUrl": "href",
+    "isVip": "",
+    "nextTocUrl": "",
+    "tocUpdateTime": ""
+  },
+  "searchUrl": "http://m.dishuge.com/search/,{\n  \"method\": \"POST\",\n  \"body\": \"searchkey={{key}}\"\n}"
+}

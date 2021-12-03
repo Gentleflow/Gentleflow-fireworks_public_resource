@@ -1,0 +1,56 @@
+{
+  "sourceName": "💥 顶点小说①",
+  "sourceType": 0,
+  "sourceUrl": "http://www.ddxsku.com",
+  "bookInfoPattern": "",
+  "exploreUrl": "总排行榜::http://www.ddxsku.com/top/allvisit_{{page}}.html\n月排行榜::http://www.ddxsku.com/top/monthvisit_{{page}}.html\n周排行榜::http://www.ddxsku.com/top/weekvisit_{{page}}.html\n总推荐榜::http://www.ddxsku.com/top/allvote_{{page}}.html\n月推荐榜::http://www.ddxsku.com/top/monthvote_{{page}}.html\n周推荐榜::http://www.ddxsku.com/top/weekvote_{{page}}.html\n最新入库::http://www.ddxsku.com/top/postdate_{{page}}.html\n最近更新::http://www.ddxsku.com/top/lastupdate_{{page}}.html\n总收藏榜::http://www.ddxsku.com/top/goodnum_{{page}}.html\n字数排行::http://www.ddxsku.com/top/size_{{page}}.html\n",
+  "header": "",
+  "ruleBookInfo": {
+    "infoInit": "",
+    "infoAuthor": "",
+    "infoCoverUrl": "",
+    "infoIntro": "",
+    "infoKind": "",
+    "infoLastChapter": "",
+    "infoName": "class.bdsub@tag.dd.1@tag.h3@text#作者：",
+    "infoTocUrl": "",
+    "infoWordCount": ""
+  },
+  "ruleContent": {
+    "content": "id.contents@html",
+    "nextContentUrl": "",
+    "webJs": "",
+    "sourceRegex": "",
+    "replaceRegex": ""
+  },
+  "ruleExplore": {
+    "exploreAuthor": "tag.td.2@text",
+    "exploreBookList": "tag.table@tag.tbody@tag.tr!0",
+    "exploreBookUrl": "tag.td.1@tag.a@href",
+    "exploreCoverUrl": "",
+    "exploreIntro": "",
+    "exploreKind": "",
+    "exploreLastChapter": "tag.td.1@tag.a.0@text",
+    "exploreName": "tag.td.0@tag.a@text"
+  },
+  "ruleSearch": {
+    "searchAuthor": "tag.td.2@text",
+    "searchBookList": "tag.table@tag.tr!0",
+    "searchBookUrl": "tag.td.0@tag.a.0@href",
+    "searchCoverUrl": "",
+    "searchIntro": "",
+    "searchKind": "",
+    "searchLastChapter": "tag.td.1@tag.a.0@text",
+    "searchName": "tag.td.0@tag.a.0@text",
+    "searchWordCount": ""
+  },
+  "ruleToc": {
+    "tocList": "id.at@tag.td@tag.a",
+    "tocName": "text",
+    "tocUrl": "href",
+    "isVip": "",
+    "nextTocUrl": "",
+    "tocUpdateTime": ""
+  },
+  "searchUrl": "/search/?searchkey={{key}}"
+}
