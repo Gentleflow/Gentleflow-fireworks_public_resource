@@ -6,8 +6,8 @@
     "download_url": "https://gentleflow.coding.net/t/gentleflow/p/fireworks-reader/d/fireworks_public_resource/git/raw/master/apk/Reader/Fireworks-Reader-Market.apk"
   },
   "iOS": {
-    "version": "1.2.6",
-    "introduction": "【修复】部分书源阅读卡顿\n【修复】其他已知问题",
+    "version": "1.2.8",
+    "introduction": "【优化】书源同步方式\n【修复】部分已知问题",
     "app_store_url": "https://apps.apple.com/cn/app/%E8%8A%B1%E7%81%AB%E9%98%85%E8%AF%BB/id1546631588"
   },
   "SourceVersion": 2021091801
