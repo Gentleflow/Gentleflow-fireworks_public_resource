@@ -1,7 +1,7 @@
 {
   "Android": {
-    "version": "1.3.1",
-    "introduction": "【修复】有声书未自动播放和跳章播放\n【修复】进入阅读页白屏\n【修复】阅读页移出书架闪退\n【修复】阅读页设置栏被虚拟按键遮挡\n【修复】其他已知问题",
+    "version": "1.3.2",
+    "introduction": "【修复】有声书跳章播放\n【修复】自动进入上次阅读位置\n【修复】其他已知问题",
     "apk_size": "34.0",
     "download_url": "https://gentleflow.coding.net/t/gentleflow/p/fireworks-reader/d/fireworks_public_resource/git/raw/master/apk/Reader/Fireworks-Reader-Market.apk"
   },
